@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
+.txt{position:absolute;left:72px;right:72px;top:760px}
+.txt .eti{color:var(--turquesa);display:block;margin-bottom:16px}
+.txt h1{font-size:120px;line-height:.95;color:var(--blanco)}
+.txt p{font-size:44px;line-height:1.2;font-weight:600;color:var(--crema);margin:24px 0 0}
+</style></head><body><div class="lienzo v">
+<div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo"></div>
+<div class="txt"><span class="eti">{{ etiqueta }}</span><h1 class="disp">{{ titulo }}</h1>{% if subtitulo %}<p>{{ subtitulo }}</p>{% endif %}</div>
+</div></body></html>

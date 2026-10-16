@@ -1,0 +1,11 @@
+@font-face{font-family:"Unica One";src:url("fuentes/UnicaOne-Regular.ttf") format("truetype")}
+@font-face{font-family:"Raleway";src:url("fuentes/Raleway.ttf") format("truetype");font-weight:100 900}
+:root{--selva:#1F2B20;--bosque:#2A3C2E;--turquesa:#28AAA3;--turquesa-profundo:#0E7A75;--dorado:#C3A065;--dorado-profundo:#AB844A;--salvia:#7A9F85;--crema:#FAF6EF;--crema-profunda:#F0EBE4;--blanco:#FFFFFF;--tinta-suave:#595959;--whatsapp:#13824A;--font-display:"Unica One","Arial Narrow",sans-serif;--font-texto:"Raleway",Arial,sans-serif}
+html,body{margin:0;background:transparent}
+.lienzo{position:relative;overflow:hidden;font-family:var(--font-texto)}
+.v{width:1080px;height:1920px}.p{width:1080px;height:1350px}
+.disp{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.02em;margin:0;font-weight:400}
+.eti{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.18em;font-size:30px}
+.foto{position:absolute;inset:0;background:var(--bosque) center/cover no-repeat}
+.velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,60,46,0) 35%,rgba(31,43,32,.85) 100%)}
+.chica{font-size:22px;line-height:1.3;font-weight:500}
