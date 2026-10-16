@@ -26,7 +26,9 @@ def salidas_vendibles(salidas: list[Salida], anio: int, mes: int, hoy: date) -> 
 
 
 def armar_calendario(anio: int, mes: int, salidas: list[Salida], hoy: date) -> list[Pieza]:
-    especial = next((x for x in salidas if x.especial and x.vendible and x.verificado_en == hoy), None)
+    especial = next((x for x in sorted(salidas, key=lambda s: s.fecha_salida)
+                     if x.especial and x.vendible and x.verificado_en == hoy
+                     and (x.fecha_salida.year, x.fecha_salida.month) > (anio, mes)), None)
     paquetes = salidas_vendibles(salidas, anio, mes, hoy)
 
     huecos: list[tuple[date, str, str, str]] = []  # (fecha, hora, formato, pilar)

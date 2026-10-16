@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 import subprocess
 import tempfile
 from dataclasses import dataclass
@@ -11,7 +12,7 @@ from .render import render_png
 from .sonda import info
 
 ANCHO, ALTO, FPS = 1080, 1920, 30
-MAX_TOTAL, PORTADA_S, PLACA_S = 90.0, 1.0, 3.0
+MAX_TOTAL, PORTADA_S, PLACA_S, MARGEN_S = 90.0, 1.0, 3.0, 0.5
 LIMITE_PREVIEW = 18 * 1024 * 1024
 ENCUADRE = f"scale={ANCHO}:{ALTO}:force_original_aspect_ratio=increase,crop={ANCHO}:{ALTO},setsar=1,fps={FPS}"
 SILENCIO = ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
@@ -25,6 +26,7 @@ class Toma:
     inicio: float
     fin: float
     subtitulo: str = ""
+    con_audio: bool = False  # True solo para tomas con sonido propio que debe oírse (Bettina hablando)
 
     @property
     def duracion(self) -> float:
@@ -35,14 +37,15 @@ def _ff(*args) -> None:
     subprocess.run([get_ffmpeg_exe(), "-hide_banner", "-loglevel", "error", "-y", *map(str, args)], check=True)
 
 
-def recortar_tomas(tomas: list[Toma], maximo: float = MAX_TOTAL - PORTADA_S - PLACA_S) -> list[Toma]:
-    resultado, total = [], 0.0
+def recortar_tomas(tomas: list[Toma], maximo: float = MAX_TOTAL - PORTADA_S - PLACA_S - MARGEN_S) -> list[Toma]:
+    # Cada toma dura un número entero de frames: ffmpeg redondea hacia arriba y el desvío se acumula entre tomas.
+    resultado, frames_total, frames_max = [], 0, math.floor(maximo * FPS)
     for t in tomas:
-        if total >= maximo:
-            break
-        dur = min(t.duracion, maximo - total)
-        resultado.append(Toma(t.archivo, t.inicio, t.inicio + dur, t.subtitulo))
-        total += dur
+        frames = min(math.floor(t.duracion * FPS + 1e-6), frames_max - frames_total)
+        if frames <= 0:
+            continue
+        resultado.append(Toma(t.archivo, t.inicio, t.inicio + frames / FPS, t.subtitulo, t.con_audio))
+        frames_total += frames
     return resultado
 
 
@@ -53,7 +56,8 @@ def _segmento_toma(t: Toma, subtitulo_png: Path | None, destino: Path) -> None:
         filtro, audio = f"[0:v]{ENCUADRE}[b];[b][1:v]overlay=0:0[v]", 2
     else:
         filtro, audio = f"[0:v]{ENCUADRE}[v]", 1
-    _ff(*entradas, *SILENCIO, "-filter_complex", filtro, "-map", "[v]", "-map", f"{audio}:a",
+    pista = "0:a" if t.con_audio else f"{audio}:a"
+    _ff(*entradas, *SILENCIO, "-filter_complex", filtro, "-map", "[v]", "-map", pista,
         "-t", t.duracion, *CODIFICAR, destino)
 
 
@@ -91,6 +95,9 @@ def armar_reel(tomas: list[Toma], portada_png: Path, placa_png: Path, carpeta: P
         partes.append(placa)
         lista = tmp / "lista.txt"
         lista.write_text("".join(f"file '{p.as_posix()}'\n" for p in partes), encoding="utf-8")
-        _ff("-f", "concat", "-safe", "0", "-i", lista, "-c", "copy", "-movflags", "+faststart", final)
+        # Re-codificar la unión: con copia directa, el relleno del audio AAC de cada tramo abre huecos
+        # que se acumulan y el reel supera los 90 s.
+        _ff("-f", "concat", "-safe", "0", "-i", lista, "-af", "aresample=async=1", *CODIFICAR,
+            "-t", MAX_TOTAL, "-movflags", "+faststart", final)
     preview = hacer_preview(final, carpeta / f"{nombre}-preview.mp4")
     return final, preview

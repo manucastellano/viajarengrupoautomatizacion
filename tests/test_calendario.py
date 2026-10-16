@@ -82,3 +82,9 @@ def test_historias_tema_por_dia_e_ids_unicos():
     ids = [p.id for p in piezas]
     assert len(ids) == len(set(ids))
     assert "2026-11-04-reel" in ids
+
+
+def test_especial_no_se_vende_en_su_mes_de_salida_ni_despues():
+    for anio, mes in ((2027, 5), (2027, 6)):
+        piezas = armar_calendario(anio, mes, [ESPECIAL], HOY)
+        assert not [p for p in piezas if p.pilar == "especial"]

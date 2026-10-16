@@ -11,3 +11,4 @@ Entrada: `meses/<AAAA-MM>/salidas.json`. Salida: `meses/<AAAA-MM>/calendario.jso
    - historias: mantené el tema del día y agregá el detalle (qué encuesta, qué tip).
    - Salidas que parten dentro del mes: usá historias de "¡salimos!" y dejá anotado un recap para el mes siguiente.
 3. Escribí `material.md` para Manuel: por pieza, qué fotos o clips hacen falta, en lenguaje simple ("8 a 12 clips del grupo en Verona, de 3 a 10 segundos cada uno"). Al final, la lista de guiones de 3 líneas para las historias de los jueves.
+4. Historias que muestran cupos o precios (miércoles "reel y cupos", viernes "próximas salidas"): asigná `salida_id` a la salida que mencionan. El revisor bloquea las historias con cupos o precio sin salida verificada hoy.

@@ -40,3 +40,13 @@ def test_subtitulo_transparente(tmp_path):
     img = Image.open(png).convert("RGBA")
     assert img.size == (1080, 1920)
     assert img.getpixel((10, 10))[3] == 0  # esquina transparente
+
+
+def test_html_precio_crudo_none_no_imprime_none():
+    h = html("post_paquete", {**POST, "precio": None, "letra_chica": None})
+    assert "CONSULTÁ CUPOS" in h and "DESDE" not in h and "None" not in h
+
+
+def test_html_precio_numerico_se_formatea():
+    h = html("post_paquete", {**POST, "precio": 9680})
+    assert "USD 9.680" in h and "DESDE" in h

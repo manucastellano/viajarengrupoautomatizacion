@@ -6,6 +6,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from playwright.sync_api import Error as PlaywrightError
 from playwright.sync_api import sync_playwright
 
+from .formato import formatear_precio
+
 RAIZ = Path(__file__).resolve().parent.parent
 PLANTILLAS = RAIZ / "plantillas"
 TAMANOS = {
@@ -18,6 +20,9 @@ _env = Environment(loader=FileSystemLoader(PLANTILLAS), autoescape=select_autoes
 
 def html(plantilla: str, datos: dict) -> str:
     datos = {k: (v.resolve().as_uri() if isinstance(v, Path) else v) for k, v in datos.items()}
+    if "precio" in datos and not isinstance(datos["precio"], str):
+        datos["precio"] = formatear_precio(datos["precio"])
+    datos = {k: ("" if v is None and k != "foto" else v) for k, v in datos.items()}
     datos.setdefault("foto", None)
     return _env.get_template(f"{plantilla}.html.j2").render(raiz=PLANTILLAS.as_uri(), **datos)
 

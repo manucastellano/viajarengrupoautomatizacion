@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from datetime import date
 
+from .formato import formatear_precio
 from .modelos import Pieza, Salida
 
 CTAS = ("whatsapp", "link en bio", "escribinos", "dejanos tu comentario", "sumate", "mensaje privado")
@@ -25,7 +26,10 @@ def revisar(pieza: Pieza, salida: Salida | None, hoy: date) -> list[str]:
         problemas.append('El precio va con "desde"')
     if _MAYUSCULAS.search(pieza.texto):
         problemas.append("Mayúsculas sostenidas en el texto")
-    if pieza.pilar in ("especial", "paquete"):
+    es_historia_de_venta = pieza.formato == "historias" and (_PRECIO.search(pieza.texto) or "cupo" in pieza.texto.lower())
+    if es_historia_de_venta and (salida is None or salida.verificado_en != hoy or not salida.vendible):
+        problemas.append("Historia con cupos o precio sin salida verificada hoy")
+    if pieza.pilar in ("especial", "paquete") or (es_historia_de_venta and salida is not None):
         if salida is None:
             problemas.append("Pieza de venta sin salida asociada")
         else:
@@ -33,6 +37,10 @@ def revisar(pieza: Pieza, salida: Salida | None, hoy: date) -> list[str]:
                 problemas.append(f"Cupo de {salida.destino} no verificado hoy")
             if not salida.vendible:
                 problemas.append(f"{salida.destino} sin cupo")
+            if (salida.fecha_salida.year, salida.fecha_salida.month) <= (pieza.fecha.year, pieza.fecha.month):
+                problemas.append("La salida parte en el mes de la pieza o antes: no se vende")
+            if salida.precio_desde is not None and formatear_precio(salida.precio_desde, salida.moneda) not in pieza.texto:
+                problemas.append(f"El precio del texto no coincide con la salida ({formatear_precio(salida.precio_desde, salida.moneda)})")
             if pieza.pilar == "especial" and not salida.especial:
                 problemas.append("Solo las salidas propias pueden ir como especial de agencia")
     return problemas

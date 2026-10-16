@@ -61,3 +61,25 @@ def test_mayusculas_sostenidas():
 def test_historias_no_exigen_hashtags_ni_titular():
     h = pieza(formato="historias", pilar="agencia", salida_id=None, titulo="", texto="", hashtags=[])
     assert revisar(h, None, HOY) == []
+
+
+def test_salida_que_parte_en_el_mes_de_la_pieza():
+    p = pieza(fecha=date(2027, 5, 7))
+    assert "La salida parte en el mes de la pieza o antes: no se vende" in revisar(p, NORTE, HOY)
+
+
+def test_precio_desactualizado_en_el_texto():
+    nuevo = Salida(**{**NORTE.__dict__, "precio_desde": 9900})
+    assert "El precio del texto no coincide con la salida (USD 9.900)" in revisar(pieza(), nuevo, HOY)
+
+
+def test_historia_de_venta_sin_salida_verificada():
+    h = pieza(formato="historias", pilar="agencia", salida_id=None, titulo="", hashtags=[],
+              texto="Quedan pocos cupos para Mercadillos\nDesde USD 4.500\nEscribinos")
+    assert "Historia con cupos o precio sin salida verificada hoy" in revisar(h, None, HOY)
+
+
+def test_historia_de_venta_con_salida_verificada_pasa():
+    h = pieza(formato="historias", pilar="agencia", salida_id="norte", titulo="", hashtags=[],
+              texto="Quedan pocos cupos\nDesde USD 9.680")
+    assert revisar(h, NORTE, HOY) == []

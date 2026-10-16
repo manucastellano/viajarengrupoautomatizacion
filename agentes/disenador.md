@@ -9,3 +9,6 @@ Entrada: `piezas.json`, `material/`. Salida: PNG en `meses/<AAAA-MM>/piezas/<id>
 - Reel → `portada_reel` y `placa_cierre` (frase según el pilar: "¿Nos acompañás?", "Sumate a la charla", "Reservá tu lugar").
 - Fotos: elegí de `material/` la mejor según el orden del manual (grupo real > Bettina > paisaje > detalle). Sin foto propia: stock libre de derechos (anotá la fuente en `piezas/<id>/fuentes.txt`) o fondo liso.
 - Mirá cada PNG con Read antes de darlo por terminado: texto dentro de los márgenes, nada tapado.
+- Precio: pasá `precio=salida.precio_desde` (número o `None`); la plantilla lo formatea y, si es `None`, muestra "CONSULTÁ CUPOS". No armes el texto del precio a mano.
+- `letra_chica`: armala solo con las partes que existen (no agregues el suplemento si es `None`).
+- Reel: subí siempre la portada PNG como asset `tipo: "imagen"` además de la preview, así el tablero tiene miniatura.
