@@ -1,19 +1,15 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
-.claro{background:var(--crema)}.oscuro{background:var(--selva)}
-.n{position:absolute;left:72px;top:110px;font-family:var(--font-display);font-size:200px;line-height:1;color:var(--dorado-profundo)}
-.oscuro .n{color:var(--dorado)}
-.filete{position:absolute;left:72px;width:120px;height:6px;background:var(--turquesa);top:360px}
-.c{position:absolute;left:72px;right:72px;top:400px}
-.c .eti{color:var(--turquesa-profundo)}.oscuro .c .eti{color:var(--turquesa)}
-.c h1{font-size:88px;line-height:.95;color:var(--selva)}
-.oscuro .c h1{color:var(--crema)}
-.c p{font-size:34px;line-height:1.35;font-weight:500;color:var(--selva);margin:32px 0 0;max-width:820px}
-.oscuro .c p{color:var(--crema)}
-.portada .c{top:300px}.portada .c h1{font-size:110px;margin-top:24px}
-.pie{position:absolute;left:72px;bottom:56px;font-family:var(--font-display);letter-spacing:.18em;font-size:26px;color:var(--turquesa-profundo)}
-.oscuro .pie{color:var(--turquesa)}
-</style></head><body><div class="lienzo p {{ 'oscuro' if oscuro else 'claro' }}{{ '' if numero else ' portada' }}">
-{% if numero %}<div class="n">{{ '%02d' % numero }}</div><div class="filete"></div>{% endif %}
-<div class="c">{% if etiqueta %}<span class="eti">{{ etiqueta }}</span>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p>{{ texto }}</p>{% endif %}</div>
+.oscuro{background:var(--verde);color:var(--marfil)}.claro{background:var(--marfil);color:var(--verde)}
+.n{font-family:var(--font-display);font-size:150px;line-height:1;color:var(--turquesa)}
+.c{position:absolute;left:110px;right:110px;top:{{ top|default(300) }}px;display:grid;gap:30px}
+.c .ante{font-size:40px}
+.c h1{font-size:{{ tam|default(84) }}px}
+.c .x{font-size:44px}
+.portada .c{top:430px}.portada .c h1{font-size:{{ tam|default(104) }}px}
+.pie{left:110px;bottom:70px}
+.con-foto{color:var(--blanco)}
+</style></head><body><div class="lienzo p {{ 'con-foto' if foto else ('oscuro' if oscuro else 'claro') }}{{ '' if numero else ' portada' }}">
+{% if foto %}<div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo-arriba"></div>{% endif %}
+<div class="c{{ ' sombra' if foto }}">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
 <div class="pie">@viajar.en.grupo</div>
 </div></body></html>

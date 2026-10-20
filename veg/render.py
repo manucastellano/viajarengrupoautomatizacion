@@ -14,6 +14,7 @@ TAMANOS = {
     "post_paquete": (1080, 1350), "lamina": (1080, 1350),
     "portada_reel": (1080, 1920), "historia": (1080, 1920),
     "placa_cierre": (1080, 1920), "subtitulo": (1080, 1920),
+    "historia_postal": (1080, 1920), "historia_frase": (1080, 1920),
 }
 _env = Environment(loader=FileSystemLoader(PLANTILLAS), autoescape=select_autoescape(["html", "j2"]))
 

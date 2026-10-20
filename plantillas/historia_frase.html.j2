@@ -1,0 +1,6 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
+.lienzo{background:var(--salvia);color:var(--verde)}
+.ruta{position:absolute;top:310px;left:0;width:640px}
+.ruta .avion{width:170px;height:170px}
+.frase{position:absolute;right:110px;left:150px;top:{{ top|default(820) }}px;text-align:right;font-size:{{ tam|default(134) }}px;line-height:1.2;text-wrap:wrap}
+</style></head><body><div class="lienzo v"><div class="ruta"><span class="punteada"></span><svg class="avion" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12 16 10 11 3H9l3 7H6L4 7H2.5l1 5-1 5H4l2-3h6l-3 7h2l5-7z"/></svg></div><h1 class="disp frase">{{ frase }}</h1></div></body></html>
