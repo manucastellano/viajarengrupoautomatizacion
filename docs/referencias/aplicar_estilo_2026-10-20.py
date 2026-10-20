@@ -95,12 +95,13 @@ html,body{margin:0;background:transparent}
 """,
 
 "lamina.html.j2": HEAD + """.oscuro{background:var(--verde);color:var(--marfil)}.claro{background:var(--marfil);color:var(--verde)}
-.n{font-family:var(--font-display);font-size:150px;line-height:1;color:var(--turquesa)}
-.c{position:absolute;left:110px;right:110px;top:{{ top|default(300) }}px;display:grid;gap:30px}
-.c .ante{font-size:40px}
-.c h1{font-size:{{ tam|default(84) }}px}
-.c .x{font-size:44px}
-.portada .c{top:430px}.portada .c h1{font-size:{{ tam|default(104) }}px}
+.n{font-family:var(--font-display);font-size:170px;line-height:1;color:var(--turquesa)}
+.c{position:absolute;left:110px;right:110px;top:{{ top|default(300) }}px;display:flex;flex-direction:column;gap:32px}
+.claro .c,.oscuro .c{top:0;bottom:110px;justify-content:center}
+.c .ante{font-size:46px}
+.c h1{font-size:{{ tam|default(98) }}px}
+.c .x{font-size:54px}
+.portada .c h1{font-size:{{ tam|default(118) }}px}
 .pie{left:110px;bottom:70px}
 .con-foto{color:var(--blanco)}
 </style></head><body><div class="lienzo p {{ 'con-foto' if foto else ('oscuro' if oscuro else 'claro') }}{{ '' if numero else ' portada' }}">
