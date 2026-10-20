@@ -6,7 +6,7 @@ from datetime import date
 from .formato import formatear_precio
 from .modelos import Pieza, Salida
 
-CTAS = ("whatsapp", "link en bio", "escribinos", "dejanos tu comentario", "sumate", "mensaje privado")
+CTAS = ("whatsapp", "link en bio", "escribinos", "dejanos tu comentario", "sumate", "mensaje privado", "comentá")
 _MAYUSCULAS = re.compile(r"\b[A-ZÁÉÍÓÚÑ]{4,}(?:\s+[A-ZÁÉÍÓÚÑ]{4,}){2,}\b")
 _PRECIO = re.compile(r"\bUSD\s?\d[\d.]*")
 

@@ -83,3 +83,8 @@ def test_historia_de_venta_con_salida_verificada_pasa():
     h = pieza(formato="historias", pilar="agencia", salida_id="norte", titulo="", hashtags=[],
               texto="Quedan pocos cupos\nDesde USD 9.680")
     assert revisar(h, NORTE, HOY) == []
+
+
+def test_cta_con_palabra_clave_cuenta_como_llamado():
+    p = pieza(texto="Norte de España. Desde USD 9.680. Comentá NORTE y te mando el itinerario.")
+    assert "Falta un llamado a la acción" not in revisar(p, NORTE, HOY)
