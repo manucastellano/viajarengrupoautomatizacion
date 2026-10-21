@@ -12,7 +12,7 @@ NORTE = Salida(id="norte", destino="Norte de España", fecha_salida=date(2027, 5
 def pieza(**kw):
     base = dict(id="2026-11-06-post", fecha=date(2026, 11, 6), hora="13:00", formato="post", pilar="especial",
                 tema="Norte de España", salida_id="norte", titulo="Norte de España",
-                texto="Del 24 de mayo al 10 de junio de 2027. Desde USD 9.680. ¿Nos acompañás? Escribinos por WhatsApp al +54 9 11 5944-4920 ✈️",
+                texto="Del 24 de mayo al 10 de junio de 2027. Desde USD 9.680. ¿Nos acompañás? Escribinos por WhatsApp: el número de Bettina está en el link de nuestro perfil ✈️",
                 hashtags=HASHTAGS)
     base.update(kw)
     return Pieza(**base)
@@ -88,3 +88,17 @@ def test_historia_de_venta_con_salida_verificada_pasa():
 def test_cta_con_palabra_clave_cuenta_como_llamado():
     p = pieza(texto="Norte de España. Desde USD 9.680. Comentá NORTE y te mando el itinerario.")
     assert "Falta un llamado a la acción" not in revisar(p, NORTE, HOY)
+
+def test_numero_viejo_de_whatsapp():
+    p = pieza(texto=pieza().texto + " Llamá al +54 9 11 5944-4920.")
+    assert "Número de WhatsApp desactualizado: usar +54 9 11 4434-0161" in revisar(p, NORTE, HOY)
+
+
+def test_falta_aclarar_que_el_contacto_esta_en_el_link_del_perfil():
+    p = pieza(texto="Desde USD 9.680. Escribinos por WhatsApp al +54 9 11 4434-0161.")
+    assert "Falta aclarar que el contacto está en el link del perfil" in revisar(p, NORTE, HOY)
+
+
+def test_historias_no_exigen_aclaracion_del_link():
+    h = pieza(formato="historias", pilar="agencia", salida_id=None, titulo="", texto="", hashtags=[])
+    assert revisar(h, None, HOY) == []

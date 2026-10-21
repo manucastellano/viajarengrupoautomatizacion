@@ -90,7 +90,8 @@ README = """Viajar en Grupo es la agencia de Bettina Schwartz, Lic. en Turismo c
 - En las imágenes, el texto va en minúscula de oración, nunca todo en mayúsculas. Las preguntas y exclamaciones llevan los dos signos (¿?, ¡!).
 - Usá entre 1 y 3 emojis por texto de posteo, como puntuación. No pongas emojis dentro de las imágenes.
 - Prohibido: urgencia falsa, superlativos vacíos, mayúsculas sostenidas y anglicismos innecesarios.
-- Siempre hay un solo llamado a la acción: "Escribinos por WhatsApp al +54 9 11 5944-4920", "Comentá NORTE y te mando el itinerario" o "Link en bio".
+- Siempre hay un solo llamado a la acción: "Escribinos por WhatsApp al +54 9 11 4434-0161", "Comentá NORTE y te mando el itinerario" o "Link en bio".
+- Todo posteo y reel termina con la línea: "📲 El WhatsApp de Bettina está en el link de nuestro perfil." El número es +54 9 11 4434-0161.
 - Hashtags: de 5 a 8, al final, con `#viajarengrupo` primero.
 
 ## Datos que no pueden fallar
@@ -310,7 +311,7 @@ w("components/PlacaCierre/preview.html", preview('<!-- @dsCard group="Reels" hei
 .logo{position:absolute;right:110px;top:300px;width:230px;height:230px;border-radius:50%}
 .t{position:absolute;left:110px;right:110px;top:860px;display:grid;gap:36px}.t h1{font-size:120px}.t p{font-size:54px;font-weight:600}.t p.ch{font-size:34px;font-weight:400}""",
 f"""<div class="marco"><div class="lienzo v">{AVION.replace('top:310px', 'top:420px')}<img class="logo" src="/_blob/c4722e25534c8b0ed90b45356b4663bd" alt="">
-<div class="t"><h1 class="disp">¿Nos acompañás?</h1><p class="txt">WhatsApp +54 9 11 5944-4920</p><p class="txt ch">viajarengrupo.tur.ar · Leg. 19725</p></div></div></div>
+<div class="t"><h1 class="disp">¿Nos acompañás?</h1><p class="txt">WhatsApp +54 9 11 4434-0161</p><p class="txt ch">viajarengrupo.tur.ar · Leg. 19725</p></div></div></div>
 <p class="ej">Últimos 3 segundos de cada reel.</p>"""))
 w("components/PlacaCierre/README.md", """Últimos 3 segundos de cada reel: fondo `salvia`, el avión con su línea punteada, el logo, la frase de cierre en Genica One y el WhatsApp.
 

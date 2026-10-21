@@ -87,7 +87,7 @@ html,body{margin:0;background:transparent}
 .t p{font-size:54px;font-weight:600}
 .t p.chica{font-size:34px;font-weight:400}
 </style></head><body><div class="lienzo v">""" + AVION + """<img class="logo" src="{{ raiz }}/logo-circular.png" alt="">
-<div class="t"><h1 class="disp">{{ frase }}</h1><p class="txt">WhatsApp +54 9 11 5944-4920</p><p class="txt chica">viajarengrupo.tur.ar · Leg. 19725</p></div>
+<div class="t"><h1 class="disp">{{ frase }}</h1><p class="txt">WhatsApp +54 9 11 4434-0161</p><p class="txt chica">viajarengrupo.tur.ar · Leg. 19725</p></div>
 </div></body></html>
 """,
 

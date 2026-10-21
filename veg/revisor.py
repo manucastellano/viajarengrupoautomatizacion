@@ -8,6 +8,8 @@ from .modelos import Pieza, Salida
 
 CTAS = ("whatsapp", "link en bio", "escribinos", "dejanos tu comentario", "sumate", "mensaje privado", "comentá")
 _MAYUSCULAS = re.compile(r"\b[A-ZÁÉÍÓÚÑ]{4,}(?:\s+[A-ZÁÉÍÓÚÑ]{4,}){2,}\b")
+WHATSAPP = "+54 9 11 4434-0161"
+NUMERO_VIEJO = "5944-4920"
 _PRECIO = re.compile(r"\bUSD\s?\d[\d.]*")
 
 
@@ -22,6 +24,10 @@ def revisar(pieza: Pieza, salida: Salida | None, hoy: date) -> list[str]:
             problemas.append("El primer hashtag debe ser #viajarengrupo")
         if not any(c in pieza.texto.lower() for c in CTAS):
             problemas.append("Falta un llamado a la acción")
+    if NUMERO_VIEJO in pieza.texto:
+        problemas.append(f"Número de WhatsApp desactualizado: usar {WHATSAPP}")
+    if pieza.formato != "historias" and not ("link" in pieza.texto.lower() and "perfil" in pieza.texto.lower()):
+        problemas.append("Falta aclarar que el contacto está en el link del perfil")
     if _PRECIO.search(pieza.texto) and "desde" not in pieza.texto.lower():
         problemas.append('El precio va con "desde"')
     if _MAYUSCULAS.search(pieza.texto):
