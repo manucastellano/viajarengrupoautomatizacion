@@ -4,7 +4,7 @@ Fecha: 2026-10-15 · Estado: diseño aprobado por Manuel, pendiente de revisión
 
 ## 1. Objetivo
 
-Un equipo de agentes que produce todo el contenido mensual de Instagram de Viajar en Grupo (@viajar.en.grupo): reels, posts e historias. Manuel solo aprueba o pide cambios desde un tablero web, y publica lo aprobado desde Meta Business Suite.
+Un equipo de agentes que produce todo el contenido mensual de Instagram de Viajar en Grupo (@viajar.en.grupo): reels, posts e historias. Manuel solo aprueba o pide cambios desde un tablero web, y confirma en el chat la publicación de lo aprobado.
 
 **Éxito:** cada mes, el día 25, el tablero tiene todas las piezas del mes siguiente listas para revisar. Para aprobar, Manuel no tiene que diseñar, escribir ni editar nada.
 
@@ -21,7 +21,7 @@ Incluye:
 - Exportación de archivos finales.
 
 No incluye:
-- Publicar en Instagram. No hay conector: Manuel programa desde Meta Business Suite.
+- Publicar sin confirmación. Desde el 2026-10-21 se publica con Composio, pero solo piezas aprobadas y cuando Manuel lo confirma en el chat (skill `arma-mes`, "Publicá lo de hoy"). Las historias con stickers las sube Bettina.
 - Responder mensajes o comentarios.
 - Pauta paga.
 - Otras redes.

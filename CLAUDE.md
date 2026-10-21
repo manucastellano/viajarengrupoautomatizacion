@@ -6,4 +6,5 @@ Sistema de contenido de Instagram para Viajar en Grupo (@viajar.en.grupo).
 - Especificación: docs/specs/2026-10-15-community-manager-veg-design.md
 - Comando de trabajo: "armá <mes>" (skill `arma-mes`). "revisá el tablero" aplica los pedidos de cambio.
 - Python: `.venv/Scripts/python`. Tests: `.venv/Scripts/python -m pytest -m "not lento"` (rápidos) y `-m lento` (render y video).
-- Nunca publicar en Instagram. Nunca inventar precios, fechas ni cupos: si no están verificados hoy, la pieza no es de venta.
+- Publicar en Instagram (Composio, cuenta @viajar.en.grupo) solo piezas `aprobada` en el tablero y solo después de que Manuel lo confirme en el chat para esas piezas puntuales ("publicá lo de hoy", sección del skill `arma-mes`). Nunca publicar por iniciativa propia ni desde una tarea programada.
+- Nunca inventar precios, fechas ni cupos: si no están verificados hoy, la pieza no es de venta.
