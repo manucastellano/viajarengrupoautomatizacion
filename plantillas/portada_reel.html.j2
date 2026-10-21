@@ -3,6 +3,7 @@
 .b h1{font-size:112px}
 .b p{font-size:54px}
 .ante{font-size:48px}
-</style></head><body><div class="lienzo v"><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo-centro"></div>
-<div class="b sombra">{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if subtitulo %}<p class="txt">{{ subtitulo }}</p>{% endif %}</div>
+.b.abajo{top:auto;bottom:520px}
+</style></head><body><div class="lienzo v"><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="{{ 'velo-abajo' if posicion == 'abajo' else 'velo-centro' }}"></div>
+<div class="b sombra{{ ' abajo' if posicion == 'abajo' }}">{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if subtitulo %}<p class="txt">{{ subtitulo }}</p>{% endif %}</div>
 </div></body></html>

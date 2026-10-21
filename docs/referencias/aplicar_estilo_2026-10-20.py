@@ -44,8 +44,9 @@ html,body{margin:0;background:transparent}
 .b h1{font-size:{{ tam|default(100) }}px}
 .b .x{font-size:58px}
 .b .cta{font-size:58px;font-weight:700}
-</style></head><body><div class="lienzo v">""" + FOTO + """<div class="{{ 'velo-centro' if alineacion == 'centro' else 'velo-arriba' }}"></div>
-<div class="b sombra{{ ' centro' if alineacion == 'centro' }}">
+.b.abajo{top:auto;bottom:{{ bottom|default(380) }}px}
+</style></head><body><div class="lienzo v">""" + FOTO + """<div class="{{ 'velo-abajo' if posicion == 'abajo' else ('velo-centro' if alineacion == 'centro' else 'velo-arriba') }}"></div>
+<div class="b sombra{{ ' centro' if alineacion == 'centro' }}{{ ' abajo' if posicion == 'abajo' }}">
 {% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}
 <h1 class="disp">{{ titulo }}</h1>
 {% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}
@@ -72,8 +73,9 @@ html,body{margin:0;background:transparent}
 .b h1{font-size:112px}
 .b p{font-size:54px}
 .ante{font-size:48px}
-</style></head><body><div class="lienzo v">""" + FOTO + """<div class="velo-centro"></div>
-<div class="b sombra">{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if subtitulo %}<p class="txt">{{ subtitulo }}</p>{% endif %}</div>
+.b.abajo{top:auto;bottom:520px}
+</style></head><body><div class="lienzo v">""" + FOTO + """<div class="{{ 'velo-abajo' if posicion == 'abajo' else 'velo-centro' }}"></div>
+<div class="b sombra{{ ' abajo' if posicion == 'abajo' }}">{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if subtitulo %}<p class="txt">{{ subtitulo }}</p>{% endif %}</div>
 </div></body></html>
 """,
 
@@ -104,9 +106,10 @@ html,body{margin:0;background:transparent}
 .portada .c h1{font-size:{{ tam|default(118) }}px}
 .pie{left:110px;bottom:70px}
 .con-foto{color:var(--blanco)}
+.c.abajo{top:auto;bottom:130px}
 </style></head><body><div class="lienzo p {{ 'con-foto' if foto else ('oscuro' if oscuro else 'claro') }}{{ '' if numero else ' portada' }}">
-{% if foto %}""" + FOTO + """<div class="velo-arriba"></div>{% endif %}
-<div class="c{{ ' sombra' if foto }}">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
+{% if foto %}""" + FOTO + """<div class="{{ 'velo-abajo' if posicion == 'abajo' else 'velo-arriba' }}"></div>{% endif %}
+<div class="c{{ ' sombra' if foto }}{{ ' abajo' if posicion == 'abajo' }}">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
 <div class="pie">@viajar.en.grupo</div>
 </div></body></html>
 """,

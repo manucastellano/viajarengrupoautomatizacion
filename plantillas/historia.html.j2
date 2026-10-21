@@ -5,8 +5,9 @@
 .b h1{font-size:{{ tam|default(100) }}px}
 .b .x{font-size:58px}
 .b .cta{font-size:58px;font-weight:700}
-</style></head><body><div class="lienzo v"><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="{{ 'velo-centro' if alineacion == 'centro' else 'velo-arriba' }}"></div>
-<div class="b sombra{{ ' centro' if alineacion == 'centro' }}">
+.b.abajo{top:auto;bottom:{{ bottom|default(380) }}px}
+</style></head><body><div class="lienzo v"><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="{{ 'velo-abajo' if posicion == 'abajo' else ('velo-centro' if alineacion == 'centro' else 'velo-arriba') }}"></div>
+<div class="b sombra{{ ' centro' if alineacion == 'centro' }}{{ ' abajo' if posicion == 'abajo' }}">
 {% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}
 <h1 class="disp">{{ titulo }}</h1>
 {% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}

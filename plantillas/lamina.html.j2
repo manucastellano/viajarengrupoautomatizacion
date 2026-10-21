@@ -9,8 +9,9 @@
 .portada .c h1{font-size:{{ tam|default(118) }}px}
 .pie{left:110px;bottom:70px}
 .con-foto{color:var(--blanco)}
+.c.abajo{top:auto;bottom:130px}
 </style></head><body><div class="lienzo p {{ 'con-foto' if foto else ('oscuro' if oscuro else 'claro') }}{{ '' if numero else ' portada' }}">
-{% if foto %}<div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo-arriba"></div>{% endif %}
-<div class="c{{ ' sombra' if foto }}">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
+{% if foto %}<div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="{{ 'velo-abajo' if posicion == 'abajo' else 'velo-arriba' }}"></div>{% endif %}
+<div class="c{{ ' sombra' if foto }}{{ ' abajo' if posicion == 'abajo' }}">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
 <div class="pie">@viajar.en.grupo</div>
 </div></body></html>
