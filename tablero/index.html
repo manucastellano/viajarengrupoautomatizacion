@@ -85,7 +85,7 @@ textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px soli
 
 <script>
 const MES = "__MES__";
-const COLOR = {especial:"var(--dorado-profundo)", paquete:"var(--turquesa-profundo)", destino:"var(--salvia)", educativo:"var(--selva)", agencia:"var(--turquesa)"};
+const COLOR = {especial:"var(--dorado-profundo)", paquete:"var(--turquesa-profundo)", destino:"var(--salvia)", educativo:"var(--selva)", agencia:"var(--turquesa)", linkedin:"#0a66c2"};
 const ESTADO = {pendiente:"Pendiente", aprobada:"Aprobada", cambios:"Con cambios", descartada:"Descartada"};
 const COLOR_ESTADO = {pendiente:"var(--tinta-suave)", aprobada:"var(--ok)", cambios:"var(--cambios)", descartada:"var(--descartada)"};
 const DIAS = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
@@ -114,6 +114,7 @@ function miniatura(p) {
 
 function chip(p) {
   const b = document.createElement("button"); b.className = "chip"; b.style.setProperty("--c", COLOR[p.pilar] || "var(--selva)");
+  b.style.setProperty("--c", COLOR[p.red] || COLOR[p.pilar] || "var(--selva)");
   const t = document.createElement("span"); t.textContent = `${p.hora} · ${p.formato} · ${p.titulo || p.tema}`;
   const e = document.createElement("div"); e.className = "estado"; e.style.color = COLOR_ESTADO[p.estado];
   e.textContent = ESTADO[p.estado] + (p.version > 1 ? ` · v${p.version}` : "");
@@ -146,7 +147,7 @@ function calendario() {
 
 function grilla() {
   const g = document.createElement("div"); g.className = "grilla";
-  piezas.filter(p => p.formato !== "historias" && p.estado !== "descartada")
+  piezas.filter(p => p.formato !== "historias" && p.red !== "linkedin" && p.estado !== "descartada")
     .sort((a,b) => (b.fecha + b.hora).localeCompare(a.fecha + a.hora))
     .forEach(p => { const b = document.createElement("button"); b.setAttribute("aria-label", p.titulo || p.tema);
       b.append(miniatura(p)); if (p.formato !== "post") { const m = document.createElement("span"); m.className = "marca"; m.textContent = p.formato; b.append(m); }
@@ -171,6 +172,8 @@ function llenar(p) {
   }));
   const ficha = [["Publica", `${fechaTxt(p.fecha)} · ${p.hora}`], ["Estado", ESTADO[p.estado] + (p.version > 1 ? ` (versión ${p.version})` : "")]];
   if (p.verificacion) ficha.push(["Verificado", `${p.verificacion.fuente}, ${p.verificacion.fecha}`]);
+  if (p.imagen) ficha.push(["Imagen", p.imagen]);
+  if (p.primer_comentario) ficha.push(["Primer comentario", p.primer_comentario]);
   if (p.comentario) ficha.push(["Tu pedido", p.comentario]);
   $("d-ficha").replaceChildren(...ficha.flatMap(([k, v]) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; return [dt, dd]; }));
   $("d-texto").textContent = [p.texto, (p.hashtags || []).join(" ")].filter(Boolean).join("\n\n") || "Esta pieza no lleva texto de posteo.";
