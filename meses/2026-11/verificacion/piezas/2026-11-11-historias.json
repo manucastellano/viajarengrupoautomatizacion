@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "id": "b49bba35255649cb6bcd339cc23abbae",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-11",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-11-historias",
+  "pilar": "agencia",
+  "tema": "reel",
+  "texto": "Nuevo reel: La Noche de Blanco.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: compartir el reel del día.",
+  "titulo": "La Noche de Blanco",
+  "verificacion": null,
+  "version": 1
+}

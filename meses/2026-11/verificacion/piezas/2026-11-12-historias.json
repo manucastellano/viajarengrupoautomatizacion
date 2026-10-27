@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "id": "e89eacd4d7b54e478105a507ca949f26",
+      "nombre": "01-historia_postal.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-12",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-12-historias",
+  "pilar": "agencia",
+  "tema": "postal",
+  "texto": "Postal: Sevilla 2024.\n\n———\nNota de producción (no copiar en Instagram):\nPostal sin más texto. Etiquetar a las viajeras que aparecen si están de acuerdo.",
+  "titulo": "Sevilla",
+  "verificacion": null,
+  "version": 1
+}

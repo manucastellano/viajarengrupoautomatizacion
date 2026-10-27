@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-10-historias",
+  "fecha": "2026-11-10",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "encuesta de destino",
+  "titulo": "¿Italia o España?",
+  "texto": "¿Italia o España?\n\n———\nNota de producción (no copiar en Instagram):\nAgregar sticker de encuesta: Italia / España.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "6fce5cb1905f969cea7cf39e1111308f",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

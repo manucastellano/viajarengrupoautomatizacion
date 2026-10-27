@@ -1,0 +1,24 @@
+{
+  "id": "2026-11-04-reel",
+  "fecha": "2026-11-04",
+  "hora": "20:00",
+  "formato": "reel",
+  "pilar": "agencia",
+  "tema": "Placa de cierre",
+  "titulo": "¿Nos acompañás?",
+  "texto": "EJEMPLO DE PRUEBA de placa de cierre.",
+  "hashtags": [
+    "#viajarengrupo"
+  ],
+  "assets": [
+    {
+      "id": "f7680912a569d224abd65df0ac009222",
+      "tipo": "imagen",
+      "nombre": "placa.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

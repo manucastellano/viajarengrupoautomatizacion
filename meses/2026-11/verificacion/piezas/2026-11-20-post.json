@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "a978053cc51dd889cf7077c58344b290",
+      "nombre": "01-post_paquete.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-20",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#nortedeespaña",
+    "#sansebastian",
+    "#paisvasco"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-20-post",
+  "pilar": "especial",
+  "tema": "Norte de España con los 5 sentidos",
+  "texto": "Cinco bases de tres noches para recorrer el norte sin apuro 🇪🇸\n\nGalicia, Asturias, Cantabria, País Vasco, Navarra y La Rioja, con cuatro bodegas, dos catas, el tour de pintxos en Bilbao y la Noche de Blanco entre viñedos.\n\n📅 Del 24 de mayo al 10 de junio de 2027 · Desde USD 9.680 por persona en base doble. Suplemento single USD 2.290. Cupos limitados.\n\nComentá NORTE y te mando el itinerario completo por privado ✈️",
+  "titulo": "Norte de España",
+  "verificacion": {
+    "fecha": "2026-10-21",
+    "fuente": "Viajar en Grupo (web propia)"
+  },
+  "version": 1
+}

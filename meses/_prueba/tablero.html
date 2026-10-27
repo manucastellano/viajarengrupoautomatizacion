@@ -1,0 +1,230 @@
+<title>Tablero Noviembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unica+One&family=Raleway:wght@500;600;700&display=swap">
+<style>
+/* Tablero de aprobación: resumen arriba, vista Calendario o Grilla, detalle en hoja. Paleta fija de marca (tema único claro, deliberado). */
+:root{--selva:#1F2B20;--bosque:#2A3C2E;--turquesa:#28AAA3;--turquesa-profundo:#0E7A75;--dorado:#C3A065;--dorado-profundo:#AB844A;--salvia:#7A9F85;--crema:#FAF6EF;--crema-profunda:#F0EBE4;--blanco:#FFFFFF;--tinta-suave:#595959;--linea:rgba(31,43,32,.14);--ok:#13824A;--cambios:#9A5B00;--descartada:#595959;
+--display:"Unica One","Arial Narrow",sans-serif;--texto:"Raleway",Arial,sans-serif;color-scheme:light}
+body{background:var(--crema);color:var(--selva);font-family:var(--texto);font-size:15px;line-height:1.45;padding:16px 16px 48px}
+.envoltura{max-width:1100px;margin:0 auto;display:grid;gap:20px}
+.eti{font-family:var(--display);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--turquesa-profundo);margin:0}
+h1{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(32px,7vw,56px);line-height:.95;margin:4px 0 0;text-wrap:balance}
+.resumen{display:flex;flex-wrap:wrap;gap:8px 20px;font-variant-numeric:tabular-nums}
+.resumen b{font-family:var(--display);font-size:22px;font-weight:400;margin-right:4px}
+.barra{height:6px;background:var(--crema-profunda)}.barra span{display:block;height:100%;background:var(--turquesa-profundo);width:0}
+.vistas{display:flex;gap:8px}
+.vistas button,.acciones button,.copiar{font:600 14px var(--texto);border:1px solid var(--selva);background:transparent;color:var(--selva);padding:8px 14px;cursor:pointer;border-radius:999px}
+.vistas button[aria-pressed=true]{background:var(--selva);color:var(--crema)}
+button:focus-visible{outline:3px solid var(--turquesa-profundo);outline-offset:2px}
+button:disabled{opacity:.5;cursor:not-allowed}
+.semana{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:16px}
+.dia{background:var(--blanco);border:1px solid var(--linea);padding:8px;min-width:0;display:grid;gap:6px;align-content:start}
+.dia h3{margin:0;font:600 12px var(--texto);color:var(--tinta-suave)}
+.chip{display:grid;grid-template-columns:44px minmax(0,1fr);gap:8px;align-items:center;text-align:left;background:none;border:0;border-left:4px solid var(--c);padding:4px 6px;cursor:pointer;font:500 12px var(--texto);color:var(--selva);min-width:0}
+.chip img,.chip .sin{width:44px;height:55px;object-fit:cover;background:var(--crema-profunda)}
+.chip span{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.estado{font-size:11px;font-weight:700}
+.grilla{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;max-width:540px}
+.grilla button{padding:0;border:0;cursor:pointer;aspect-ratio:4/5;background:var(--crema-profunda);position:relative;max-width:100%}
+.grilla img,.grilla .sin{width:100%;height:100%;object-fit:cover;display:block}
+.grilla .marca{position:absolute;top:6px;right:6px;background:var(--selva);color:var(--crema);font-size:11px;padding:2px 6px}
+dialog{border:0;padding:0;width:min(720px,100%);max-height:92vh;background:var(--crema);color:var(--selva)}
+dialog::backdrop{background:rgba(31,43,32,.6)}
+.hoja{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:16px}
+@media (max-width:640px){.hoja{grid-template-columns:1fr}.semana{grid-template-columns:1fr}}
+.vista-previa{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory}
+.vista-previa img,.vista-previa video{width:100%;flex:none;scroll-snap-align:start;background:var(--selva);max-height:70vh;object-fit:contain}
+.ficha{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:13px;margin:0}.ficha dt{color:var(--tinta-suave)}.ficha dd{margin:0}
+.texto{white-space:pre-wrap;background:var(--blanco);border:1px solid var(--linea);padding:10px;font-size:14px;max-height:220px;overflow:auto}
+textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px solid var(--selva);padding:8px;min-height:80px;background:var(--blanco);color:var(--selva)}
+.acciones{display:flex;flex-wrap:wrap;gap:8px}
+.acciones .aprobar{background:var(--ok);border-color:var(--ok);color:var(--blanco)}
+.aviso{font-size:13px;color:var(--tinta-suave)}
+.cerrar{justify-self:end;background:none;border:0;font:600 14px var(--texto);cursor:pointer;color:var(--selva);padding:12px 16px 0}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="envoltura">
+  <header>
+    <p class="eti">Viajar en Grupo · Tablero de aprobación</p>
+    <h1>Noviembre 2026</h1>
+  </header>
+  <section aria-label="Resumen" class="resumen" id="resumen"><span>Cargando piezas…</span></section>
+  <div class="barra" aria-hidden="true"><span id="avance"></span></div>
+  <div class="vistas" role="group" aria-label="Vista">
+    <button id="v-cal" aria-pressed="true">Calendario</button>
+    <button id="v-grilla" aria-pressed="false">Grilla de Instagram</button>
+  </div>
+  <main id="vista"><p class="aviso">Las piezas del mes aparecen acá cuando Claude las sube al tablero.</p></main>
+</div>
+
+<dialog id="detalle" aria-label="Detalle de la pieza">
+  <div style="display:grid">
+    <button class="cerrar" id="cerrar">Cerrar ✕</button>
+    <div class="hoja">
+      <div class="vista-previa" id="d-previa"></div>
+      <div style="display:grid;gap:12px;align-content:start;min-width:0">
+        <p class="eti" id="d-pilar"></p>
+        <h2 id="d-titulo" style="font:400 28px var(--display);text-transform:uppercase;margin:0"></h2>
+        <dl class="ficha" id="d-ficha"></dl>
+        <div class="texto" id="d-texto"></div>
+        <button class="copiar" id="d-copiar">Copiar texto</button>
+        <label for="d-comentario" class="aviso">Qué querés cambiar</label>
+        <textarea id="d-comentario" placeholder="Ej.: cambiar la foto de portada por una del grupo en Verona"></textarea>
+        <div class="acciones">
+          <button class="aprobar" id="d-aprobar">✅ Aprobar</button>
+          <button id="d-cambios">✏️ Pedir cambio</button>
+          <button id="d-descartar">⏸ Descartar</button>
+          <button id="d-descargar" hidden>Descargar</button>
+        </div>
+        <p class="aviso" id="d-aviso" role="status"></p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const MES = "2026-11";
+const COLOR = {especial:"var(--dorado-profundo)", paquete:"var(--turquesa-profundo)", destino:"var(--salvia)", educativo:"var(--selva)", agencia:"var(--turquesa)"};
+const ESTADO = {pendiente:"Pendiente", aprobada:"Aprobada", cambios:"Con cambios", descartada:"Descartada"};
+const COLOR_ESTADO = {pendiente:"var(--tinta-suave)", aprobada:"var(--ok)", cambios:"var(--cambios)", descartada:"var(--descartada)"};
+const DIAS = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
+let piezas = [], vista = "cal", abierta = null, db = null, user = null, downloads = null;
+
+const $ = (id) => document.getElementById(id);
+const url = (a) => "/_blob/" + a.id;
+const portada = (p) => (p.assets || []).find(a => a.tipo === "imagen");
+const fechaTxt = (iso) => { const d = new Date(iso + "T12:00:00"); return `${DIAS[(d.getDay()+6)%7]} ${d.getDate()}`; };
+const isoLocal = (d) => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+
+function resumen() {
+  const c = {pendiente:0, aprobada:0, cambios:0, descartada:0};
+  piezas.forEach(p => c[p.estado] = (c[p.estado] || 0) + 1);
+  const decididas = c.aprobada + c.descartada;
+  $("resumen").replaceChildren(...[["Total", piezas.length], ["Aprobadas", c.aprobada], ["Con cambios", c.cambios], ["Pendientes", c.pendiente]]
+    .map(([t, n]) => { const s = document.createElement("span"); const b = document.createElement("b"); b.textContent = n; s.append(b, t); return s; }));
+  $("avance").style.width = piezas.length ? `${Math.round(decididas / piezas.length * 100)}%` : "0";
+}
+
+function miniatura(p) {
+  const a = portada(p);
+  if (!a) { const d = document.createElement("div"); d.className = "sin"; return d; }
+  const i = document.createElement("img"); i.src = url(a); i.alt = ""; i.loading = "lazy"; return i;
+}
+
+function chip(p) {
+  const b = document.createElement("button"); b.className = "chip"; b.style.setProperty("--c", COLOR[p.pilar] || "var(--selva)");
+  const t = document.createElement("span"); t.textContent = `${p.hora} · ${p.formato} · ${p.titulo || p.tema}`;
+  const e = document.createElement("div"); e.className = "estado"; e.style.color = COLOR_ESTADO[p.estado];
+  e.textContent = ESTADO[p.estado] + (p.version > 1 ? ` · v${p.version}` : "");
+  const col = document.createElement("div"); col.style.minWidth = "0"; col.append(t, e);
+  b.append(miniatura(p), col); b.onclick = () => abrir(p.id); return b;
+}
+
+function calendario() {
+  const porSemana = new Map();
+  piezas.forEach(p => {
+    const d = new Date(p.fecha + "T12:00:00"); const lunes = new Date(d); lunes.setDate(d.getDate() - ((d.getDay()+6)%7));
+    const k = isoLocal(lunes);
+    if (!porSemana.has(k)) porSemana.set(k, new Map());
+    const dias = porSemana.get(k); if (!dias.has(p.fecha)) dias.set(p.fecha, []); dias.get(p.fecha).push(p);
+  });
+  const cont = document.createDocumentFragment();
+  [...porSemana.keys()].sort().forEach(k => {
+    const fila = document.createElement("div"); fila.className = "semana";
+    for (let i = 0; i < 5; i++) {
+      const d = new Date(k + "T12:00:00"); d.setDate(d.getDate() + i); const iso = isoLocal(d);
+      const caja = document.createElement("div"); caja.className = "dia";
+      const h = document.createElement("h3"); h.textContent = fechaTxt(iso); caja.append(h);
+      (porSemana.get(k).get(iso) || []).sort((a,b) => a.hora.localeCompare(b.hora)).forEach(p => caja.append(chip(p)));
+      fila.append(caja);
+    }
+    cont.append(fila);
+  });
+  return cont;
+}
+
+function grilla() {
+  const g = document.createElement("div"); g.className = "grilla";
+  piezas.filter(p => p.formato !== "historias" && p.estado !== "descartada")
+    .sort((a,b) => (b.fecha + b.hora).localeCompare(a.fecha + a.hora))
+    .forEach(p => { const b = document.createElement("button"); b.setAttribute("aria-label", p.titulo || p.tema);
+      b.append(miniatura(p)); if (p.formato !== "post") { const m = document.createElement("span"); m.className = "marca"; m.textContent = p.formato; b.append(m); }
+      b.onclick = () => abrir(p.id); g.append(b); });
+  return g;
+}
+
+function pintar() {
+  resumen();
+  if (!piezas.length) return;
+  $("vista").replaceChildren(vista === "cal" ? calendario() : grilla());
+  if (abierta) llenar(piezas.find(p => p.id === abierta));
+}
+
+function llenar(p) {
+  if (!p) return;
+  $("d-pilar").textContent = `${p.pilar} · ${p.formato}`;
+  $("d-titulo").textContent = p.titulo || p.tema;
+  $("d-previa").replaceChildren(...(p.assets || []).map(a => {
+    if (a.tipo === "video") { const v = document.createElement("video"); v.src = url(a); v.controls = true; v.playsInline = true; v.preload = "metadata"; return v; }
+    const i = document.createElement("img"); i.src = url(a); i.alt = a.nombre; return i;
+  }));
+  const ficha = [["Publica", `${fechaTxt(p.fecha)} · ${p.hora}`], ["Estado", ESTADO[p.estado] + (p.version > 1 ? ` (versión ${p.version})` : "")]];
+  if (p.verificacion) ficha.push(["Verificado", `${p.verificacion.fuente}, ${p.verificacion.fecha}`]);
+  if (p.comentario) ficha.push(["Tu pedido", p.comentario]);
+  $("d-ficha").replaceChildren(...ficha.flatMap(([k, v]) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; return [dt, dd]; }));
+  $("d-texto").textContent = [p.texto, (p.hashtags || []).join(" ")].filter(Boolean).join("\n\n") || "Esta pieza no lleva texto de posteo.";
+  $("d-descargar").hidden = !(downloads && p.estado === "aprobada" && (p.assets || []).length);
+  ["d-aprobar","d-cambios","d-descartar"].forEach(id => $(id).disabled = !db);
+}
+
+function abrir(id) { abierta = id; $("d-comentario").value = ""; $("d-aviso").textContent = ""; llenar(piezas.find(p => p.id === id)); $("detalle").showModal(); }
+
+async function decidir(estado) {
+  const comentario = $("d-comentario").value.trim();
+  if (estado === "cambios" && !comentario) { $("d-aviso").textContent = "Escribí qué querés cambiar antes de pedir el cambio."; $("d-comentario").focus(); return; }
+  try {
+    const quien = user ? await user.id() : null;
+    await db.doc("piezas/" + abierta).update({ estado, comentario: estado === "cambios" ? comentario : "", decididoPor: quien, decididoEn: new Date().toISOString() });
+    $("d-aviso").textContent = estado === "aprobada" ? "Aprobada." : estado === "cambios" ? "Pedido de cambio guardado." : "Descartada.";
+  } catch (e) {
+    $("d-aviso").textContent = "No se pudo guardar. Probá de nuevo en unos segundos.";
+  }
+}
+
+async function descargar() {
+  const p = piezas.find(x => x.id === abierta);
+  for (const a of p.assets) {
+    try {
+      const blob = await (await fetch(url(a))).blob();
+      await downloads.save({ filename: `${p.id}-${a.nombre}`, data: blob });
+    } catch (e) {
+      if (e && e.code === "declined") break;
+      $("d-aviso").textContent = "No se pudo descargar " + a.nombre + ".";
+    }
+  }
+}
+
+async function copiar() {
+  try { await navigator.clipboard.writeText($("d-texto").textContent); $("d-aviso").textContent = "Texto copiado."; }
+  catch { const r = document.createRange(); r.selectNodeContents($("d-texto")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("d-aviso").textContent = "Texto seleccionado: copialo con Ctrl+C."; }
+}
+
+$("v-cal").onclick = () => { vista = "cal"; $("v-cal").setAttribute("aria-pressed","true"); $("v-grilla").setAttribute("aria-pressed","false"); pintar(); };
+$("v-grilla").onclick = () => { vista = "grilla"; $("v-grilla").setAttribute("aria-pressed","true"); $("v-cal").setAttribute("aria-pressed","false"); pintar(); };
+$("cerrar").onclick = () => { abierta = null; $("detalle").close(); };
+$("d-aprobar").onclick = () => decidir("aprobada");
+$("d-cambios").onclick = () => decidir("cambios");
+$("d-descartar").onclick = () => decidir("descartada");
+$("d-descargar").onclick = descargar;
+$("d-copiar").onclick = copiar;
+
+(async () => {
+  [db, user, downloads] = await Promise.all([claude.use("db"), claude.use("user"), claude.use("downloads")]);
+  if (!db) { $("vista").innerHTML = '<p class="aviso">No se pudo conectar con la base del tablero en esta vista.</p>'; return; }
+  db.collection("piezas").orderBy("fecha").onSnapshot(
+    snap => { piezas = snap.docs.map(d => d.data()); pintar(); },
+    () => { $("vista").innerHTML = '<p class="aviso">Se cortó la conexión con el tablero. Recargá la página.</p>'; }
+  );
+})();
+</script>

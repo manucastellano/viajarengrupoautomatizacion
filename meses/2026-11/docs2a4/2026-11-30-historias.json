@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-30-historias",
+  "fecha": "2026-11-30",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "tip",
+  "titulo": "Viajar sola, pero acompañada",
+  "texto": "Tip: viajar sola en grupo.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: esta. Placa 2: compartir el carrusel del día.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "d78ea9657bf99d8aac156b95c15b4a69",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

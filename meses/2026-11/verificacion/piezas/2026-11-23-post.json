@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "id": "34b6ab32fd1526829c1661e9dcfb2a9e",
+      "nombre": "01-lamina.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-23",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#verona",
+    "#arenadiverona",
+    "#opera",
+    "#dolcevita"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-23-post",
+  "pilar": "agencia",
+  "tema": "Así viajamos: la ópera en la Arena de Verona",
+  "texto": "Una noche de ópera bajo las estrellas, en un anfiteatro romano 🎭\n\nAsí vivimos la Arena de Verona con el grupo de La Dolce Vita 2026. Son esos momentos los que hacen que un viaje en grupo sea distinto.\n\n¿Te gustaría vivirlo? Escribinos y te contamos sobre la Dolce Vita 2027 ✈️",
+  "titulo": "Así viajamos",
+  "verificacion": null,
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "id": "05214c3962e226cc9ac3f64b63278787",
+      "nombre": "01-post_paquete.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-06",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#nortedeespaña",
+    "#españa",
+    "#larioja",
+    "#paisvasco"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-06-post",
+  "pilar": "especial",
+  "tema": "Norte de España con los 5 sentidos",
+  "texto": "Hay viajes que se viven con los cinco sentidos 🌿\n\nGalicia, Asturias, Cantabria, País Vasco, Navarra y La Rioja, con cinco bases de tres noches para recorrer sin apuro.\n\n🍷 Cuatro bodegas y dos catas con degustación\n🍽️ Ocho comidas con bebidas, un tour de pintxos en Bilbao y la Noche de Blanco en Navarrete\n👩🏻 Acompañamiento de Bettina y Eugenia, con guía acompañante y guías locales\n\n📅 Del 24 de mayo al 10 de junio de 2027 · 18 días\nDesde USD 9.680 por persona en base doble. Suplemento single USD 2.290. Cupos limitados.\n\nComentá NORTE y te mando el itinerario completo por privado ✈️\n\n———\nNota de producción (no copiar en Instagram):\nLa imagen tiene fondo liso: cuando tenga una foto propia del norte de España (o del grupo), la reemplazo.",
+  "titulo": "Norte de España",
+  "verificacion": {
+    "fecha": "2026-10-20",
+    "fuente": "Viajar en Grupo (web propia)"
+  },
+  "version": 1
+}

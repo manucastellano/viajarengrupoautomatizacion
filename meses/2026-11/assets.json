@@ -1,0 +1,120 @@
+{
+  "2026-11-02-carrusel": [
+    {
+      "id": "9194561b377aaf45a3001be6a20582d6",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "554efe2963c54cfc451589a57a7df43e",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "0d5809be7e0ef8fb8269f18de48ecc21",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "95952b204db2c91db1c78c4640cc15b7",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "cb840fccbf90f4d04de909f618b873fc",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    },
+    {
+      "id": "efe62bdba7afbe0bedb704791577d2c5",
+      "tipo": "imagen",
+      "nombre": "06-lamina.png"
+    },
+    {
+      "id": "e59d7050200bc70162c87a3e5c1867ce",
+      "tipo": "imagen",
+      "nombre": "07-lamina.png"
+    }
+  ],
+  "2026-11-02-historias": [
+    {
+      "id": "433c53ce7466b169ec93d5dea8765b9a",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "2026-11-03-historias": [
+    {
+      "id": "897f58f68a7b8ab70c88eb8bd934d7ca",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "2026-11-03-post": [
+    {
+      "id": "fa6992de86cdfadb25a09ffe1c1bad9a",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "a20006e24ca844bc7ef1465f01cafea9",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "ea76169b098ed847f9653c80c6b06237",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "e79888c46891eb8281b3b55646ed1338",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "45a66b240fdc0a15a658fcaf1c7bb30e",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    }
+  ],
+  "2026-11-04-historias": [
+    {
+      "id": "278f774f65e9d47970b4fce20df11deb",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "2026-11-04-reel": [
+    {
+      "id": "357751bfa2d1ac47c77777d2f1eae6bd",
+      "tipo": "imagen",
+      "nombre": "01-portada_reel.png"
+    },
+    {
+      "id": "5718a80bd08f892738ba31a4a82e67ec",
+      "tipo": "imagen",
+      "nombre": "02-placa_cierre.png"
+    }
+  ],
+  "2026-11-05-historias": [
+    {
+      "id": "ea4cb3548d45fbd6a29059136457f649",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "2026-11-06-historias": [
+    {
+      "id": "64920ea54d0abef6d714fda6a649d6c7",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "2026-11-06-post": [
+    {
+      "id": "8166c6468448638e169f8e071e4a3e6b",
+      "tipo": "imagen",
+      "nombre": "01-post_paquete.png"
+    }
+  ]
+}

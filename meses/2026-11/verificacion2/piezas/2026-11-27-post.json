@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "5cc5a6338090a5e35b31b5830f94d913",
+      "nombre": "01-post_paquete.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-27",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#ellasviajan",
+    "#viajarsola",
+    "#mujeresqueviajan"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-27-post",
+  "pilar": "paquete",
+  "tema": "Ellas a Europa (Europa BA)",
+  "texto": "Viajar entre mujeres tiene algo especial 💫\n\nUna salida pensada para viajar sola sin estar sola: grupo de mujeres, acompañamiento durante todo el viaje y Europa en febrero.\n\n📅 Del 5 al 22 de febrero de 2027 · 15 noches · acompañada\nDesde USD 3.900 por persona. Tarifa del operador sujeta a disponibilidad.\n\nComentá ELLAS y te mando el itinerario por privado ✈️\n\n📲 El WhatsApp de Bettina está en el link de nuestro perfil.",
+  "titulo": "Ellas a Europa",
+  "verificacion": {
+    "fecha": "2026-10-21",
+    "fuente": "Europa BA"
+  },
+  "version": 1
+}

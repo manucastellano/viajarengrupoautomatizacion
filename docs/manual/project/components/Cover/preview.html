@@ -1,0 +1,47 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Viajar en Grupo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--marfil); color:var(--verde); font-family:"Raleway", Arial, sans-serif; overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .verde { fill:var(--verde); }
+  .salvia { fill:var(--salvia); }
+  .turquesa { fill:var(--turquesa); }
+  .ruta { fill:none; stroke:var(--marfil); stroke-width:4; stroke-dasharray:2 10; stroke-linecap:round; }
+  .avion { fill:var(--marfil); }
+  .words { position:absolute; left:64px; bottom:40px; max-width:440px; }
+  .name { margin:0; font-family:"Genica One", Georgia, serif; font-weight:400; font-size:76px; line-height:1.02; color:var(--verde); }
+  .tag { margin:14px 0 0 2px; font-size:14px; line-height:20px; font-weight:500; color:var(--verde); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      salvia 288x320 bled off the top and bottom (the background of the brand's quote pieces) - verde 176x256 bled off the right - turquesa 64x96 once; about 45% of 960x288
+  arrangement one tall salvia field with a verde slab bled off the right and a small turquesa satellite, bottoms aligned
+  pattern     literal motif from the brand's quote stories: one dotted flight route in marfil crossing the salvia field, ending in the plane silhouette
+  scales      sides in 16px multiples; corners radius-0 everywhere (photos and fields are always bleed, no rounded corners)
+-->
+<rect class="salvia" x="16" y="-16" width="288" height="320"/>
+<rect class="verde" x="320" y="48" width="176" height="256"/>
+<rect class="turquesa" x="240" y="176" width="64" height="96"/>
+<path class="ruta" d="M16 120 C 90 70, 170 70, 236 104"/>
+<g transform="translate(232 82) scale(2.2)"><path class="avion" d="M23 12 16 10 11 3H9l3 7H6L4 7H2.5l1 5-1 5H4l2-3h6l-3 7h2l5-7z"/></g>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Viajar en Grupo</h1>
+<p class="tag">Salidas grupales acompañadas, armadas por personas.</p>
+</div>
+</div>
+</body>
+</html>

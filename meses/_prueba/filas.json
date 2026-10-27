@@ -1,0 +1,63 @@
+[
+  {
+    "doc_id": "2026-11-06-post",
+    "data": {
+      "id": "2026-11-06-post",
+      "fecha": "2026-11-06",
+      "hora": "13:00",
+      "formato": "post",
+      "pilar": "especial",
+      "tema": "Norte de España",
+      "titulo": "Norte de España",
+      "texto": "EJEMPLO DE PRUEBA. Desde USD 9.680 por persona en base doble. Escribinos por WhatsApp.",
+      "hashtags": [
+        "#viajarengrupo",
+        "#viajesgrupales",
+        "#agenciadeviajes",
+        "#españa",
+        "#nortedeespaña"
+      ],
+      "assets": [
+        {
+          "id": "ff47f14e9909019a5aa73f0f2b2a2de3",
+          "tipo": "imagen",
+          "nombre": "post.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": {
+        "fuente": "Viajar en Grupo",
+        "fecha": "2026-10-16"
+      }
+    }
+  },
+  {
+    "doc_id": "2026-11-04-reel",
+    "data": {
+      "id": "2026-11-04-reel",
+      "fecha": "2026-11-04",
+      "hora": "20:00",
+      "formato": "reel",
+      "pilar": "agencia",
+      "tema": "Placa de cierre",
+      "titulo": "¿Nos acompañás?",
+      "texto": "EJEMPLO DE PRUEBA de placa de cierre.",
+      "hashtags": [
+        "#viajarengrupo"
+      ],
+      "assets": [
+        {
+          "id": "f7680912a569d224abd65df0ac009222",
+          "tipo": "imagen",
+          "nombre": "placa.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  }
+]

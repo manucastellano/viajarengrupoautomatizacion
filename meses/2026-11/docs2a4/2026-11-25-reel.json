@@ -1,0 +1,33 @@
+{
+  "id": "2026-11-25-reel",
+  "fecha": "2026-11-25",
+  "hora": "20:00",
+  "formato": "reel",
+  "pilar": "agencia",
+  "tema": "Bettina responde: ¿cómo es la charla informativa?",
+  "titulo": "¿Cómo es la charla?",
+  "texto": "¿Te interesa un viaje pero tenés mil preguntas? 💬\n\nPara eso hacemos la charla informativa: te contamos el itinerario día por día, qué incluye, cómo se paga y respondemos todas las dudas.\n\nEscribinos por WhatsApp al +54 9 11 5944-4920 y te avisamos de la próxima ✈️\n\n———\nNota de producción (no copiar en Instagram):\nGuion para Bettina a cámara (30 a 40 s): \"¿Te interesa un viaje pero tenés mil preguntas? Para eso hacemos la charla informativa. Te cuento el itinerario día por día, qué incluye, cómo se paga, y respondo todas tus dudas. Es gratis y podés venir aunque todavía no estés decidida. Escribinos y te aviso de la próxima.\" Tomas de apoyo: una charla anterior, el grupo en Porto.",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#bettinaschwartz",
+    "#viajesacompañados"
+  ],
+  "assets": [
+    {
+      "id": "f48ca4cd11e755ac8650f541500f0824",
+      "tipo": "imagen",
+      "nombre": "01-portada_reel.png"
+    },
+    {
+      "id": "106a148106b4e9a00687c1d66175f7e9",
+      "tipo": "imagen",
+      "nombre": "02-placa_cierre.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

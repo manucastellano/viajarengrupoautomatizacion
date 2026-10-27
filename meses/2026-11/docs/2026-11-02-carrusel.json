@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-02-carrusel",
+  "fecha": "2026-11-02",
+  "hora": "19:00",
+  "formato": "carrusel",
+  "pilar": "educativo",
+  "tema": "5 mitos del viaje grupal",
+  "titulo": "5 mitos del viaje grupal",
+  "texto": "¿Te dan ganas de viajar pero te frena ir con un grupo? 💭\n\nDespués de más de 30 años acompañando viajeros, estos son los cinco miedos que más escucho, y lo que pasa de verdad en el viaje. Deslizá 👉\n\n¿Tenés otra duda? Dejanos tu comentario y te contamos.\n\nGuardá este posteo para tu próximo viaje ✈️",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#viajarsola",
+    "#tipsdeviaje",
+    "#viajesacompañados"
+  ],
+  "assets": [
+    {
+      "id": "9194561b377aaf45a3001be6a20582d6",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "554efe2963c54cfc451589a57a7df43e",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "0d5809be7e0ef8fb8269f18de48ecc21",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "95952b204db2c91db1c78c4640cc15b7",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "cb840fccbf90f4d04de909f618b873fc",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    },
+    {
+      "id": "efe62bdba7afbe0bedb704791577d2c5",
+      "tipo": "imagen",
+      "nombre": "06-lamina.png"
+    },
+    {
+      "id": "e59d7050200bc70162c87a3e5c1867ce",
+      "tipo": "imagen",
+      "nombre": "07-lamina.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

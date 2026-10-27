@@ -1,0 +1,66 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-15T15:53:56Z"
+  },
+  "title": "Viajar en Grupo",
+  "namespace": "VEG",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Fotos"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "logo-circular.png"
+      ],
+      "files": {
+        "logo-circular.png": {
+          "name": "logo-circular.png",
+          "blob": "c4722e25534c8b0ed90b45356b4663bd",
+          "size": 456058,
+          "type": "image/png"
+        }
+      }
+    },
+    "Fotos": {
+      "name": "Fotos",
+      "tile": "m",
+      "order": [
+        "gaztelugatxe.jpg",
+        "san-sebastian.jpg"
+      ],
+      "files": {
+        "gaztelugatxe.jpg": {
+          "name": "gaztelugatxe.jpg",
+          "blob": "5e50bf0c0b29515002037e3bd7889d65",
+          "size": 355902,
+          "type": "image/jpeg"
+        },
+        "san-sebastian.jpg": {
+          "name": "san-sebastian.jpg",
+          "blob": "fe9c118f5a4d1ce9a9ce517ffeae0862",
+          "size": 326057,
+          "type": "image/jpeg"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Manuel",
+    "at": "2026-10-21T11:43:10Z",
+    "via": "Claude Code",
+    "note": "Paleta propia (#396c59, #c8ceb5, #39b5b9, #fffff0), Genica One + Raleway y recetas tomadas de las historias publicadas"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-04-reel",
+  "fecha": "2026-11-04",
+  "hora": "20:00",
+  "formato": "reel",
+  "pilar": "especial",
+  "tema": "Bettina responde: ¿y si viajo sola?",
+  "titulo": "¿Y si viajo sola?",
+  "texto": "¿Te dan ganas de viajar pero no tenés con quién? 💭\n\nEs lo que más me preguntan. La mayoría de quienes viajan conmigo llegan sin conocer a nadie, y vuelven con amigas.\n\nLa próxima: Norte de España con los 5 sentidos, del 24 de mayo al 10 de junio de 2027, desde USD 9.680 por persona en base doble 🇪🇸\n\nComentá NORTE y te mando el itinerario por privado ✈️\n\n———\nNota de producción (no copiar en Instagram):\nGuion para grabar con Bettina a cámara (vertical, 35 a 45 s, luz natural, celular a la altura de los ojos):\n0–3 s: \"¿Te dan ganas de viajar pero no tenés con quién?\"\n3–15 s: \"Es lo que más me preguntan. Y te cuento algo: la mayoría de las personas que viajan conmigo llegan sin conocer a nadie.\"\n15–28 s: \"Yo viajo con el grupo, de principio a fin. Compartimos cenas, recorridos, y al tercer día ya son amigas.\"\n28–38 s: \"En mayo nos vamos al Norte de España, con los cinco sentidos. Si querés el itinerario, comentá NORTE.\"\nTomas de apoyo (material propio): grupo brindando, grupo caminando en Italia, Bettina con viajeras.\nCon subtítulos y la placa de cierre \"¿Nos acompañás?\". En cuanto llegue el video, lo edito.",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#viajarsola",
+    "#nortedeespaña",
+    "#españa"
+  ],
+  "assets": [
+    {
+      "id": "357751bfa2d1ac47c77777d2f1eae6bd",
+      "tipo": "imagen",
+      "nombre": "01-portada_reel.png"
+    },
+    {
+      "id": "5718a80bd08f892738ba31a4a82e67ec",
+      "tipo": "imagen",
+      "nombre": "02-placa_cierre.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": {
+    "fuente": "Viajar en Grupo (web propia)",
+    "fecha": "2026-10-20"
+  }
+}

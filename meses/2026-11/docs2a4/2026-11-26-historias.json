@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-26-historias",
+  "fecha": "2026-11-26",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "postal",
+  "titulo": "Piemonte",
+  "texto": "Postal: Piemonte 2026.\n\n———\nNota de producción (no copiar en Instagram):\nPostal sin más texto.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "90bbaa369ae62c60331b4684fdf1e1bd",
+      "tipo": "imagen",
+      "nombre": "01-historia_postal.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

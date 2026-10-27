@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-03-historias",
+  "fecha": "2026-11-03",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "encuesta de destino",
+  "titulo": "¿Qué te frena para viajar?",
+  "texto": "Respondé en la encuesta de abajo.\n\n———\nNota de producción (no copiar en Instagram):\nAgregar el sticker de encuesta: No conocer a nadie / El idioma / El precio / Nada, ¡vamos!",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "897f58f68a7b8ab70c88eb8bd934d7ca",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

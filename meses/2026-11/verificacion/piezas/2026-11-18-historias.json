@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "id": "23be4982a6434160e756ddcdade19a9b",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-18",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-18-historias",
+  "pilar": "agencia",
+  "tema": "reel",
+  "texto": "Nuevo reel: un día en Sevilla.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: compartir el reel del día.",
+  "titulo": "Un día en Sevilla",
+  "verificacion": null,
+  "version": 1
+}

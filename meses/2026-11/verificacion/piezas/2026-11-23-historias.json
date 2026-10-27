@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "id": "eef97695b2cf6a5a65c4a09bc3db526d",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-23",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-23-historias",
+  "pilar": "agencia",
+  "tema": "tip",
+  "texto": "Tip: avisale a tu banco.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: el tip.",
+  "titulo": "Avisale a tu banco",
+  "verificacion": null,
+  "version": 1
+}

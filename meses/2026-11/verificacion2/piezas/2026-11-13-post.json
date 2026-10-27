@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "7f99aaf4e8ae41f5a1062d65e416c374",
+      "nombre": "01-post_paquete.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-13",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#navidadeneuropa",
+    "#añonuevo",
+    "#europa"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-13-post",
+  "pilar": "paquete",
+  "tema": "Europeando Fiestas (Europa BA)",
+  "texto": "¿Te imaginás pasar las fiestas en Europa? 🎄✨\n\nUna salida grupal para recibir Navidad y Año Nuevo viajando, en compañía y con todo organizado.\n\n📅 Del 18 de diciembre de 2026 al 2 de enero de 2027 · 13 noches · aéreo incluido\nDesde USD 3.900 por persona. Tarifa del operador sujeta a disponibilidad.\n\nComentá FIESTAS y te mando el itinerario por privado ✈️\n\n📲 El WhatsApp de Bettina está en el link de nuestro perfil.",
+  "titulo": "Fiestas en Europa",
+  "verificacion": {
+    "fecha": "2026-10-21",
+    "fuente": "Europa BA"
+  },
+  "version": 1
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "id": "norte-espana-2027",
+  "nombre": "Norte de España con los 5 sentidos",
+  "region": "exclusiva",
+  "operador": "Viajar en Grupo",
+  "url_operador": "https://www.viajarengrupo.tur.ar/norte-espana-2027",
+  "fecha_salida": "2027-05-24",
+  "fecha_regreso": "2027-06-10",
+  "fecha_texto": null,
+  "duracion": "18 días · 15 noches",
+  "precio_desde": 9680,
+  "moneda": "USD",
+  "base": "por persona en base doble",
+  "impuestos_aparte": false,
+  "impuestos": null,
+  "suplemento_single": 2290,
+  "acompanada": true,
+  "incluye": [
+   "Cinco bases de tres noches",
+   "Hoteles 4 estrellas céntricos",
+   "Cuatro bodegas con degustación",
+   "8 comidas incluidas",
+   "Noche de Blanco entre viñedos",
+   "Acompañamiento de Bettina"
+  ],
+  "descripcion": "Galicia, Asturias, Cantabria, País Vasco, Navarra y La Rioja en cinco bases de tres noches. Un viaje para saborear el norte con calma, acompañados por Bettina.",
+  "imagen": "/norte-espana-calles.jpg",
+  "estado": "activa",
+  "verificado_en": "2026-10-21",
+  "exclusiva": true,
+  "orden": 1
+ }
+]

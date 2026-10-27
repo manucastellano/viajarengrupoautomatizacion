@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "id": "30d587eff133e7638bad35fe5cedf455",
+      "nombre": "01-lamina.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-27",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#porto",
+    "#portugal",
+    "#duero"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-27-post",
+  "pilar": "destino",
+  "tema": "Porto",
+  "texto": "Porto se recorre despacio 🇵🇹\n\nCalles en subida, azulejos, el río Duero y un vino que lleva el nombre de la ciudad. Fue una de las paradas favoritas del grupo en nuestro viaje de 2024.\n\n¿La sumarías a tu próximo viaje? Dejanos tu comentario 💬",
+  "titulo": "Porto, a orillas del Duero",
+  "verificacion": null,
+  "version": 1
+}

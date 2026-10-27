@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-24-historias",
+  "fecha": "2026-11-24",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "encuesta",
+  "titulo": "¿Viajaste alguna vez sola?",
+  "texto": "Encuesta: ¿viajaste alguna vez sola?\n\n———\nNota de producción (no copiar en Instagram):\nSticker de encuesta: Sí / Todavía no.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "da2efa8d6787726b539f75c3581211a7",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

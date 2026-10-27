@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "id": "6b0783acbeb410265c5f7a469f42ea20",
+      "nombre": "01-lamina.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-13",
+  "formato": "post",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#granada",
+    "#alhambra",
+    "#andalucia",
+    "#españa"
+  ],
+  "hora": "13:00",
+  "id": "2026-11-13-post",
+  "pilar": "destino",
+  "tema": "Granada y la Alhambra",
+  "texto": "Hay lugares que no alcanza con verlos en fotos 🌿\n\nCaminar la Alhambra con el grupo, sin apuro y con guía local, fue uno de los momentos más lindos de nuestro viaje por el sur de España.\n\n¿Ya la conocés o la tenés pendiente? Dejanos tu comentario 💬",
+  "titulo": "Granada y la Alhambra",
+  "verificacion": null,
+  "version": 1
+}

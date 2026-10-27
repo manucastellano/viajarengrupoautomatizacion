@@ -1,0 +1,54 @@
+{
+  "assets": [
+    {
+      "id": "defee2a8b6456bda6fe22e0bef46fe29",
+      "nombre": "01-lamina.png",
+      "tipo": "imagen"
+    },
+    {
+      "id": "2a37876ea1e959b8b70f923ef31a96fe",
+      "nombre": "02-lamina.png",
+      "tipo": "imagen"
+    },
+    {
+      "id": "5b94f20a2af341ef460760fbe6070dcc",
+      "nombre": "03-lamina.png",
+      "tipo": "imagen"
+    },
+    {
+      "id": "f93350bb300708e2fba5a4883b64003e",
+      "nombre": "04-lamina.png",
+      "tipo": "imagen"
+    },
+    {
+      "id": "0b72722098b64e9cf19ad7d728c6780b",
+      "nombre": "05-lamina.png",
+      "tipo": "imagen"
+    },
+    {
+      "id": "27bee317a871b2cb30713e80bd0b2856",
+      "nombre": "06-lamina.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-30",
+  "formato": "carrusel",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#viajarsola",
+    "#mujeresqueviajan",
+    "#viajesacompañados"
+  ],
+  "hora": "19:00",
+  "id": "2026-11-30-carrusel",
+  "pilar": "educativo",
+  "tema": "Viajar sola sin estar sola",
+  "texto": "¿Querés viajar pero no tenés con quién? 💭\n\nNo hace falta esperar a nadie. Así es viajar sola en una salida grupal. Deslizá 👉\n\nEscribinos por WhatsApp al +54 9 11 5944-4920 y te contamos cuál es la próxima ✈️",
+  "titulo": "Viajar sola sin estar sola",
+  "verificacion": null,
+  "version": 1
+}

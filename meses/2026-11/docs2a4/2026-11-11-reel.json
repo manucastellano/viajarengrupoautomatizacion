@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-11-reel",
+  "fecha": "2026-11-11",
+  "hora": "20:00",
+  "formato": "reel",
+  "pilar": "destino",
+  "tema": "La Noche de Blanco (recap)",
+  "titulo": "La Noche de Blanco",
+  "texto": "Hay noches que se planean con tiempo y se recuerdan para siempre 🤍\n\nLa Noche de Blanco es una de las experiencias que más disfrutamos en nuestras salidas: todo el grupo de blanco, una mesa larga y muchos brindis.\n\nEn mayo la vivimos otra vez en el Norte de España, entre viñedos. ¿Nos acompañás? Escribinos por WhatsApp al +54 9 11 5944-4920 ✨\n\n———\nNota de producción (no copiar en Instagram):\nReel de 25 a 35 s con fotos y videos de las Noches de Blanco (Marbella 2024 y La Dolce Vita 2026): llegada del grupo, mesa, brindis, baile. Subtítulos: \"Todo el grupo de blanco\", \"Una mesa larga\", \"Muchos brindis\". Elegir los videos de esas carpetas para editarlo.",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#nochedeblanco",
+    "#viajarenamigas",
+    "#españa",
+    "#italia"
+  ],
+  "assets": [
+    {
+      "id": "8516c14c7c41334dcaa068ac22963ebd",
+      "tipo": "imagen",
+      "nombre": "01-portada_reel.png"
+    },
+    {
+      "id": "46db7ecd5b7d51c40b1c9bf5ed7a9d11",
+      "tipo": "imagen",
+      "nombre": "02-placa_cierre.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

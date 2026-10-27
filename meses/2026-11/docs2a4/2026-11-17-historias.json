@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-17-historias",
+  "fecha": "2026-11-17",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "encuesta de destino",
+  "titulo": "¿Qué te gustaría vivir?",
+  "texto": "Encuesta: ¿qué te gustaría vivir en el Norte de España?\n\n———\nNota de producción (no copiar en Instagram):\nSticker de encuesta: Bodegas / Pintxos / Paisajes / Todo.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "a2b2753e67e3bc26aa230f799cdb7fac",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

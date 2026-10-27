@@ -1,0 +1,60 @@
+{
+  "id": "2026-11-09-carrusel",
+  "fecha": "2026-11-09",
+  "hora": "19:00",
+  "formato": "carrusel",
+  "pilar": "destino",
+  "tema": "Norte de Italia en 5 paradas (La Dolce Vita)",
+  "titulo": "Norte de Italia: 5 paradas",
+  "texto": "Lagos, ópera, castillos y trufas 🇮🇹\n\nEstas son cinco paradas que vivimos con el grupo de La Dolce Vita 2026, y que se quedaron en el corazón de todos. Deslizá 👉\n\nEn 2027 repetimos la Dolce Vita. Comentá ITALIA y te avisamos cuando abramos los cupos ✈️",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#italia",
+    "#dolcevita",
+    "#lagodicomo",
+    "#verona"
+  ],
+  "assets": [
+    {
+      "id": "6290f7915f648ad8db040a40ee6b2f93",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "76c09f118c5a9d01aa33f8ade02670dc",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "1ec063db2d50d52b50ca9106af715b06",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "728a4d911fe8f54e91c4475bac81eba5",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "2a56038ff15737c1fbec228d440732e2",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    },
+    {
+      "id": "2937af5faf5b0cbe4cc2e543a9255849",
+      "tipo": "imagen",
+      "nombre": "06-lamina.png"
+    },
+    {
+      "id": "46776a1caa6ef17b2a3baeca7afa87b5",
+      "tipo": "imagen",
+      "nombre": "07-lamina.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

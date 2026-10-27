@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-16-carrusel",
+  "fecha": "2026-11-16",
+  "hora": "19:00",
+  "formato": "carrusel",
+  "pilar": "educativo",
+  "tema": "Qué llevar a Europa en mayo",
+  "titulo": "Qué llevar a Europa",
+  "texto": "Mayo es uno de los mejores meses para viajar a Europa 🌿\n\nPero las mañanas son frescas y las tardes, templadas. Te dejo lo que nunca falta en mi valija. Deslizá 👉\n\nGuardalo para tu próximo viaje y escribinos si tenés dudas ✈️",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#tipsdeviaje",
+    "#valija",
+    "#europa"
+  ],
+  "assets": [
+    {
+      "id": "f04ccad5cc56bd5546a9faaec851fffb",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "35a9c5d9e70590d5a5cc35c25bcdc861",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "fbd4ee59a39e39ba213e5af42ca5ec96",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "3c82dcb0cccf21ee63c21c9de18252a2",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "672a5e7661707ff6564151b4dbc96e3f",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    },
+    {
+      "id": "ae9cb1796f033b2c8d8604b22295ca85",
+      "tipo": "imagen",
+      "nombre": "06-lamina.png"
+    },
+    {
+      "id": "bba2311344454a6d3bdc0b0741d6c695",
+      "tipo": "imagen",
+      "nombre": "07-lamina.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

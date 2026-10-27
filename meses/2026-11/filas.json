@@ -1,0 +1,322 @@
+[
+  {
+    "doc_id": "2026-11-02-historias",
+    "data": {
+      "id": "2026-11-02-historias",
+      "fecha": "2026-11-02",
+      "hora": "10:00",
+      "formato": "historias",
+      "pilar": "agencia",
+      "tema": "tip",
+      "titulo": "Una muda en el carry-on",
+      "texto": "Si la valija se demora, tenés lo básico para el primer día.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: el tip. Placa 2: compartir el carrusel de los 5 mitos.",
+      "hashtags": [],
+      "assets": [
+        {
+          "id": "433c53ce7466b169ec93d5dea8765b9a",
+          "tipo": "imagen",
+          "nombre": "01-historia.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  },
+  {
+    "doc_id": "2026-11-02-carrusel",
+    "data": {
+      "id": "2026-11-02-carrusel",
+      "fecha": "2026-11-02",
+      "hora": "19:00",
+      "formato": "carrusel",
+      "pilar": "educativo",
+      "tema": "5 mitos del viaje grupal",
+      "titulo": "5 mitos del viaje grupal",
+      "texto": "¿Te dan ganas de viajar pero te frena ir con un grupo? 💭\n\nDespués de más de 30 años acompañando viajeros, estos son los cinco miedos que más escucho, y lo que pasa de verdad en el viaje. Deslizá 👉\n\n¿Tenés otra duda? Dejanos tu comentario y te contamos.\n\nGuardá este posteo para tu próximo viaje ✈️",
+      "hashtags": [
+        "#viajarengrupo",
+        "#viajesgrupales",
+        "#agenciadeviajes",
+        "#viajarsola",
+        "#tipsdeviaje",
+        "#viajesacompañados"
+      ],
+      "assets": [
+        {
+          "id": "9194561b377aaf45a3001be6a20582d6",
+          "tipo": "imagen",
+          "nombre": "01-lamina.png"
+        },
+        {
+          "id": "554efe2963c54cfc451589a57a7df43e",
+          "tipo": "imagen",
+          "nombre": "02-lamina.png"
+        },
+        {
+          "id": "0d5809be7e0ef8fb8269f18de48ecc21",
+          "tipo": "imagen",
+          "nombre": "03-lamina.png"
+        },
+        {
+          "id": "95952b204db2c91db1c78c4640cc15b7",
+          "tipo": "imagen",
+          "nombre": "04-lamina.png"
+        },
+        {
+          "id": "cb840fccbf90f4d04de909f618b873fc",
+          "tipo": "imagen",
+          "nombre": "05-lamina.png"
+        },
+        {
+          "id": "efe62bdba7afbe0bedb704791577d2c5",
+          "tipo": "imagen",
+          "nombre": "06-lamina.png"
+        },
+        {
+          "id": "e59d7050200bc70162c87a3e5c1867ce",
+          "tipo": "imagen",
+          "nombre": "07-lamina.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  },
+  {
+    "doc_id": "2026-11-03-historias",
+    "data": {
+      "id": "2026-11-03-historias",
+      "fecha": "2026-11-03",
+      "hora": "10:00",
+      "formato": "historias",
+      "pilar": "agencia",
+      "tema": "encuesta de destino",
+      "titulo": "¿Qué te frena para viajar?",
+      "texto": "Respondé en la encuesta de abajo.\n\n———\nNota de producción (no copiar en Instagram):\nAgregar el sticker de encuesta: No conocer a nadie / El idioma / El precio / Nada, ¡vamos!",
+      "hashtags": [],
+      "assets": [
+        {
+          "id": "897f58f68a7b8ab70c88eb8bd934d7ca",
+          "tipo": "imagen",
+          "nombre": "01-historia.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  },
+  {
+    "doc_id": "2026-11-03-post",
+    "data": {
+      "id": "2026-11-03-post",
+      "fecha": "2026-11-03",
+      "hora": "13:00",
+      "formato": "carrusel",
+      "pilar": "agencia",
+      "tema": "Presentación de Bettina (para fijar arriba del perfil)",
+      "titulo": "Hola, soy Bettina",
+      "texto": "Si llegaste hace poco a la cuenta, te cuento quién está detrás de cada viaje 🌍\n\nSoy Bettina Schwartz, Licenciada en Turismo. Hace más de 30 años que armo viajes, y en 2009, con un viaje a Grecia, empezó Viajar en Grupo.\n\nDiseño cada itinerario y acompaño a los grupos: más noches por ciudad, hoteles bien ubicados y tiempo para disfrutar.\n\n¿Querés saber cuál es la próxima salida? Escribinos por WhatsApp al +54 9 11 5944-4920 ✈️\n\n———\nNota de producción (no copiar en Instagram):\nDespués de publicarlo, fijalo arriba del perfil (los tres puntitos → Fijar en tu perfil).",
+      "hashtags": [
+        "#viajarengrupo",
+        "#viajesgrupales",
+        "#agenciadeviajes",
+        "#bettinaschwartz",
+        "#viajesacompañados"
+      ],
+      "assets": [
+        {
+          "id": "fa6992de86cdfadb25a09ffe1c1bad9a",
+          "tipo": "imagen",
+          "nombre": "01-lamina.png"
+        },
+        {
+          "id": "a20006e24ca844bc7ef1465f01cafea9",
+          "tipo": "imagen",
+          "nombre": "02-lamina.png"
+        },
+        {
+          "id": "ea76169b098ed847f9653c80c6b06237",
+          "tipo": "imagen",
+          "nombre": "03-lamina.png"
+        },
+        {
+          "id": "e79888c46891eb8281b3b55646ed1338",
+          "tipo": "imagen",
+          "nombre": "04-lamina.png"
+        },
+        {
+          "id": "45a66b240fdc0a15a658fcaf1c7bb30e",
+          "tipo": "imagen",
+          "nombre": "05-lamina.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  },
+  {
+    "doc_id": "2026-11-04-historias",
+    "data": {
+      "id": "2026-11-04-historias",
+      "fecha": "2026-11-04",
+      "hora": "10:00",
+      "formato": "historias",
+      "pilar": "agencia",
+      "tema": "reel y cupos",
+      "titulo": "¿Y si viajo sola?",
+      "texto": "Norte de España 2027 · Desde USD 9.680 · Cupos limitados\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: compartir el reel del día. Placa 2: esta placa con sticker de enlace a la web.",
+      "hashtags": [],
+      "assets": [
+        {
+          "id": "278f774f65e9d47970b4fce20df11deb",
+          "tipo": "imagen",
+          "nombre": "01-historia.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": {
+        "fuente": "Viajar en Grupo (web propia)",
+        "fecha": "2026-10-20"
+      }
+    }
+  },
+  {
+    "doc_id": "2026-11-04-reel",
+    "data": {
+      "id": "2026-11-04-reel",
+      "fecha": "2026-11-04",
+      "hora": "20:00",
+      "formato": "reel",
+      "pilar": "especial",
+      "tema": "Bettina responde: ¿y si viajo sola?",
+      "titulo": "¿Y si viajo sola?",
+      "texto": "¿Te dan ganas de viajar pero no tenés con quién? 💭\n\nEs lo que más me preguntan. La mayoría de quienes viajan conmigo llegan sin conocer a nadie, y vuelven con amigas.\n\nLa próxima: Norte de España con los 5 sentidos, del 24 de mayo al 10 de junio de 2027, desde USD 9.680 por persona en base doble 🇪🇸\n\nComentá NORTE y te mando el itinerario por privado ✈️\n\n———\nNota de producción (no copiar en Instagram):\nGuion para grabar con Bettina a cámara (vertical, 35 a 45 s, luz natural, celular a la altura de los ojos):\n0–3 s: \"¿Te dan ganas de viajar pero no tenés con quién?\"\n3–15 s: \"Es lo que más me preguntan. Y te cuento algo: la mayoría de las personas que viajan conmigo llegan sin conocer a nadie.\"\n15–28 s: \"Yo viajo con el grupo, de principio a fin. Compartimos cenas, recorridos, y al tercer día ya son amigas.\"\n28–38 s: \"En mayo nos vamos al Norte de España, con los cinco sentidos. Si querés el itinerario, comentá NORTE.\"\nTomas de apoyo (material propio): grupo brindando, grupo caminando en Italia, Bettina con viajeras.\nCon subtítulos y la placa de cierre \"¿Nos acompañás?\". En cuanto llegue el video, lo edito.",
+      "hashtags": [
+        "#viajarengrupo",
+        "#viajesgrupales",
+        "#agenciadeviajes",
+        "#viajarsola",
+        "#nortedeespaña",
+        "#españa"
+      ],
+      "assets": [
+        {
+          "id": "357751bfa2d1ac47c77777d2f1eae6bd",
+          "tipo": "imagen",
+          "nombre": "01-portada_reel.png"
+        },
+        {
+          "id": "5718a80bd08f892738ba31a4a82e67ec",
+          "tipo": "imagen",
+          "nombre": "02-placa_cierre.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": {
+        "fuente": "Viajar en Grupo (web propia)",
+        "fecha": "2026-10-20"
+      }
+    }
+  },
+  {
+    "doc_id": "2026-11-05-historias",
+    "data": {
+      "id": "2026-11-05-historias",
+      "fecha": "2026-11-05",
+      "hora": "10:00",
+      "formato": "historias",
+      "pilar": "agencia",
+      "tema": "Bettina / detrás de escena",
+      "titulo": "Un día en la oficina",
+      "texto": "Así armamos cada itinerario.\n\n———\nNota de producción (no copiar en Instagram):\nGuion para Bettina (15 s, celular): \"Hola, les muestro dónde nace cada viaje. Hoy estoy terminando el itinerario del Norte de España. ¿Qué destino les gustaría para 2028? Contestame acá.\" + sticker de pregunta.",
+      "hashtags": [],
+      "assets": [
+        {
+          "id": "ea4cb3548d45fbd6a29059136457f649",
+          "tipo": "imagen",
+          "nombre": "01-historia.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": null
+    }
+  },
+  {
+    "doc_id": "2026-11-06-historias",
+    "data": {
+      "id": "2026-11-06-historias",
+      "fecha": "2026-11-06",
+      "hora": "10:00",
+      "formato": "historias",
+      "pilar": "agencia",
+      "tema": "próximas salidas",
+      "titulo": "Norte de España",
+      "texto": "24/05 al 10/06/2027 · Desde USD 9.680 · Cupos limitados\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: esta placa. Placa 2: compartir el post del día. Sticker de enlace a la web.",
+      "hashtags": [],
+      "assets": [
+        {
+          "id": "64920ea54d0abef6d714fda6a649d6c7",
+          "tipo": "imagen",
+          "nombre": "01-historia.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": {
+        "fuente": "Viajar en Grupo (web propia)",
+        "fecha": "2026-10-20"
+      }
+    }
+  },
+  {
+    "doc_id": "2026-11-06-post",
+    "data": {
+      "id": "2026-11-06-post",
+      "fecha": "2026-11-06",
+      "hora": "13:00",
+      "formato": "post",
+      "pilar": "especial",
+      "tema": "Norte de España con los 5 sentidos",
+      "titulo": "Norte de España",
+      "texto": "Hay viajes que se viven con los cinco sentidos 🌿\n\nGalicia, Asturias, Cantabria, País Vasco, Navarra y La Rioja, con cinco bases de tres noches para recorrer sin apuro.\n\n🍷 Cuatro bodegas y dos catas con degustación\n🍽️ Ocho comidas con bebidas, un tour de pintxos en Bilbao y la Noche de Blanco en Navarrete\n👩🏻 Acompañamiento de Bettina y Eugenia, con guía acompañante y guías locales\n\n📅 Del 24 de mayo al 10 de junio de 2027 · 18 días\nDesde USD 9.680 por persona en base doble. Suplemento single USD 2.290. Cupos limitados.\n\nComentá NORTE y te mando el itinerario completo por privado ✈️\n\n———\nNota de producción (no copiar en Instagram):\nLa imagen tiene fondo liso: cuando tenga una foto propia del norte de España (o del grupo), la reemplazo.",
+      "hashtags": [
+        "#viajarengrupo",
+        "#viajesgrupales",
+        "#agenciadeviajes",
+        "#nortedeespaña",
+        "#españa",
+        "#larioja",
+        "#paisvasco"
+      ],
+      "assets": [
+        {
+          "id": "8166c6468448638e169f8e071e4a3e6b",
+          "tipo": "imagen",
+          "nombre": "01-post_paquete.png"
+        }
+      ],
+      "version": 1,
+      "estado": "pendiente",
+      "comentario": "",
+      "verificacion": {
+        "fuente": "Viajar en Grupo (web propia)",
+        "fecha": "2026-10-20"
+      }
+    }
+  }
+]

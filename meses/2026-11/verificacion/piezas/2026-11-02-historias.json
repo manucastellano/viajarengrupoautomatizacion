@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "id": "9e24c9aa4a56cfa5ca343b25e9aa10a0",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-02",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-02-historias",
+  "pilar": "agencia",
+  "tema": "tip",
+  "texto": "Si la valija se demora, tenés lo básico para el primer día.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: el tip. Placa 2: compartir el carrusel de los 5 mitos.",
+  "titulo": "Una muda en el carry-on",
+  "verificacion": null,
+  "version": 1
+}

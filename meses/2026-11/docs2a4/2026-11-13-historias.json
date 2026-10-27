@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-13-historias",
+  "fecha": "2026-11-13",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "frase",
+  "titulo": "Un viaje se recuerda por la gente con la que lo compartiste.",
+  "texto": "Frase de marca.\n\n———\nNota de producción (no copiar en Instagram):\nSubir tal cual.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "ae290a6bb62be1bdb6197fd6cde2a203",
+      "tipo": "imagen",
+      "nombre": "01-historia_frase.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

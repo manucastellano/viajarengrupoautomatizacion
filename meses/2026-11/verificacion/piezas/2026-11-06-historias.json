@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "id": "d752ae0e9457a7d44ced8461782c8788",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-06",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-06-historias",
+  "pilar": "agencia",
+  "tema": "próximas salidas",
+  "texto": "24/05 al 10/06/2027 · Desde USD 9.680 · Cupos limitados\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: esta placa. Placa 2: compartir el post del día. Sticker de enlace a la web.",
+  "titulo": "Norte de España",
+  "verificacion": {
+    "fecha": "2026-10-20",
+    "fuente": "Viajar en Grupo (web propia)"
+  },
+  "version": 1
+}

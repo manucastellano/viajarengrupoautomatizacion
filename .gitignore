@@ -1,5 +1,18 @@
 .venv/
 __pycache__/
-material/
-meses/
 .superpowers/
+
+# Fotos y videos propios: viven en Drive (herramientas/bajar_drive.py los baja de nuevo)
+material/*
+!material/propias/
+material/propias/*
+!material/propias/catalogo.md
+!material/propias/videos.tsv
+!material/propias/catalogo_dolce_vita.md
+
+# De cada mes se versionan los datos (JSON, textos, scripts), no los renders
+meses/**/*.png
+meses/**/*.jpg
+meses/**/*.jpeg
+meses/**/*.mp4
+meses/**/*.mov

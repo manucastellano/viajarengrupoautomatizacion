@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "id": "4308a0a91b4d4f6330106ce3050e1665",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-04",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-04-historias",
+  "pilar": "agencia",
+  "tema": "reel y cupos",
+  "texto": "Norte de España 2027 · Desde USD 9.680 · Cupos limitados\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: compartir el reel del día. Placa 2: esta placa con sticker de enlace a la web.",
+  "titulo": "¿Y si viajo sola?",
+  "verificacion": {
+    "fecha": "2026-10-20",
+    "fuente": "Viajar en Grupo (web propia)"
+  },
+  "version": 1
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2026-11-16-historias",
+  "fecha": "2026-11-16",
+  "hora": "10:00",
+  "formato": "historias",
+  "pilar": "agencia",
+  "tema": "tip",
+  "titulo": "Capas, capas y capas",
+  "texto": "Tip: ropa en capas.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: el tip. Placa 2: compartir el carrusel del lunes.",
+  "hashtags": [],
+  "assets": [
+    {
+      "id": "2ad69131b56b4539ed6448d984285683",
+      "tipo": "imagen",
+      "nombre": "01-historia.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "norte-espana-2027",
+    "destino": "Norte de España",
+    "fecha_salida": "2027-05-24",
+    "duracion": "18 días / 15 noches",
+    "operador": "Viajar en Grupo (web propia)",
+    "url": "https://www.viajarengrupo.tur.ar/norte-espana-2027",
+    "cupo": "disponible",
+    "verificado_en": "2026-10-21",
+    "precio_desde": 9680,
+    "moneda": "USD",
+    "base": "por persona en base doble",
+    "suplemento_single": 2290,
+    "especial": true,
+    "fecha_regreso": "2027-06-10"
+  },
+  {
+    "id": "europaba-europeando-fiestas",
+    "destino": "Europeando Fiestas",
+    "fecha_salida": "2026-12-18",
+    "duracion": "13 noches",
+    "operador": "Europa BA",
+    "url": "https://europaba.com/page/destinos-internacionales1610045318780",
+    "cupo": "disponible",
+    "verificado_en": "2026-10-21",
+    "precio_desde": 3900,
+    "moneda": "USD",
+    "base": "por persona",
+    "suplemento_single": null,
+    "especial": false,
+    "fecha_regreso": "2027-01-02"
+  },
+  {
+    "id": "europaba-ellas-a-europa-feb",
+    "destino": "Ellas a Europa",
+    "fecha_salida": "2027-02-05",
+    "duracion": "15 noches",
+    "operador": "Europa BA",
+    "url": "https://europaba.com/page/ellas-viajan1657035006987",
+    "cupo": "disponible",
+    "verificado_en": "2026-10-21",
+    "precio_desde": 3900,
+    "moneda": "USD",
+    "base": "por persona",
+    "suplemento_single": null,
+    "especial": false,
+    "fecha_regreso": "2027-02-22"
+  }
+]

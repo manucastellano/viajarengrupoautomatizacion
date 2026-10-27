@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-03-post",
+  "fecha": "2026-11-03",
+  "hora": "13:00",
+  "formato": "carrusel",
+  "pilar": "agencia",
+  "tema": "Presentación de Bettina (para fijar arriba del perfil)",
+  "titulo": "Hola, soy Bettina",
+  "texto": "Si llegaste hace poco a la cuenta, te cuento quién está detrás de cada viaje 🌍\n\nSoy Bettina Schwartz, Licenciada en Turismo. Hace más de 30 años que armo viajes, y en 2009, con un viaje a Grecia, empezó Viajar en Grupo.\n\nDiseño cada itinerario y acompaño a los grupos: más noches por ciudad, hoteles bien ubicados y tiempo para disfrutar.\n\n¿Querés saber cuál es la próxima salida? Escribinos por WhatsApp al +54 9 11 5944-4920 ✈️\n\n———\nNota de producción (no copiar en Instagram):\nDespués de publicarlo, fijalo arriba del perfil (los tres puntitos → Fijar en tu perfil).",
+  "hashtags": [
+    "#viajarengrupo",
+    "#viajesgrupales",
+    "#agenciadeviajes",
+    "#bettinaschwartz",
+    "#viajesacompañados"
+  ],
+  "assets": [
+    {
+      "id": "fa6992de86cdfadb25a09ffe1c1bad9a",
+      "tipo": "imagen",
+      "nombre": "01-lamina.png"
+    },
+    {
+      "id": "a20006e24ca844bc7ef1465f01cafea9",
+      "tipo": "imagen",
+      "nombre": "02-lamina.png"
+    },
+    {
+      "id": "ea76169b098ed847f9653c80c6b06237",
+      "tipo": "imagen",
+      "nombre": "03-lamina.png"
+    },
+    {
+      "id": "e79888c46891eb8281b3b55646ed1338",
+      "tipo": "imagen",
+      "nombre": "04-lamina.png"
+    },
+    {
+      "id": "45a66b240fdc0a15a658fcaf1c7bb30e",
+      "tipo": "imagen",
+      "nombre": "05-lamina.png"
+    }
+  ],
+  "version": 1,
+  "estado": "pendiente",
+  "comentario": "",
+  "verificacion": null
+}

@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "id": "8bb7ae8a6a222bf8b2558a37fed3102b",
+      "nombre": "01-historia.png",
+      "tipo": "imagen"
+    }
+  ],
+  "comentario": "",
+  "estado": "pendiente",
+  "fecha": "2026-11-20",
+  "formato": "historias",
+  "hashtags": [],
+  "hora": "10:00",
+  "id": "2026-11-20-historias",
+  "pilar": "agencia",
+  "tema": "secuencia Norte de España",
+  "texto": "Norte de España 2027 · Desde USD 9.680 · Cupos limitados.\n\n———\nNota de producción (no copiar en Instagram):\nPlaca 1: esta. Placa 2: compartir el post del día con sticker de enlace a la web.",
+  "titulo": "El Norte de España",
+  "verificacion": {
+    "fecha": "2026-10-21",
+    "fuente": "Viajar en Grupo (web propia)"
+  },
+  "version": 1
+}
