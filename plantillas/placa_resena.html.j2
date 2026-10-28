@@ -1,0 +1,12 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
+.lienzo{background:var(--salvia);color:var(--verde)}
+.ruta{position:absolute;top:170px;left:0;width:640px}
+.ruta .avion{width:150px;height:150px}
+.c{position:absolute;left:150px;right:110px;top:380px;bottom:170px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:48px;text-align:right}
+.cita{font-size:{{ tam|default(92) }}px;line-height:1.2;text-wrap:wrap}
+.autor{font-size:46px}
+.pie{left:110px;right:110px;bottom:70px;text-align:right}
+</style></head><body><div class="lienzo p"><div class="ruta"><span class="punteada"></span><svg class="avion" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12 16 10 11 3H9l3 7H6L4 7H2.5l1 5-1 5H4l2-3h6l-3 7h2l5-7z"/></svg></div>
+<div class="c"><h1 class="disp cita">“{{ cita }}”</h1><p class="txt autor"><b>{{ autor }}</b>{% if fuente %} · {{ fuente }}{% endif %}</p></div>
+<div class="pie">{{ firma }}</div>
+</div></body></html>

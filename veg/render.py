@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from PIL import Image
 from playwright.sync_api import Error as PlaywrightError
 from playwright.sync_api import sync_playwright
 
@@ -10,8 +11,10 @@ from .formato import formatear_precio
 
 RAIZ = Path(__file__).resolve().parent.parent
 PLANTILLAS = RAIZ / "plantillas"
+CHROMIUM_NUBE = Path("/opt/pw-browsers/chromium")
 TAMANOS = {
     "post_paquete": (1080, 1350), "lamina": (1080, 1350),
+    "lamina_linkedin": (1080, 1350), "placa_resena": (1080, 1350),
     "portada_reel": (1080, 1920), "historia": (1080, 1920),
     "placa_cierre": (1080, 1920), "subtitulo": (1080, 1920),
     "historia_postal": (1080, 1920), "historia_frase": (1080, 1920),
@@ -33,7 +36,14 @@ def _abrir_navegador(p):
     try:
         return p.chromium.launch(channel="msedge")
     except PlaywrightError:
+        pass
+    try:
         return p.chromium.launch()
+    except PlaywrightError:
+        # En la nube el Chromium ya instalado no coincide con la versión de Playwright del venv.
+        if not CHROMIUM_NUBE.exists():
+            raise
+        return p.chromium.launch(executable_path=str(CHROMIUM_NUBE), args=["--no-sandbox"])
 
 
 def render_png(plantilla: str, datos: dict, salida: Path, transparente: bool = False) -> Path:
@@ -52,4 +62,13 @@ def render_png(plantilla: str, datos: dict, salida: Path, transparente: bool = F
             navegador.close()
     finally:
         temporal.unlink(missing_ok=True)
+    return salida
+
+
+def render_pdf(pngs: list[Path], salida: Path) -> Path:
+    """Une las láminas en un PDF de una página por lámina (carrusel de documento de LinkedIn)."""
+    salida = Path(salida)
+    salida.parent.mkdir(parents=True, exist_ok=True)
+    paginas = [Image.open(png).convert("RGB") for png in pngs]
+    paginas[0].save(salida, save_all=True, append_images=paginas[1:], resolution=144)
     return salida

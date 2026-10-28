@@ -1,3 +1,5 @@
+import re
+
 import pytest
 from PIL import Image
 from veg.render import html, render_png
@@ -52,3 +54,18 @@ def test_html_precio_crudo_none_no_imprime_none():
 def test_html_precio_numerico_se_formatea():
     h = html("post_paquete", {**POST, "precio": 9680})
     assert "USD 9.680" in h and "Desde" in h
+
+
+def test_html_placa_resena_cita_textual():
+    h = html("placa_resena", {"cita": "Lindisimo viaje por España.", "autor": "Susan F.", "firma": "Viajar en Grupo"})
+    assert "“Lindisimo viaje por España.”" in h and "Susan F." in h
+
+
+@pytest.mark.lento
+def test_render_pdf_una_pagina_por_lamina(tmp_path):
+    from veg.render import render_pdf
+    laminas = [render_png("lamina_linkedin", {"titulo": t, "firma": "Viajar en Grupo", "oscuro": i == 0, "numero": None if i == 0 else str(i)},
+                          tmp_path / f"{i}.png") for i, t in enumerate(["5 mitos de viajar en grupo", "Es más caro"])]
+    assert Image.open(laminas[0]).size == (1080, 1350)
+    pdf = render_pdf(laminas, tmp_path / "carrusel.pdf")
+    assert len(re.findall(rb"/Type\s*/Page\b", pdf.read_bytes())) == 2
