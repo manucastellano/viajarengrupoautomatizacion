@@ -32,7 +32,7 @@
     ],
     "descripcion": "Salida de mujeres por Madrid, Burdeos, Blois, París, Lucerna, Zúrich, Verona, Venecia, Florencia, Roma, Pisa, Niza y Barcelona.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-ellas-a-turquia-2027-03",
@@ -66,7 +66,7 @@
     ],
     "descripcion": "Salida de mujeres por Estambul, Ankara, Capadocia, Pamukkale, Éfeso, Kusadasi y Bursa.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-ellas-a-croacia-y-eslovenia-2027-04",
@@ -100,7 +100,7 @@
     ],
     "descripcion": "Salida de mujeres por Opatija, Pula, Rovinj, Sibenik, Dubrovnik, Ston, Split, Krka, Zagreb, Liubliana, Lago Bled, Postojna y Predjama.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-ellas-a-miami-2027-05",
@@ -134,7 +134,7 @@
     ],
     "descripcion": "Salida de mujeres a Miami con estadía en Miami Beach, city tour y tours de compras.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-europeando-fiestas-2026-12",
@@ -167,7 +167,7 @@
     ],
     "descripcion": "Circuito por Madrid, Burdeos, Blois, París, Lucerna, Zúrich, Verona, Venecia, Florencia y Roma durante las fiestas.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-experiencia-turquia-2027-01",
@@ -199,7 +199,7 @@
     ],
     "descripcion": "Circuito por Estambul, Ankara, Capadocia, Pamukkale, Éfeso, Kusadasi o Esmirna y Bursa.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-experiencia-turquia-carnaval-2027-01",
@@ -230,7 +230,7 @@
     ],
     "descripcion": "Circuito por Estambul, Ankara, Capadocia, Pamukkale, Éfeso, Kusadasi o Esmirna y Bursa en el feriado de Carnaval.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-escapada-europea-semana-santa-2027-03",
@@ -263,7 +263,7 @@
     ],
     "descripcion": "Circuito por París, Luxemburgo, Valle del Rin, Frankfurt, Heidelberg, Selva Negra, Zúrich, Lucerna, Vaduz, Múnich, Innsbruck, Verona, Venecia, Florencia, Asís y Roma.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-europeando-semana-santa-2027-03",
@@ -296,7 +296,7 @@
     ],
     "descripcion": "Circuito por París, Lucerna, Zúrich, Verona, Venecia, Florencia, Roma, Pisa, Niza, Barcelona, Zaragoza y Madrid.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-europeando-xl-2027-04",
@@ -330,7 +330,7 @@
     ],
     "descripcion": "Circuito por Londres, París, Luxemburgo, Valle del Rin, Frankfurt, Heidelberg, Selva Negra, Zúrich, Lucerna, Vaduz, Múnich, Innsbruck, Verona, Venecia, Florencia, Asís, Roma, Pisa, Niza, Barcelona, Zaragoza y Madrid.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-europeando-2027-05",
@@ -363,7 +363,7 @@
     ],
     "descripcion": "Circuito por París, Lucerna, Zúrich, Verona, Venecia, Florencia, Roma, Pisa, Niza, Barcelona, Zaragoza y Madrid.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-delicias-de-portugal-y-espana-2027-05",
@@ -385,7 +385,7 @@
     "incluye": [],
     "descripcion": "Salida aeroterrestre a Portugal y España; la ficha publicada no detalla el itinerario.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-euroimperiales-2027-05",
@@ -417,7 +417,7 @@
     ],
     "descripcion": "Circuito por París, Brujas, Bruselas, Róterdam, La Haya, Ámsterdam, Berlín, Dresde, Praga, Bratislava, Budapest y Viena.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "europaba-delicias-de-reino-unido-2027-06",
@@ -439,6 +439,6 @@
     "incluye": [],
     "descripcion": "Salida aeroterrestre al Reino Unido; la ficha publicada no detalla el itinerario.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   }
 ]

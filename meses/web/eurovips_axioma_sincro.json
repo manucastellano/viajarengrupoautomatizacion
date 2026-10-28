@@ -32,7 +32,7 @@
     ],
     "descripcion": "Circuito de 8 días por Cusco, Machu Picchu (con tren a Aguas Calientes) y Lima.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-peru-de-locura-2027-03-06",
@@ -67,7 +67,7 @@
     ],
     "descripcion": "Circuito de 8 días por Cusco, Machu Picchu (con tren a Aguas Calientes) y Lima.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-peru-de-locura-2027-05-28",
@@ -102,7 +102,7 @@
     ],
     "descripcion": "Circuito de 8 días por Cusco, Machu Picchu (con tren a Aguas Calientes) y Lima.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-peru-de-locura-2027-05-29",
@@ -137,7 +137,7 @@
     ],
     "descripcion": "Circuito de 8 días por Cusco, Machu Picchu (con tren a Aguas Calientes) y Lima.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-peru-de-locura-2027-06-12",
@@ -172,7 +172,7 @@
     ],
     "descripcion": "Circuito de 8 días por Cusco, Machu Picchu (con tren a Aguas Calientes) y Lima.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-guatemala-de-locura-2027-05-08",
@@ -204,7 +204,7 @@
     ],
     "descripcion": "Viaje de 8 días por Ciudad de Guatemala, Antigua, Chichicastenango y el Lago Atitlán.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-guatemala-de-locura-2027-06-05",
@@ -236,7 +236,7 @@
     ],
     "descripcion": "Viaje de 8 días por Ciudad de Guatemala, Antigua, Chichicastenango y el Lago Atitlán.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-ecuador-de-locura-2026-11-27",
@@ -270,7 +270,7 @@
     ],
     "descripcion": "Viaje de 7 días por Quito, la Isla Santa Cruz en Galápagos y Guayaquil.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-ecuador-de-locura-2027-03-20",
@@ -304,7 +304,7 @@
     ],
     "descripcion": "Viaje de 7 días por Quito, la Isla Santa Cruz en Galápagos y Guayaquil.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-ecuador-de-locura-2027-04-17",
@@ -338,7 +338,7 @@
     ],
     "descripcion": "Viaje de 7 días por Quito, la Isla Santa Cruz en Galápagos y Guayaquil.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-costa-rica-de-locura-2027-04-02",
@@ -371,7 +371,7 @@
     ],
     "descripcion": "Viaje de 8 días por San José, el Volcán Arenal, Monteverde y el Parque Nacional Manuel Antonio.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-costa-rica-de-locura-2027-07-02",
@@ -404,7 +404,7 @@
     ],
     "descripcion": "Viaje de 8 días por San José, el Volcán Arenal, Monteverde y el Parque Nacional Manuel Antonio.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-sudafrica-de-locura-2027-01-09",
@@ -433,7 +433,7 @@
     ],
     "descripcion": "Circuito de 13 días por Sudáfrica con safari en el Parque Kruger y Ciudad del Cabo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-sudafrica-de-locura-2027-01-16",
@@ -462,7 +462,7 @@
     ],
     "descripcion": "Circuito de 13 días por Sudáfrica con safari en el Parque Kruger y Ciudad del Cabo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-sudafrica-de-locura-2027-01-23",
@@ -491,7 +491,7 @@
     ],
     "descripcion": "Circuito de 13 días por Sudáfrica con safari en el Parque Kruger y Ciudad del Cabo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-europa-magica-2027-02-06",
@@ -518,7 +518,7 @@
     ],
     "descripcion": "Circuito de 19 días por Londres, París, Heidelberg, Múnich, Innsbruck, Verona, Venecia, Florencia, Roma, Pisa y Niza.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-europa-magica-2027-03-06",
@@ -545,7 +545,7 @@
     ],
     "descripcion": "Circuito de 19 días por Londres, París, Heidelberg, Múnich, Innsbruck, Verona, Venecia, Florencia, Roma, Pisa y Niza.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-europa-magica-2027-05-01",
@@ -572,7 +572,7 @@
     ],
     "descripcion": "Circuito de 19 días por Londres, París, Heidelberg, Múnich, Innsbruck, Verona, Venecia, Florencia, Roma, Pisa y Niza.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-egipto-con-desierto-2027-02-19",
@@ -599,7 +599,7 @@
     ],
     "descripcion": "Circuito de 16 días por El Cairo, Luxor, Asuán y Hurghada.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-descubriendo-turquia-2027-04-13",
@@ -626,7 +626,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul, Ankara, Capadocia, Pamukkale y Éfeso.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-maravillas-reino-unido-irlanda-2027-05-17",
@@ -653,7 +653,7 @@
     ],
     "descripcion": "Circuito de 16 días por Londres, Edimburgo, Dublín y Liverpool.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-maravillas-reino-unido-irlanda-2027-05-18",
@@ -680,7 +680,7 @@
     ],
     "descripcion": "Circuito de 16 días por Londres, Edimburgo, Dublín y Liverpool.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-de-locura-2027-02-04",
@@ -707,7 +707,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul y Capadocia.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-de-locura-2027-02-05",
@@ -734,7 +734,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul y Capadocia.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-de-locura-2027-02-25",
@@ -761,7 +761,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul y Capadocia.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-de-locura-2027-02-26",
@@ -788,7 +788,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul y Capadocia.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-de-locura-2027-03-12",
@@ -815,7 +815,7 @@
     ],
     "descripcion": "Circuito de 12 días por Estambul y Capadocia.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-02-12",
@@ -841,7 +841,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-02-26",
@@ -867,7 +867,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-03-12",
@@ -893,7 +893,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-03-26",
@@ -919,7 +919,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-04-02",
@@ -945,7 +945,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-turquia-y-dubai-2027-04-16",
@@ -971,7 +971,7 @@
     ],
     "descripcion": "Circuito de 17 días por Estambul, Capadocia y Dubái.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-09",
@@ -997,7 +997,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-14",
@@ -1023,7 +1023,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-16",
@@ -1049,7 +1049,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-21",
@@ -1075,7 +1075,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-23",
@@ -1101,7 +1101,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-28",
@@ -1127,7 +1127,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-29",
@@ -1153,7 +1153,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-caribe-all-inclusive-punta-cana-2027-01-30",
@@ -1179,7 +1179,7 @@
     ],
     "descripcion": "Estadía de 9 días con 8 noches en resort all inclusive en Punta Cana, República Dominicana.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-peru-magia-y-misterio-2027-04-10",
@@ -1206,7 +1206,7 @@
     ],
     "descripcion": "Viaje de 8 días por Lima, Cusco y Machu Picchu.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-latidos-de-colombia-2026-11-15",
@@ -1232,7 +1232,7 @@
     ],
     "descripcion": "Combinado de 6 días por Bogotá y Pereira, en el Eje Cafetero.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-guatemala-corazon-del-mundo-maya-2026-11-01",
@@ -1258,7 +1258,7 @@
     ],
     "descripcion": "Viaje de 8 días por Ciudad de Guatemala, Antigua y el Lago Atitlán.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-interlagos-f1-2026-11-04",
@@ -1285,7 +1285,7 @@
     ],
     "descripcion": "Viaje de 6 días a São Paulo para el Gran Premio de Fórmula 1 en el Autódromo de Interlagos.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-interlagos-f1-2026-11-05",
@@ -1312,7 +1312,7 @@
     ],
     "descripcion": "Viaje de 6 días a São Paulo para el Gran Premio de Fórmula 1 en el Autódromo de Interlagos.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-marruecos-con-madrid-2027-02-23",
@@ -1344,7 +1344,7 @@
     ],
     "descripcion": "Circuito de 12 días por las ciudades imperiales de Marruecos, el desierto de Merzouga y Madrid.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-egipto-con-mar-rojo-2027-03-14",
@@ -1373,7 +1373,7 @@
     ],
     "descripcion": "Viaje de 11 días por El Cairo, crucero por el Nilo (Luxor, Edfu, Kom Ombo, Asuán) y descanso en el Mar Rojo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-madrid-portugal-andalucia-marruecos-2027-04-17",
@@ -1402,7 +1402,7 @@
     ],
     "descripcion": "Circuito de 18 días por Madrid, Portugal (Lisboa, Sintra), Andalucía y Marruecos (Fez, Marrakech, Rabat, Tánger).",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "eurovips-madrid-andalucia-marruecos-2027-02-23",
@@ -1431,7 +1431,7 @@
     ],
     "descripcion": "Circuito de 18 días por España y Marruecos según la ficha (Madrid, Andalucía, Fez, Marrakech, Rabat y Tánger).",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-el-bolson-campo-de-tulipanes-2026-10-28",
@@ -1461,7 +1461,7 @@
     ],
     "descripcion": "Salida grupal de 5 días a El Bolsón con excursiones a Trevelin, el campo de tulipanes y el Lago Puelo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-caribe-en-miches-2026-11-28",
@@ -1489,7 +1489,7 @@
     ],
     "descripcion": "Salida grupal de 10 días al hotel Viva Miches by Wyndham, en República Dominicana, con sistema all inclusive.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-carretera-austral-2026-11-30",
@@ -1519,7 +1519,7 @@
     ],
     "descripcion": "Salida grupal de 9 días por Perito Moreno, Cochrane, Villa O'Higgins, Puerto Río Tranquilo y Coyhaique.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-caviahue-termas-de-copahue-2026-12-09",
@@ -1549,7 +1549,7 @@
     ],
     "descripcion": "Salida grupal de 5 días a Caviahue, en Neuquén, con traslado a las Termas de Copahue.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-ushuaia-travesia-fin-del-mundo-2027-01-06",
@@ -1585,7 +1585,7 @@
     ],
     "descripcion": "Salida grupal de 7 días por Ushuaia y Tolhuin con excursiones en 4x4 a los lagos Escondido y Fagnano y Cabo San Pablo.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-mitica-ruta-40-2027-01-15",
@@ -1622,7 +1622,7 @@
     ],
     "descripcion": "Salida grupal de 11 días por la Ruta 40 entre El Calafate, El Chaltén, Los Antiguos y Bariloche.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-mitica-ruta-40-2027-01-21",
@@ -1653,7 +1653,7 @@
     ],
     "descripcion": "Salida grupal de 11 días por la Ruta 40 en sentido Bariloche, Los Antiguos, El Chaltén y El Calafate.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-catamarca-travesia-en-4x4-2027-01-25",
@@ -1689,7 +1689,7 @@
     ],
     "descripcion": "Salida grupal de 7 días por Tinogasta y Belén con excursiones en 4x4 por la Ruta del Adobe, el Balcón del Pissis y Campo de Piedra Pómez.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-selva-negra-alsacia-tulipanes-2027-04-04",
@@ -1723,7 +1723,7 @@
     ],
     "descripcion": "Salida grupal de 18 días por Alemania, Alsacia, París, Bélgica y Ámsterdam con visita a los jardines de Keukenhof.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-turquia-magica-playas-del-egeo-2027-05-21",
@@ -1764,7 +1764,7 @@
     ],
     "descripcion": "Salida grupal de 17 días por Estambul, Ankara, Capadocia, Konya, Pamukkale, Éfeso, Pérgamo, Troya y Bursa.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   },
   {
     "id": "axioma-polonia-paises-balticos-2027-06-13",
@@ -1799,6 +1799,6 @@
     ],
     "descripcion": "Salida grupal de 18 días por Polonia, Lituania, Letonia y Estonia, de Cracovia a Tallin.",
     "estado": "activa",
-    "verificado_en": "2026-10-21"
+    "verificado_en": "2026-10-28"
   }
 ]
