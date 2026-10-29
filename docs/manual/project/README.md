@@ -2,7 +2,7 @@ Viajar en Grupo es la agencia de Bettina Schwartz, Lic. en Turismo con 30 años 
 
 ## Voz y tono
 
-- Escribí como Bettina: primera persona, cálida y cercana. En lo institucional usá el plural ("Te invitamos a viajar con nosotras"), y en recaps y relatos la primera persona singular ("Me vuelvo con el corazón lleno…").
+- Escribí en la voz de la cara del programa (ver **Programas**): primera persona, cálida y cercana. Sin cara (Destinos) o en lo institucional, usá el plural de la agencia ("Te invitamos a viajar con nosotras"); en recaps y relatos, la primera persona singular de quien viajó ("Me vuelvo con el corazón lleno…").
 - Usá voseo rioplatense: "¿Te sumás?", "¿Nos acompañás?", "Escribinos".
 - Abrí con una pregunta o una frase emotiva y después bajá a lo concreto. Ejemplos reales de la cuenta: *"Si te dijéramos que en mayo viajás a España en grupo… ¿te sumás?"*, *"Los mejores paisajes se miran en compañía"*, *"Viajar es lo único que comprás y te hace más rico."*
 - En las imágenes, el texto va en minúscula de oración, nunca todo en mayúsculas. Las preguntas y exclamaciones llevan los dos signos (¿?, ¡!).
@@ -17,17 +17,33 @@ Viajar en Grupo es la agencia de Bettina Schwartz, Lic. en Turismo con 30 años 
 - Los precios van siempre con "Desde" y su base: "Desde **USD 9.680** por persona en base doble", más el suplemento single si existe.
 - Las fechas, el cupo y la disponibilidad se verifican el mismo día en viajarengrupo.tur.ar y en la web del mayorista (Dopazo & Ravenna, Eurovips, King Midas, Europa BA, Tower Travel). Si no hay cupo verificado, no se publica.
 - Toda pieza de venta lleva en `letra-chica`: "Leg. 19725 · Precios sujetos a disponibilidad y cambio".
-- "Especial de agencia" es solo para las salidas propias acompañadas por Bettina. Hoy la única es **Norte de España con los 5 sentidos**, del 24 de mayo al 10 de junio de 2027.
+- "Especial de agencia" es solo para las salidas propias acompañadas. Hoy son dos: **Norte de España con los 5 sentidos** (24 de mayo al 10 de junio de 2027, con Bettina) y **The Beatle Experience: de Londres a Liverpool** (25 de agosto al 4 de septiembre de 2027, con Alejandra Peñalva y Mirna Cappiello). Nunca para paquetes de mayorista.
 
-## Pilares de contenido (mes tipo)
+## Programas
 
-| Pilar | Peso | Qué es | Formato preferido |
-| --- | --- | --- | --- |
-| Especiales de agencia | 25 % | Norte de España 2027 y futuras salidas acompañadas | Reel + historias en secuencia (anuncio → destinos → beneficio → pregunta) |
-| Paquetes para vender | 25 % | Salidas próximas con cupo verificado | Post de salida + historia |
-| Informativo de destino | 20 % | Qué ver y curiosidades de un destino que vendemos | Carrusel o reel |
-| Educativo | 15 % | Tips y mitos de viajar en grupo | Carrusel |
-| Agencia | 15 % | Bettina, recaps, postales de viajes, efemérides | Reel, postal, frase |
+La cuenta funciona como un canal con programas. Viajar en Grupo es el canal: pone la marca, el legajo, los colores y la calidad. Cada programa tiene su cara, su voz y sus formatos, pero todos se ven de la misma casa:
+- Misma piel visual: tipografía, colores y recetas de este manual. Lo único propio de cada programa es su etiqueta (`antetitulo`) con el nombre del programa.
+- Mismo cierre: un solo llamado a la acción hacia el WhatsApp de la agencia, y "Leg. 19725" en toda pieza de venta.
+- Bettina es la directora del canal: conduce su programa y aparece de vez en cuando en los otros para presentar a sus caras.
+- Cada programa tiene su historia destacada en el perfil.
+
+| Programa | Cara y voz | Qué es | Formatos | Pilar |
+| --- | --- | --- | --- | --- |
+| Norte de España con los 5 sentidos | Bettina, primera persona | Salida propia, 24/05–10/06/2027 | Reels a cámara, serie de un sentido por semana, cuenta regresiva, recaps durante el viaje | especial |
+| The Beatle Experience | Alejandra Peñalva y Mirna Cappiello, comunicadoras que acompañan el viaje | Salida propia, Londres y Liverpool, 25/08–04/09/2027, a 70 años del primer encuentro de John y Paul | Reels de las dos a cámara, sección "Una canción, un lugar", historias | especial |
+| La salida de la semana | Juana, agente de viajes de Viajar en Grupo, primera persona | Paquetes de mayoristas (King Midas, Eurovips, etc.) con cupo verificado | Reel de Juana de 45 a 60 s + post de salida + historia de cupos | paquete |
+| Destinos | Sin cara: plural de la agencia | Curiosidades, qué ver y postales de los destinos que vendemos | Carruseles, reels de fotos, postales | destino, educativo |
+
+Las caras graban 4 videos por mes cada una (reels o tandas de historias); la agencia escribe el guion y edita. Nadie aparece sin haber dado su conformidad.
+
+Peso de cada programa en el mes:
+
+| Período | España | Beatles | Salida de la semana | Destinos |
+| --- | --- | --- | --- | --- |
+| Diciembre a mayo | 35 % | 30 % | 20 % | 15 % |
+| Junio a agosto | 15 % (recaps) | 45 % | 25 % | 15 % |
+
+En LinkedIn, la cuenta de Bettina sigue con España y el oficio; la página de la empresa suma Beatles, la salida de la semana y las reseñas. Instagram es el canal principal.
 
 Ritmo semanal: 1 reel, 2 o 3 posts e historias de lunes a viernes.
 
