@@ -69,3 +69,14 @@ def test_render_pdf_una_pagina_por_lamina(tmp_path):
     assert Image.open(laminas[0]).size == (1080, 1350)
     pdf = render_pdf(laminas, tmp_path / "carrusel.pdf")
     assert len(re.findall(rb"/Type\s*/Page\b", pdf.read_bytes())) == 2
+
+
+def test_html_programa_pinta_fondo_y_cinta():
+    h = html("post_paquete", {**POST, "programa": "espana"})
+    assert "--programa:#a63d2a" in h and 'class="cinta"' in h
+    assert 'class="cinta"' not in html("post_paquete", POST)
+
+
+def test_html_programa_desconocido_falla():
+    with pytest.raises(ValueError):
+        html("lamina", {"titulo": "x", "programa": "rock"})

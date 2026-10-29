@@ -11,6 +11,7 @@ body{background:var(--crema);color:var(--selva);font-family:var(--texto);font-si
 h1{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(32px,7vw,56px);line-height:.95;margin:4px 0 0;text-wrap:balance}
 .resumen{display:flex;flex-wrap:wrap;gap:8px 20px;font-variant-numeric:tabular-nums}
 .resumen b{font-family:var(--display);font-size:22px;font-weight:400;margin-right:4px}
+.leyenda{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px}.leyenda span{display:inline-flex;align-items:center;gap:6px}.leyenda i{width:12px;height:12px;background:var(--c);display:inline-block}
 .barra{height:6px;background:var(--crema-profunda)}.barra span{display:block;height:100%;background:var(--turquesa-profundo);width:0}
 .vistas{display:flex;gap:8px}
 .vistas button,.acciones button,.copiar{font:600 14px var(--texto);border:1px solid var(--selva);background:transparent;color:var(--selva);padding:8px 14px;cursor:pointer;border-radius:999px}
@@ -50,6 +51,7 @@ textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px soli
     <h1>__TITULO__</h1>
   </header>
   <section aria-label="Resumen" class="resumen" id="resumen"><span>Cargando piezas…</span></section>
+  <div class="leyenda" id="leyenda" aria-label="Colores por programa"></div>
   <div class="barra" aria-hidden="true"><span id="avance"></span></div>
   <div class="vistas" role="group" aria-label="Vista">
     <button id="v-cal" aria-pressed="true">Calendario</button>
@@ -86,6 +88,9 @@ textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px soli
 <script>
 const MES = "__MES__";
 const COLOR = {especial:"var(--dorado-profundo)", paquete:"var(--turquesa-profundo)", destino:"var(--salvia)", educativo:"var(--selva)", agencia:"var(--turquesa)", linkedin:"#0a66c2"};
+// Programas del canal (veg/programas.py): mandan sobre el pilar y la red.
+const PROGRAMA = {espana:["Norte de España","#a63d2a"], beatles:["The Beatle Experience","#1c1c1a"], salidas:["La salida de la semana","#5e3f6e"], destinos:["Destinos","#396c59"]};
+const colorDe = (p) => (PROGRAMA[p.programa] || [])[1] || COLOR[p.red] || COLOR[p.pilar] || "var(--selva)";
 const ESTADO = {pendiente:"Pendiente", aprobada:"Aprobada", cambios:"Con cambios", descartada:"Descartada"};
 const COLOR_ESTADO = {pendiente:"var(--tinta-suave)", aprobada:"var(--ok)", cambios:"var(--cambios)", descartada:"var(--descartada)"};
 const DIAS = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
@@ -113,8 +118,7 @@ function miniatura(p) {
 }
 
 function chip(p) {
-  const b = document.createElement("button"); b.className = "chip"; b.style.setProperty("--c", COLOR[p.pilar] || "var(--selva)");
-  b.style.setProperty("--c", COLOR[p.red] || COLOR[p.pilar] || "var(--selva)");
+  const b = document.createElement("button"); b.className = "chip"; b.style.setProperty("--c", colorDe(p));
   const t = document.createElement("span"); t.textContent = `${p.hora} · ${p.formato} · ${p.titulo || p.tema}`;
   const e = document.createElement("div"); e.className = "estado"; e.style.color = COLOR_ESTADO[p.estado];
   e.textContent = ESTADO[p.estado] + (p.version > 1 ? ` · v${p.version}` : "");
@@ -164,7 +168,7 @@ function pintar() {
 
 function llenar(p) {
   if (!p) return;
-  $("d-pilar").textContent = `${p.pilar} · ${p.formato}`;
+  $("d-pilar").textContent = [PROGRAMA[p.programa]?.[0], p.pilar, p.formato].filter(Boolean).join(" · ");
   $("d-titulo").textContent = p.titulo || p.tema;
   $("d-previa").replaceChildren(...(p.assets || []).map(a => {
     if (a.tipo === "video") { const v = document.createElement("video"); v.src = url(a); v.controls = true; v.playsInline = true; v.preload = "metadata"; return v; }
@@ -213,6 +217,7 @@ async function copiar() {
   catch { const r = document.createRange(); r.selectNodeContents($("d-texto")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("d-aviso").textContent = "Texto seleccionado: copialo con Ctrl+C."; }
 }
 
+$("leyenda").replaceChildren(...Object.values(PROGRAMA).map(([n, c]) => { const s = document.createElement("span"); const i = document.createElement("i"); i.style.setProperty("--c", c); s.append(i, n); return s; }));
 $("v-cal").onclick = () => { vista = "cal"; $("v-cal").setAttribute("aria-pressed","true"); $("v-grilla").setAttribute("aria-pressed","false"); pintar(); };
 $("v-grilla").onclick = () => { vista = "grilla"; $("v-grilla").setAttribute("aria-pressed","true"); $("v-cal").setAttribute("aria-pressed","false"); pintar(); };
 $("cerrar").onclick = () => { abierta = null; $("detalle").close(); };

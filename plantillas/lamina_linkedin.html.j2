@@ -1,5 +1,5 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
-.oscuro{background:var(--verde);color:var(--marfil)}.claro{background:var(--marfil);color:var(--verde)}
+.oscuro{background:var(--programa,var(--verde));color:var(--marfil)}.claro{background:var(--marfil);color:var(--verde)}
 .c{position:absolute;left:110px;right:110px;top:0;bottom:150px;display:flex;flex-direction:column;justify-content:center;gap:34px}
 .n{font-family:var(--font-display);font-size:170px;line-height:1;color:var(--turquesa)}
 .ante{font-size:44px}
@@ -8,7 +8,7 @@
 .x{font-size:50px}
 .oscuro .ante{color:var(--salvia)}
 .pie{left:110px;right:110px;bottom:70px;display:flex;justify-content:space-between;opacity:.85}
-</style></head><body><div class="lienzo p {{ 'oscuro' if oscuro else 'claro' }}{{ '' if numero else ' portada' }}">
+</style></head><body><div{% if color_programa %} style="--programa:{{ color_programa }}"{% endif %} class="lienzo p {{ 'oscuro' if oscuro else 'claro' }}{{ '' if numero else ' portada' }}">
 <div class="c">{% if numero %}<div class="n">{{ numero }}</div>{% endif %}{% if etiqueta %}<p class="txt ante">{{ etiqueta }}</p>{% endif %}<h1 class="disp">{{ titulo }}</h1>{% if texto %}<p class="txt x">{{ texto }}</p>{% endif %}</div>
 <div class="pie"><span>{{ firma }}</span>{% if pagina %}<span>{{ pagina }}</span>{% endif %}</div>
 </div></body></html>

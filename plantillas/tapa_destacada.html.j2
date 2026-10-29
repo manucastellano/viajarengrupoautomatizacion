@@ -1,0 +1,4 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="{{ raiz }}/base.css"><style>
+.lienzo{background:var(--programa,var(--verde))}
+.avion{position:absolute;left:340px;top:760px;width:400px;height:400px;fill:var(--marfil)}
+</style></head><body><div class="lienzo v"{% if color_programa %} style="--programa:{{ color_programa }}"{% endif %}><svg class="avion" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12 16 10 11 3H9l3 7H6L4 7H2.5l1 5-1 5H4l2-3h6l-3 7h2l5-7z"/></svg></div></body></html>

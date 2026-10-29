@@ -15,7 +15,7 @@ def fila(pieza: Pieza, assets: list[dict], salida: Salida | None) -> dict:
         "id": pieza.id, "fecha": pieza.fecha.isoformat(), "hora": pieza.hora, "formato": pieza.formato,
         "pilar": pieza.pilar, "tema": pieza.tema, "titulo": pieza.titulo, "texto": pieza.texto,
         "hashtags": pieza.hashtags, "assets": assets, "version": pieza.version, "estado": pieza.estado,
-        "comentario": pieza.comentario,
+        "comentario": pieza.comentario, "programa": pieza.programa,
         "verificacion": {"fuente": salida.operador, "fecha": salida.verificado_en.isoformat()} if salida else None,
     }}
 

@@ -40,3 +40,9 @@ def test_escribir_documentos_un_archivo_por_pieza(tmp_path):
     archivos = escribir_documentos(filas, tmp_path / "docs")
     assert [a.name for a in archivos] == ["2026-11-06-post.json"]
     assert json.loads(archivos[0].read_text(encoding="utf-8"))["titulo"] == "Norte de España"
+
+
+def test_fila_lleva_el_programa():
+    from dataclasses import replace
+    assert fila(replace(P, programa="espana"), [], None)["data"]["programa"] == "espana"
+    assert fila(P, [], None)["data"]["programa"] is None

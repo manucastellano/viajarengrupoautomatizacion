@@ -6,7 +6,8 @@
 .precio{font-size:52px}
 .chica{position:absolute;left:100px;right:260px;bottom:60px;font-size:24px;font-weight:400;opacity:.92}
 .logo{position:absolute;right:70px;bottom:50px;width:130px;height:130px;border-radius:50%}
-</style></head><body><div class="lienzo p"><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo-arriba"></div><div class="velo-abajo" style="opacity:.6"></div>
+</style></head><body><div class="lienzo p"{% if color_programa %} style="--programa:{{ color_programa }}"{% endif %}><div class="foto"{% if foto %} style="background-image:url('{{ foto }}')"{% endif %}></div><div class="velo-arriba"></div><div class="velo-abajo" style="opacity:.6"></div>
+{% if color_programa %}<div class="cinta"></div>{% endif %}
 <img class="logo" src="{{ raiz }}/logo-circular.png" alt="">
 <div class="b sombra">
 <p class="txt ante">{{ etiqueta }}</p>

@@ -53,6 +53,7 @@ class Pieza:
     version: int = 1
     estado: str = "pendiente"
     comentario: str = ""
+    programa: str | None = None  # clave de veg.programas.PROGRAMAS
 
 
 def _a_json(obj) -> dict:

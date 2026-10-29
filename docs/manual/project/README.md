@@ -27,12 +27,12 @@ La cuenta funciona como un canal con programas. Viajar en Grupo es el canal: pon
 - Bettina es la directora del canal: conduce su programa y aparece de vez en cuando en los otros para presentar a sus caras.
 - Cada programa tiene su historia destacada en el perfil.
 
-| Programa | Cara y voz | Qué es | Formatos | Pilar |
-| --- | --- | --- | --- | --- |
-| Norte de España con los 5 sentidos | Bettina, primera persona | Salida propia, 24/05–10/06/2027 | Reels a cámara, serie de un sentido por semana, cuenta regresiva, recaps durante el viaje | especial |
-| The Beatle Experience | Alejandra Peñalva y Mirna Cappiello, comunicadoras que acompañan el viaje | Salida propia, Londres y Liverpool, 25/08–04/09/2027, a 70 años del primer encuentro de John y Paul | Reels de las dos a cámara, sección "Una canción, un lugar", historias | especial |
-| La salida de la semana | Juana, agente de viajes de Viajar en Grupo, primera persona | Paquetes de mayoristas (King Midas, Eurovips, etc.) con cupo verificado | Reel de Juana de 45 a 60 s + post de salida + historia de cupos | paquete |
-| Destinos | Sin cara: plural de la agencia | Curiosidades, qué ver y postales de los destinos que vendemos | Carruseles, reels de fotos, postales | destino, educativo |
+| Programa | Color | Cara y voz | Qué es | Formatos | Pilar |
+| --- | --- | --- | --- | --- | --- |
+| Norte de España con los 5 sentidos | rojo teja | Bettina, primera persona | Salida propia, 24/05–10/06/2027 | Reels a cámara, serie de un sentido por semana, cuenta regresiva, recaps durante el viaje | especial |
+| The Beatle Experience | negro | Alejandra Peñalva y Mirna Cappiello, comunicadoras que acompañan el viaje | Salida propia, Londres y Liverpool, 25/08–04/09/2027, a 70 años del primer encuentro de John y Paul | Reels de las dos a cámara, sección "Una canción, un lugar", historias | especial |
+| La salida de la semana | ciruela | Juana, agente de viajes de Viajar en Grupo, primera persona | Paquetes de mayoristas (King Midas, Eurovips, etc.) con cupo verificado | Reel de Juana de 45 a 60 s + post de salida + historia de cupos | paquete |
+| Destinos | verde | Sin cara: plural de la agencia | Curiosidades, qué ver y postales de los destinos que vendemos | Carruseles, reels de fotos, postales | destino, educativo |
 
 Las caras graban 4 videos por mes cada una (reels o tandas de historias); la agencia escribe el guion y edita. Nadie aparece sin haber dado su conformidad.
 
@@ -49,12 +49,13 @@ Ritmo semanal: 1 reel, 2 o 3 posts e historias de lunes a viernes.
 
 ## Fundamentos visuales
 
-**Color.** Cuatro colores, nada más:
+**Color.** Cuatro colores de marca, más un color por programa:
 - `verde` (#396c59) es el color de marca.
 - `salvia` (#c8ceb5) es el fondo de las piezas sin foto, con texto `verde`.
 - `marfil` (#fffff0) es el fondo claro de los carruseles, con texto `verde`. Sobre `verde`, el texto va en `marfil`.
 - `turquesa` (#39b5b9) es el acento: numerales y una palabra destacada, siempre en tamaño grande.
 - Sobre foto, el texto va siempre en `blanco`.
+- Cada programa tiene su color: Norte de España `programa-espana` (rojo teja), The Beatle Experience `programa-beatles` (negro), La salida de la semana `programa-salidas` (ciruela) y Destinos el `verde` de marca. Va solo en tres lugares: el fondo de las piezas sin foto del programa (portadas, cierres y placas, con texto `marfil`), una cinta de 26 px arriba de sus posts 4:5 con foto y la tapa de su historia destacada (el avión en `marfil` sobre el color). Nunca encima de una foto ni en historias y reels, y nunca reemplaza al `turquesa` de los numerales.
 
 **Fotos.** La protagonista de casi todas las piezas es una foto real, a sangre y sin marcos. Priorizá, en este orden:
 1. El grupo real viajando: de espaldas mirando un paisaje, caminando, abrazadas.
@@ -117,7 +118,7 @@ El único recurso gráfico propio es **el avión con su línea punteada**, en `v
 - [ ] Precio con "Desde" y su base; fechas y cupos verificados hoy.
 - [ ] Un solo llamado a la acción.
 - [ ] Título en Genica One, en minúscula de oración y de 6 palabras como máximo.
-- [ ] Solo los 4 colores de marca, más blanco sobre foto.
+- [ ] Solo los 4 colores de marca y el color del programa de la pieza, más blanco sobre foto.
 - [ ] Foto real a sangre, con el texto legible gracias al velo.
 - [ ] Leg. 19725 en las piezas de venta.
 - [ ] Ortografía, voseo, los dos signos de pregunta y hashtags con `#viajarengrupo` primero.

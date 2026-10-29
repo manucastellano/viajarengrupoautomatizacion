@@ -17,4 +17,5 @@ html,body{margin:0;background:transparent}
 .ruta{display:flex;align-items:center}
 .punteada{flex:1;border-top:5px dotted var(--verde);height:0}
 .avion{width:110px;height:110px;fill:var(--verde);flex:none;margin-left:-6px}
+.cinta{position:absolute;top:0;left:0;right:0;height:26px;background:var(--programa)}
 .pie{position:absolute;font-family:var(--font-texto);font-weight:500;font-size:26px;letter-spacing:.04em}
