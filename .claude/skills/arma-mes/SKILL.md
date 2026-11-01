@@ -38,3 +38,17 @@ Manuel lo pide en el chat ("publicá lo de hoy", "publicá el post del 13"). La 
    - Reel: el MP4 de `finales/` con `media_type: "REELS"`, `share_to_feed: true` y la portada como `cover_url`; `max_wait_seconds` 300.
    - Historias: una por placa con `media_type: "STORIES"`. La API no pone stickers (enlace, encuesta, música): las historias que los necesitan las sube Bettina desde el celular, y se le avisa a Manuel.
 5. Con `INSTAGRAM_GET_IG_MEDIA` tomá el `permalink`, y hacé `update` de la pieza en el tablero con `publicado: {fecha, permalink}` (el `estado` queda `aprobada`: el tablero no conoce otro). Antes de publicar, si la pieza ya tiene `publicado`, no se vuelve a publicar. Pasale los links a Manuel.
+
+# Publicación automática
+
+Desde el 01/11/2026 Manuel no confirma pieza por pieza: lo `aprobada` en el tablero se publica solo. Lo hace la tarea programada "Publicar lo aprobado" (corre 8 min antes de cada horario: 08:52, 09:52, 10:52, 12:52, 18:52 y 19:52, hora de Argentina), con los mismos pasos de "Publicá lo de hoy" salvo el 3 (no se espera el "sí"), y con estas reglas:
+
+1. Se toman las piezas de hoy con `estado == "aprobada"`, sin `publicado` ni `aviso_publicacion`, y con `hora` hasta 20 minutos después de ahora.
+2. El caption es el `texto` hasta la línea `———` (la "Nota de producción" nunca se publica) más los `hashtags`.
+3. Las imágenes se bajan del tablero (Artifact `read` con el id del asset), se pasan a JPEG en `publicar/<id>/NN.jpg`, se hace commit y push, y se publican con la URL `https://raw.githubusercontent.com/manucastellano/viajarengrupoautomatizacion/<sha del commit>/publicar/<id>/NN.jpg`.
+4. Se saltean y se avisa (campo `aviso_publicacion` en la pieza + notificación):
+   - historias cuya nota pide sticker (encuesta, enlace, música) o compartir otra publicación: se publican solo las placas que no lo necesitan y Bettina sube el resto desde el celular;
+   - reels sin el MP4 final entre los assets;
+   - posts de la página de LinkedIn (falta la app de Community Management);
+   - piezas de venta de salidas no especiales cuyo precio en `public.salidas` (proyecto Lovable) no coincida o tenga `verificado_en` de más de 15 días.
+5. Al publicar: `publicado: {fecha, permalink}` en la pieza.
