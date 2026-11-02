@@ -2,7 +2,7 @@
 
 Objetivo: conseguir contenido propio y de calidad de cada lugar del itinerario (fotos, videos verticales y un saludo personalizado al grupo) y publicaciones colaborativas en Instagram, para el programa Norte de España (rojo teja) de diciembre a mayo.
 
-Fuente del itinerario: la página del viaje (viajarengrupo.tur.ar/norte-espana-2027), revisada el 29/10/2026. Los datos de contacto de abajo salen de búsquedas web y **hay que confirmarlos** en el sitio oficial antes de escribir.
+Fuente del itinerario: la página del viaje (viajarengrupo.tur.ar/norte-espana-2027), revisada el 29/10/2026. Los mails de los hoteles salen de sus sitios oficiales (revisados el 02/11/2026); el de AC Hotel La Rioja no está publicado.
 
 ## Antes de escribir
 
@@ -22,11 +22,11 @@ Fuente del itinerario: la página del viaje (viajarengrupo.tur.ar/norte-espana-2
 | 6 | Sociedad Gastronómica (cena) | Ermua, 2 jun | Falta | Pedir a Eugenia | Alta | Sin contactar |
 | 7 | Tour de nueve pintxos | Bilbao, 1 jun | Falta | Pedir a Eugenia | Media | Sin contactar |
 | 8 | Cofradía de pescadores (degustación) | Bermeo, 2 jun | Falta | Pedir a Eugenia | Media | Sin contactar |
-| 9 | Hotel Exe Peregrino 4★ | Santiago, 25–28 may | Confirmado | Página en eurostarshotels (cadena Eurostars). Teléfonos que no coinciden entre listados: +34 981 520 917 / +34 981 795 299 | Media | Sin contactar |
-| 10 | Hotel Zentral Gijón Rey Pelayo 4★ | Gijón, 28–31 may | Confirmado | Tel. 985 199 800 (Turismo Asturias). Sitio oficial no encontrado | Media | Sin contactar |
-| 11 | Hotel ILUNION Abando Bilbao 4★ | Bilbao, 31 may–3 jun | Confirmado | ilunionhotels.com/en/hotels/ilunion-abando-bilbao | Media | Sin contactar |
-| 12 | Zinema7 Hotel 4★ | San Sebastián, 3–6 jun | Confirmado | Sagrada Familia 1. Tel. +34 943 44 50 00 (listado de terceros) | Media | Sin contactar |
-| 13 | AC Hotel La Rioja by Marriott 4★ | Logroño, 6–9 jun | Confirmado | marriott.com (código rjllo). Tel. +34 941 272 350 | Media | Sin contactar |
+| 9 | Hotel Exe Peregrino 4★ | Santiago, 25–28 may | Confirmado | info@exeperegrino.com (copia a grupos@exeperegrino.com) · IG de la cadena @eurostarshotels · sitio oficial eurostarshotels.com, 02/11 | Media | Sin contactar |
+| 10 | Hotel Zentral Gijón Rey Pelayo 4★ | Gijón, 28–31 may | Confirmado | reservas@hotelzentralgijon.com · IG @hoteles_zentral · sitio oficial hotelzentralgijon.com y Turismo Asturias, 02/11 | Media | Sin contactar |
+| 11 | Hotel ILUNION Abando Bilbao 4★ | Bilbao, 31 may–3 jun | Confirmado | recepcionabando@ilunionhotels.com · IG de la cadena @ilunionhotels · sitio oficial ilunionhotels.com, 02/11 | Media | Sin contactar |
+| 12 | Zinema7 Hotel 4★ | San Sebastián, 3–6 jun | Confirmado | info@zinema7hotel.com · IG @zinema7hotel · sitio oficial zinema7hotel.com, 02/11 | Media | Sin contactar |
+| 13 | AC Hotel La Rioja by Marriott 4★ | Logroño, 6–9 jun | Confirmado | Sin mail público (marriott.com no lo muestra). Tel. +34 941 272 350 | Media | Sin contactar |
 | 14 | Oficinas de turismo (Galicia, Asturias, Euskadi, Navarra, La Rioja) | Todo el recorrido | — | Sitios oficiales de cada una | Baja | Sin contactar |
 
 Prioridad alta = lugares chicos y muy visuales, donde quien atiende suele decidir y donde un video del bodeguero o del cocinero vale oro. Los hoteles son de cadena: la respuesta suele venir del área de marketing y es más lenta, y lo más probable es que compartan su material oficial con permiso de uso.
