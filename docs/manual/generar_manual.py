@@ -99,7 +99,8 @@ README = """Viajar en Grupo es la agencia de Bettina Schwartz, Lic. en Turismo c
 
 ## Datos que no pueden fallar
 
-- Los precios van siempre con "Desde" y su base: "Desde **USD 9.680** por persona en base doble", más el suplemento single si existe.
+- Los precios de paquetes de operadores van siempre con "Desde" y su base: "Desde **USD 2.350** por persona en base doble", más el suplemento single si existe.
+- Las salidas propias con precio total cerrado (hoy, Norte de España) van sin "Desde" y con la palabra "final", para que se entienda que no hay sorpresas: "**USD 9.680 final** por persona en base doble". Decisión de Manuel del 04/11/2026.
 - Las fechas, el cupo y la disponibilidad se verifican el mismo día en viajarengrupo.tur.ar y en la web del mayorista (Dopazo & Ravenna, Eurovips, King Midas, Europa BA, Tower Travel). Si no hay cupo verificado, no se publica.
 - Toda pieza de venta lleva en `letra-chica`: "Leg. 19725 · Precios sujetos a disponibilidad y cambio".
 - "Especial de agencia" es solo para las salidas propias acompañadas. Hoy son dos: **Norte de España con los 5 sentidos** (24 de mayo al 10 de junio de 2027, con Bettina) y **The Beatle Experience: de Londres a Liverpool** (25 de agosto al 4 de septiembre de 2027, con Alejandra Peñalva y Mirna Cappiello). Nunca para paquetes de mayorista.
@@ -200,7 +201,7 @@ El único recurso gráfico propio es **el avión con su línea punteada**, en `v
 
 ## Revisión antes de enviar a aprobación
 
-- [ ] Precio con "Desde" y su base; fechas y cupos verificados hoy.
+- [ ] Precio con su base ("Desde" en paquetes de operadores, "final" en Norte de España); fechas y cupos verificados hoy.
 - [ ] Un solo llamado a la acción.
 - [ ] Título en Genica One, en minúscula de oración y de 6 palabras como máximo.
 - [ ] Solo los 4 colores de marca y el color del programa de la pieza, más blanco sobre foto.

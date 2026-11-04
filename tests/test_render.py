@@ -80,3 +80,8 @@ def test_html_programa_pinta_fondo_y_cinta():
 def test_html_programa_desconocido_falla():
     with pytest.raises(ValueError):
         html("lamina", {"titulo": "x", "programa": "rock"})
+
+
+def test_html_precio_final_sin_desde():
+    h = html("post_paquete", {**POST, "precio_final": True})
+    assert "USD 9.680 final" in h and "Desde" not in h
