@@ -22,10 +22,10 @@ Fuente del itinerario: la página del viaje (viajarengrupo.tur.ar/norte-espana-2
 | 6 | Sociedad Gastronómica (cena) | Ermua, 2 jun | Falta | Pedir a Eugenia | Alta | Sin contactar |
 | 7 | Tour de nueve pintxos | Bilbao, 1 jun | Falta | Pedir a Eugenia | Media | Sin contactar |
 | 8 | Cofradía de pescadores (degustación) | Bermeo, 2 jun | Falta | Pedir a Eugenia | Media | Sin contactar |
-| 9 | Hotel Exe Peregrino 4★ | Santiago, 25–28 may | Confirmado | info@exeperegrino.com (copia a grupos@exeperegrino.com) · IG de la cadena @eurostarshotels · sitio oficial eurostarshotels.com, 02/11 | Media | Sin contactar |
-| 10 | Hotel Zentral Gijón Rey Pelayo 4★ | Gijón, 28–31 may | Confirmado | reservas@hotelzentralgijon.com · IG @hoteles_zentral · sitio oficial hotelzentralgijon.com y Turismo Asturias, 02/11 | Media | Sin contactar |
-| 11 | Hotel ILUNION Abando Bilbao 4★ | Bilbao, 31 may–3 jun | Confirmado | recepcionabando@ilunionhotels.com · IG de la cadena @ilunionhotels · sitio oficial ilunionhotels.com, 02/11 | Media | Sin contactar |
-| 12 | Zinema7 Hotel 4★ | San Sebastián, 3–6 jun | Confirmado | info@zinema7hotel.com · IG @zinema7hotel · sitio oficial zinema7hotel.com, 02/11 | Media | Sin contactar |
+| 9 | Hotel Exe Peregrino 4★ | Santiago, 25–28 may | Confirmado | info@exeperegrino.com (copia a grupos@exeperegrino.com) · IG de la cadena @eurostarshotels · sitio oficial eurostarshotels.com, 02/11 | Media | Respondió 02/11: no encuentran la reserva a nuestro nombre; se aclaró que la gestionó Concepto Viajes Grupales. Esperando confirmación. |
+| 10 | Hotel Zentral Gijón Rey Pelayo 4★ | Gijón, 28–31 may | Confirmado | reservas@hotelzentralgijon.com · IG @hoteles_zentral · sitio oficial hotelzentralgijon.com y Turismo Asturias, 02/11 | Media | Mail enviado ~02/11, sin respuesta. Seguimiento el 09/11 |
+| 11 | Hotel ILUNION Abando Bilbao 4★ | Bilbao, 31 may–3 jun | Confirmado | recepcionabando@ilunionhotels.com · IG de la cadena @ilunionhotels · sitio oficial ilunionhotels.com, 02/11 | Media | Mail enviado ~02/11, sin respuesta. Seguimiento el 09/11 |
+| 12 | Zinema7 Hotel 4★ | San Sebastián, 3–6 jun | Confirmado | info@zinema7hotel.com · IG @zinema7hotel · sitio oficial zinema7hotel.com, 02/11 | Media | Mail enviado ~02/11, sin respuesta. Seguimiento el 09/11 |
 | 13 | AC Hotel La Rioja by Marriott 4★ | Logroño, 6–9 jun | Confirmado | Sin mail público (marriott.com no lo muestra). Tel. +34 941 272 350 | Media | Sin contactar |
 | 14 | Oficinas de turismo (Galicia, Asturias, Euskadi, Navarra, La Rioja) | Todo el recorrido | — | Sitios oficiales de cada una | Baja | Sin contactar |
 
