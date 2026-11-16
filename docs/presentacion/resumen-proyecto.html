@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Community Manager VEG · Resumen del proyecto</title>
+<style>
+@font-face{font-family:"Unica One";src:url("../../plantillas/fuentes/UnicaOne-Regular.ttf")}
+@font-face{font-family:"Raleway";src:url("../../plantillas/fuentes/Raleway.ttf");font-weight:100 900}
+@page{size:A4;margin:0}
+:root{--selva:#1F2B20;--bosque:#2A3C2E;--turquesa:#28AAA3;--turq:#0E7A75;--dorado:#C3A065;--dorado-p:#AB844A;--crema:#FAF6EF;--crema-p:#F0EBE4;--tinta:#595959;--linea:rgba(31,43,32,.16)}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--selva);font-family:"Raleway",Arial,sans-serif;font-size:10.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pag{width:210mm;height:297mm;padding:18mm 18mm 16mm;position:relative;overflow:hidden;page-break-after:always;background:var(--crema)}
+.pag:last-child{page-break-after:auto}
+.pie{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:8pt;color:var(--tinta);border-top:1px solid var(--linea);padding-top:3mm}
+.eti{font-family:"Unica One";text-transform:uppercase;letter-spacing:.18em;font-size:9pt;color:var(--turq);margin:0 0 2mm}
+h1,h2,h3{font-family:"Unica One";font-weight:400;text-transform:uppercase;margin:0;line-height:1}
+h2{font-size:26pt;margin-bottom:5mm}
+h3{font-size:13pt;letter-spacing:.04em;margin:5mm 0 2mm}
+p{margin:0 0 3mm}
+ul{margin:0 0 3mm;padding-left:5mm}li{margin-bottom:1.2mm}
+.lead{font-size:12pt;line-height:1.5}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
+.caja{background:#fff;border:1px solid var(--linea);padding:4.5mm 5mm}
+.caja h3{margin-top:0}
+.cifras{display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;margin:5mm 0}
+.cifra{background:#fff;border-top:3px solid var(--turq);padding:3.5mm 4mm}
+.cifra b{display:block;font-family:"Unica One";font-size:24pt;font-weight:400;line-height:1}
+.cifra span{font-size:8.5pt;color:var(--tinta)}
+.flujo{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin:4mm 0}
+.paso{background:#fff;border:1px solid var(--linea);padding:3mm;position:relative;min-height:28mm}
+.paso .n{font-family:"Unica One";color:var(--dorado-p);font-size:16pt;line-height:1}
+.paso b{display:block;margin:1mm 0;font-size:10pt}
+.paso small{font-size:8.3pt;color:var(--tinta);line-height:1.35;display:block}
+.paso.humano{background:var(--selva);color:var(--crema);border-color:var(--selva)}
+.paso.humano small{color:#d9d4cb}.paso.humano .n{color:var(--dorado)}
+table{border-collapse:collapse;width:100%;font-size:9pt}
+th,td{text-align:left;padding:2mm 2.5mm;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-family:"Unica One";font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:var(--turq);font-size:9pt}
+.foto{border:1px solid var(--linea);background:#fff;display:block;width:100%}
+.nota{font-size:8.5pt;color:var(--tinta);margin-top:2mm}
+.portada{background:var(--selva);color:var(--crema);padding:24mm 20mm}
+.portada .eti{color:var(--turquesa)}
+.portada h1{font-size:54pt;line-height:.95;margin:6mm 0 8mm}
+.portada .sub{font-size:14pt;max-width:150mm;color:#e9e4da}
+.portada .linea{width:40mm;height:3px;background:var(--dorado);margin:12mm 0}
+.portada .pie{color:#bdb7ad;border-color:rgba(255,255,255,.2)}
+.portada .mini{position:absolute;left:20mm;right:20mm;bottom:28mm}
+.portada .mini img{width:100%;border:1px solid rgba(255,255,255,.15)}
+.arq{display:grid;grid-template-columns:1fr 18mm 1fr 18mm 1fr;align-items:center;margin:5mm 0}
+.nodo{background:#fff;border:1.5px solid var(--selva);padding:3.5mm;text-align:center;min-height:30mm;display:flex;flex-direction:column;justify-content:center}
+.nodo b{font-family:"Unica One";font-weight:400;font-size:13pt;text-transform:uppercase;letter-spacing:.04em}
+.nodo small{font-size:8.3pt;color:var(--tinta);line-height:1.35}
+.nodo.c{border-color:var(--turq);background:#eef7f6}
+.flecha{text-align:center;font-size:16pt;color:var(--turq)}
+.ok{color:#13824A;font-weight:700}.no{color:#9A5B00;font-weight:700}
+.aviso{background:#fff7e8;border-left:4px solid var(--dorado-p);padding:3.5mm 4.5mm;font-size:9.5pt}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:8.3pt;background:var(--crema-p);padding:.2mm 1mm}
+</style>
+</head>
+<body>
+
+<!-- 1 · PORTADA -->
+<section class="pag portada">
+  <p class="eti">Viajar en Grupo · Resumen del proyecto</p>
+  <h1>Community<br>Manager VEG</h1>
+  <p class="sub">Un sistema de agentes de inteligencia artificial que planifica, escribe, diseña y deja listo para publicar el contenido mensual de Instagram y LinkedIn de una agencia de viajes. Una persona lo aprueba desde un tablero web.</p>
+  <div class="linea"></div>
+  <div class="mini"><img src="img/tablero-calendario.jpg" style="height:118mm;object-fit:cover;object-position:top"></div>
+  <div class="pie"><span>Noviembre 2026</span><span>@viajar.en.grupo</span></div>
+</section>
+
+<!-- 2 · RESUMEN -->
+<section class="pag">
+  <p class="eti">1 · De qué se trata</p>
+  <h2>El problema y la solución</h2>
+  <p class="lead">Una agencia chica necesita publicar todos los días para vender sus viajes, pero no tiene un equipo de marketing. Este proyecto reemplaza ese trabajo por un circuito automatizado que produce todo el mes de contenido. Las personas de la agencia solo deciden qué sale.</p>
+  <div class="dos" style="margin-top:5mm">
+    <div class="caja">
+      <h3>Qué hace el sistema</h3>
+      <ul>
+        <li>Busca las salidas vendibles y verifica fechas y precios en la web de la agencia y en las de los operadores mayoristas.</li>
+        <li>Arma el calendario del mes con una grilla fija de posts, carruseles, reels e historias.</li>
+        <li>Escribe los textos con la voz de la marca.</li>
+        <li>Diseña las piezas con las plantillas del manual de marca.</li>
+        <li>Edita los reels verticales.</li>
+        <li>Revisa cada pieza contra una lista de control.</li>
+        <li>Sube todo a un tablero web de aprobación.</li>
+        <li>Publica en Instagram y LinkedIn a través de Composio.</li>
+      </ul>
+    </div>
+    <div class="caja">
+      <h3>Qué hace la agencia</h3>
+      <ul>
+        <li>Abre el tablero desde el celular o la computadora.</li>
+        <li>En cada pieza toca <b>Aprobar</b>, <b>Pedir cambio</b> (con un comentario) o <b>Descartar</b>.</li>
+        <li>Pide "revisá el tablero" y el sistema corrige lo marcado y sube una versión nueva.</li>
+        <li>Confirma en el chat qué se publica y cuándo.</li>
+        <li>Graba los videos con los guiones que le deja el sistema.</li>
+      </ul>
+      <h3>Qué no hace</h3>
+      <ul>
+        <li>No responde mensajes ni comentarios.</li>
+        <li>No maneja pauta paga.</li>
+        <li>No publica nada que no esté aprobado.</li>
+      </ul>
+    </div>
+  </div>
+  <h3 style="margin-top:7mm">Noviembre 2026, primer mes real</h3>
+  <div class="cifras">
+    <div class="cifra"><b>49</b><span>piezas planificadas en el tablero del mes</span></div>
+    <div class="cifra"><b>37</b><span>de Instagram: 21 días de historias, 7 posts, 5 carruseles y 4 reels</span></div>
+    <div class="cifra"><b>12</b><span>de LinkedIn: 8 personales y 4 de la página de la empresa</span></div>
+    <div class="cifra"><b>15</b><span>ya publicadas al 16/11</span></div>
+  </div>
+  <p class="nota">Cifras tomadas del tablero el 16/11/2026. Además, ya están cargadas 23 piezas de LinkedIn para diciembre y enero, pendientes de aprobación.</p>
+  <div class="pie"><span>Community Manager VEG</span><span>2</span></div>
+</section>
+
+<!-- 3 · CÓMO FUNCIONA -->
+<section class="pag">
+  <p class="eti">2 · Cómo funciona</p>
+  <h2>El circuito mensual</h2>
+  <p>Todo arranca con un pedido en lenguaje natural ("armá diciembre"). A partir de ahí, un equipo de agentes trabaja en cadena. Cada agente tiene sus propias instrucciones y le pasa un archivo al siguiente.</p>
+  <div class="flujo">
+    <div class="paso"><span class="n">01</span><b>Investigador</b><small>Releva las salidas grupales: destino, fechas, precio, cupo, operador y fecha de verificación.</small></div>
+    <div class="paso"><span class="n">02</span><b>Estratega</b><small>Arma el calendario: una entrada por pieza con fecha, hora, formato, pilar, tema y material necesario.</small></div>
+    <div class="paso"><span class="n">03</span><b>Copywriter</b><small>Escribe el texto, el llamado a la acción y los hashtags, con la voz de la marca.</small></div>
+    <div class="paso"><span class="n">04</span><b>Diseñador y editor</b><small>Imágenes 1080×1350 y 1080×1920 desde plantillas HTML. Reels con cortes, subtítulos y placa de cierre.</small></div>
+    <div class="paso"><span class="n">05</span><b>Revisor</b><small>Controla cada pieza contra el manual y vuelve a verificar precios y cupos. Lo que no pasa vuelve al agente que lo hizo.</small></div>
+    <div class="paso"><span class="n">06</span><b>Tablero</b><small>Las piezas se cargan en una página web privada con calendario, grilla de Instagram y detalle.</small></div>
+    <div class="paso humano"><span class="n">07</span><b>Aprobación humana</b><small>La agencia aprueba, pide cambios o descarta. Los cambios se rehacen y vuelven como versión nueva.</small></div>
+    <div class="paso"><span class="n">08</span><b>Publicación</b><small>Con confirmación, se publica en Instagram y LinkedIn vía Composio y el link queda registrado en la pieza.</small></div>
+  </div>
+
+  <h3>La grilla semanal</h3>
+  <table>
+    <tr><th>Día</th><th>Feed</th><th>Historias (tema del día)</th></tr>
+    <tr><td>Lunes</td><td>Post o carrusel, 19:00</td><td>Un tip de viaje</td></tr>
+    <tr><td>Martes</td><td>—</td><td>Encuesta de destino</td></tr>
+    <tr><td>Miércoles</td><td>Reel, 20:00</td><td>Compartir el reel y mostrar cupos</td></tr>
+    <tr><td>Jueves</td><td>—</td><td>Detrás de escena, con guion para grabar</td></tr>
+    <tr><td>Viernes</td><td>Post de venta, 13:00</td><td>Próximas salidas con link</td></tr>
+  </table>
+  <p class="nota">LinkedIn va aparte: la cuenta personal publica martes y jueves, y la página de la empresa los miércoles.</p>
+
+  <h3>Reglas que el sistema no puede saltear</h3>
+  <ul>
+    <li>Nunca inventa precios, fechas ni cupos. Una pieza de venta necesita un precio verificado en los últimos 15 días. Si no lo tiene, no se publica.</li>
+    <li>Solo se publica lo que está <b>aprobado</b> en el tablero, y nunca dos veces la misma pieza.</li>
+    <li>Cada pieza respeta el manual de marca: colores, tipografías, voz y plantillas.</li>
+    <li>Las notas de producción, como "esta historia lleva sticker", nunca llegan al texto publicado.</li>
+  </ul>
+  <div class="pie"><span>Community Manager VEG</span><span>3</span></div>
+</section>
+
+<!-- 4 · TABLERO CALENDARIO -->
+<section class="pag">
+  <p class="eti">3 · El tablero mensual</p>
+  <h2>Vista calendario</h2>
+  <p>Arriba están los totales por estado y la barra de avance. Debajo va una fila por semana, de lunes a viernes. Cada pieza muestra su miniatura, la hora, el formato y el estado. El color de la izquierda indica a qué programa de contenido pertenece.</p>
+  <img class="foto" src="img/tablero-calendario.jpg" style="height:208mm;object-fit:contain;background:var(--crema)">
+  <p class="nota">Captura del tablero de noviembre 2026 con los datos reales al 16/11.</p>
+  <div class="pie"><span>Community Manager VEG</span><span>4</span></div>
+</section>
+
+<!-- 5 · TABLERO GRILLA + DETALLE -->
+<section class="pag">
+  <p class="eti">3 · El tablero mensual</p>
+  <h2>Grilla y detalle de cada pieza</h2>
+  <div style="display:grid;grid-template-columns:70mm 1fr;gap:6mm;align-items:start">
+    <div>
+      <img class="foto" src="img/tablero-grilla-recorte.jpg">
+      <p class="nota">La <b>Grilla de Instagram</b> muestra cómo va a quedar el feed antes de publicar.</p>
+    </div>
+    <div>
+      <img class="foto" src="img/tablero-detalle.jpg">
+      <p class="nota">Al tocar una pieza se abre el <b>detalle</b>: la vista previa (carrusel deslizable, imagen o video), la ficha con fecha, hora y estado, el texto completo con un botón para copiarlo, y los botones Aprobar, Pedir cambio y Descartar.</p>
+      <img class="foto" src="img/tablero-detalle2.jpg" style="margin-top:3mm">
+      <p class="nota">Historia aprobada. La "nota de producción" le avisa al equipo qué parte no se puede publicar por API y hay que subir desde el celular.</p>
+    </div>
+  </div>
+  <h3>Cómo está hecho</h3>
+  <p>Es una página web privada publicada en Claude (claude.ai). Las piezas viven en una base de datos compartida que la página lee en vivo, y las imágenes y videos se guardan como archivos del propio tablero. Cuando alguien toca "Pedir cambio", el comentario queda guardado en la pieza, y el sistema lo lee la próxima vez que se le pide "revisá el tablero".</p>
+  <p class="nota">En esta captura de la grilla se ocultaron dos posts del Norte de España que se están corrigiendo.</p>
+  <div class="pie"><span>Community Manager VEG</span><span>5</span></div>
+</section>
+
+<!-- 6 · COMPOSIO -->
+<section class="pag">
+  <p class="eti">4 · La conexión con Composio</p>
+  <h2>Cómo se publica</h2>
+  <p><b>Composio</b> es una plataforma que conecta agentes de IA con aplicaciones externas, como Instagram, LinkedIn y Gmail. Se ocupa de dos cosas que el agente no debería manejar por su cuenta:</p>
+  <ul>
+    <li>El inicio de sesión (OAuth) en cada red. Las contraseñas y los tokens quedan en Composio, nunca en el código ni en el chat.</li>
+    <li>Un catálogo de "herramientas" listas para usar, como "crear publicación de Instagram". Cada herramienta llama a la API oficial de esa red.</li>
+  </ul>
+  <p>Claude se conecta a Composio por <b>MCP</b> (Model Context Protocol), el estándar con el que un modelo usa herramientas externas. Así, publicar es una llamada a una herramienta con parámetros, sin código de integración propio.</p>
+
+  <div class="arq">
+    <div class="nodo"><b>Claude</b><small>Agente que arma y revisa la pieza, y pide confirmación antes de publicar</small></div>
+    <div class="flecha">⇄<br><small style="font-size:7.5pt;color:var(--tinta)">MCP</small></div>
+    <div class="nodo c"><b>Composio</b><small>Guarda las cuentas conectadas por OAuth y expone las herramientas de cada red</small></div>
+    <div class="flecha">⇄<br><small style="font-size:7.5pt;color:var(--tinta)">API oficial</small></div>
+    <div class="nodo"><b>Instagram · LinkedIn</b><small>Cuenta profesional de Instagram de la agencia y cuenta personal de LinkedIn autorizada</small></div>
+  </div>
+
+  <h3>Paso a paso de una publicación en Instagram</h3>
+  <table>
+    <tr><th style="width:8mm">#</th><th>Qué pasa</th><th>Herramienta de Composio</th></tr>
+    <tr><td>1</td><td>Se toma la pieza aprobada del tablero y se arma el texto: el posteo más los hashtags, sin la nota de producción.</td><td>—</td></tr>
+    <tr><td>2</td><td>La imagen se convierte a JPEG y se sube al repositorio del proyecto, para tener una URL pública que Instagram pueda descargar.</td><td>—</td></tr>
+    <tr><td>3</td><td>Se crea el "contenedor" de la publicación con la imagen y el texto. En un carrusel se crea uno por lámina y después el contenedor padre.</td><td><code>INSTAGRAM_POST_IG_USER_MEDIA</code></td></tr>
+    <tr><td>4</td><td>Se publica el contenedor.</td><td><code>INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH</code></td></tr>
+    <tr><td>5</td><td>Se obtiene el link público, que queda guardado en la pieza del tablero junto con la fecha. Esto evita que se publique dos veces.</td><td><code>INSTAGRAM_GET_IG_MEDIA</code></td></tr>
+  </table>
+  <p class="nota">Las historias usan las mismas herramientas con el tipo "STORIES". En LinkedIn, la imagen se sube primero al espacio de trabajo de Composio y después se publica con <code>LINKEDIN_CREATE_LINKED_IN_POST</code>.</p>
+  <div class="pie"><span>Community Manager VEG</span><span>6</span></div>
+</section>
+
+<!-- 7 · COMPOSIO LÍMITES + CONTROL -->
+<section class="pag">
+  <p class="eti">4 · La conexión con Composio</p>
+  <h2>Qué se puede y qué no</h2>
+  <table>
+    <tr><th>Tipo de pieza</th><th>Por API (Composio)</th><th>Comentario</th></tr>
+    <tr><td>Post y carrusel de Instagram</td><td class="ok">Sí</td><td>Imagen en JPEG con una URL pública.</td></tr>
+    <tr><td>Historia de Instagram (imagen)</td><td class="ok">Sí</td><td>Sin stickers.</td></tr>
+    <tr><td>Historia con sticker (enlace, encuesta, música)</td><td class="no">No</td><td>La API no agrega stickers. Esas placas se suben a mano desde el celular.</td></tr>
+    <tr><td>Compartir otra publicación en historias</td><td class="no">No</td><td>Se hace desde la app.</td></tr>
+    <tr><td>Reel</td><td class="ok">Sí, con el MP4 final</td><td>Sin el video final no se puede publicar.</td></tr>
+    <tr><td>Etiquetar personas</td><td class="no">No</td><td>Se hace desde la app.</td></tr>
+    <tr><td>LinkedIn, cuenta personal</td><td class="ok">Sí</td><td>Solo la cuenta autorizada para la marca.</td></tr>
+    <tr><td>LinkedIn, página de la empresa</td><td class="no">Todavía no</td><td>LinkedIn exige un permiso de administración de páginas que hoy la conexión no tiene. Por ahora se sube a mano.</td></tr>
+    <tr><td>Programar a futuro</td><td class="no">No</td><td>La API publica en el momento. Para respetar el horario, la publicación se lanza a la hora indicada.</td></tr>
+  </table>
+
+  <h3>Control humano</h3>
+  <p>Entre el 1 y el 16 de noviembre de 2026 se probó un modo automático: una tarea programada publicaba sola lo aprobado en su horario. El 16/11 la agencia decidió <b>pausarlo</b>. Hoy cada publicación se hace a pedido y con confirmación explícita en el chat, después de ver el texto y las imágenes finales.</p>
+  <div class="aviso"><b>Aprendizaje del piloto.</b> Cuando Composio no respondió (13/11), las piezas de ese día no salieron y hubo que avisar y decidir a mano. Para una agencia chica, revisar antes de cada publicación pesa más que el ahorro de tiempo de la automatización completa.</div>
+
+  <h3>Seguridad y cuentas</h3>
+  <ul>
+    <li>Los accesos a las redes se autorizan con OAuth dentro de Composio y se pueden revocar desde ahí en cualquier momento.</li>
+    <li>El sistema tiene una lista fija de cuentas en las que puede publicar. Cualquier otra cuenta conectada queda excluida a propósito.</li>
+    <li>Cada publicación queda registrada en el tablero con la fecha y el link.</li>
+  </ul>
+  <div class="pie"><span>Community Manager VEG</span><span>7</span></div>
+</section>
+
+<!-- 8 · TÉCNICA Y PRÓXIMOS PASOS -->
+<section class="pag">
+  <p class="eti">5 · Detrás de escena</p>
+  <h2>Tecnología y próximos pasos</h2>
+  <table>
+    <tr><th>Parte</th><th>Herramienta</th></tr>
+    <tr><td>Agentes e instrucciones</td><td>Claude Code, con un archivo de instrucciones por agente y un "skill" que encadena el mes completo</td></tr>
+    <tr><td>Diseño de piezas</td><td>Plantillas HTML/CSS con los colores y las tipografías del manual de marca, renderizadas a imagen con un navegador sin interfaz (Playwright)</td></tr>
+    <tr><td>Reels</td><td>ffmpeg para cortes, escalado, subtítulos y placa de cierre</td></tr>
+    <tr><td>Código y pruebas</td><td>Python, con pruebas automáticas (pytest) del calendario, los formatos, el render y el tablero</td></tr>
+    <tr><td>Tablero de aprobación</td><td>Página web privada en Claude, con base de datos compartida y archivos adjuntos</td></tr>
+    <tr><td>Salidas y precios</td><td>Base de datos de salidas con fecha de verificación (proyecto en Lovable)</td></tr>
+    <tr><td>Publicación</td><td>Composio por MCP, con la API oficial de Instagram y de LinkedIn</td></tr>
+    <tr><td>Historial</td><td>Repositorio Git: cada imagen publicada y cada cambio queda versionado</td></tr>
+  </table>
+
+  <h3>Además del contenido</h3>
+  <ul>
+    <li>Guiones de video por persona, con guía de grabación y especificaciones para el editor.</li>
+    <li>Respuestas modelo para la primera consulta por WhatsApp y una planilla para seguir las consultas.</li>
+    <li>Informe de nicho y competencia, y relevamiento de salidas de mayoristas.</li>
+  </ul>
+
+  <h3>Próximos pasos</h3>
+  <ul>
+    <li>Conectar el permiso de páginas de LinkedIn para publicar también en la página de la empresa.</li>
+    <li>Ajustar los horarios con las estadísticas reales de Instagram.</li>
+    <li>Medir consultas por pieza para saber qué contenido trae ventas.</li>
+  </ul>
+
+  <div class="caja" style="margin-top:6mm">
+    <h3>En una línea</h3>
+    <p style="margin:0" class="lead">La IA hace el trabajo repetitivo de todo el mes: investigar, escribir, diseñar, revisar y dejar listo para publicar. La agencia conserva las decisiones: qué se dice, qué precio se muestra y cuándo sale.</p>
+  </div>
+  <div class="pie"><span>Community Manager VEG</span><span>8</span></div>
+</section>
+
+</body>
+</html>
