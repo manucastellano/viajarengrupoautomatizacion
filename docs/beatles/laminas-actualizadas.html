@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap">
+<style>
+@page{size:1280px 720px;margin:0}
+html,body{margin:0;padding:0}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:Raleway,sans-serif}
+.hoja{width:1280px;height:720px;overflow:hidden;position:relative;page-break-after:always}
+.hoja:last-child{page-break-after:auto}
+.l{width:2000px;height:1125px;zoom:.64;position:absolute;top:0;left:0;background:#FAF6EF;color:#1F2B20}
+:root{--selva:#1F2B20;--turq:#28AAA3;--turq-p:#0E7A75;--crema:#FAF6EF;--linea:#E7DFD3;--gris:#6b6b6b;--amarillo:#FFF53D;--negro:#141414}
+.marca{display:flex;align-items:center;gap:24px}
+.marca img{width:70px;height:70px}
+.marca b{display:block;font-weight:500;font-size:20px;letter-spacing:.32em}
+.marca i{display:block;font-weight:300;font-size:21px;letter-spacing:.08em;margin-top:4px}
+.seccion{font-weight:600;font-size:19px;letter-spacing:.32em;color:var(--turq-p)}
+.pie{position:absolute;left:100px;right:100px;bottom:42px;border-top:2px solid var(--linea);padding-top:20px;display:flex;justify-content:space-between;font-size:19px;letter-spacing:.32em;color:var(--gris)}
+.pie b{color:var(--turq-p);font-weight:700;letter-spacing:.1em}
+/* portada */
+.portada{background:var(--selva);color:#FAF6EF}
+.portada .foto{position:absolute;right:0;top:0;width:700px;height:1125px;background:url(img/cavern.jpg) 88% center/cover}
+.portada .foto:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--selva) 0,rgba(31,43,32,0) 22%)}
+.portada .marca{position:absolute;left:115px;top:85px}
+.portada .marca img{width:117px;height:117px}
+.portada .marca b{font-size:22px}.portada .marca i{color:#cfcac0;font-size:22px}
+.portada h1{position:absolute;left:112px;top:270px;margin:0;font-weight:300;font-size:142px;line-height:.95;letter-spacing:-.01em}
+.portada h2{position:absolute;left:112px;top:548px;margin:0;font-weight:300;font-style:italic;font-size:80px;color:var(--turq)}
+.portada .bajada{position:absolute;left:113px;top:670px;width:1100px;font-size:34px;font-weight:300;line-height:1.5}
+.portada .bajada b{font-weight:600}.portada .bajada em{color:var(--turq)}
+.portada .fechas{position:absolute;left:113px;top:808px;font-size:44px;font-weight:600;letter-spacing:.01em}
+.portada .datos{position:absolute;left:113px;top:978px;display:flex}
+.portada .dato{padding:0 36px;border-left:2px solid #4a554b}.portada .dato:first-child{padding-left:0;border:0}
+.portada .dato b{display:block;color:var(--turq);font-weight:500;font-size:36px}
+.portada .dato span{display:block;font-size:17px;letter-spacing:.3em;color:#cfcac0;margin-top:14px}
+/* itinerario */
+.izq{position:absolute;left:0;top:0;width:516px;height:1125px;background:var(--selva);color:#FAF6EF}
+.izq .cancion{position:absolute;left:100px;top:128px;font-style:italic;font-weight:300;color:var(--turq);font-size:28px}
+.izq .cancion:before{content:"";display:inline-block;width:26px;height:2px;background:var(--turq);vertical-align:middle;margin-right:14px}
+.izq .tipo{position:absolute;left:100px;top:198px;font-weight:600;font-size:20px;letter-spacing:.42em;line-height:1.25}
+.izq h2{position:absolute;left:100px;top:262px;margin:0;font-weight:300;font-size:70px;line-height:1}
+.izq h2 em{color:var(--turq);font-weight:300}
+.izq .rango{position:absolute;left:100px;top:428px;font-size:26px;font-weight:300;line-height:1.45}
+.izq ul{position:absolute;left:100px;top:540px;margin:0;padding:0 0 0 0;list-style:none;border-left:3px solid var(--turq)}
+.izq li{position:relative;padding:0 0 22px 32px;font-size:23px;font-weight:300}
+.izq li:before{content:"";position:absolute;left:-15px;top:4px;width:20px;height:20px;border-radius:50%;border:3px solid var(--turq);background:var(--selva)}
+.izq li.on:before{background:var(--turq)}
+.izq li span{display:block;font-size:17px;letter-spacing:.3em;color:#cfcac0;margin-top:6px}
+.izq .foto{position:absolute;left:0;bottom:0;width:516px;height:190px;background:url(img/cavern.jpg) 40% 85%/170% auto}
+.izq .foto:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--selva) 0,rgba(31,43,32,0) 50%)}
+.der{position:absolute;left:616px;right:100px;top:0;bottom:0}
+.der .cab{position:absolute;left:0;right:0;top:55px;display:flex;justify-content:space-between;align-items:center}
+.dias{position:absolute;left:0;right:0;top:150px}
+.dia{display:grid;grid-template-columns:190px 1fr;padding:11px 0 13px;border-bottom:2px solid var(--linea)}
+.dia:last-child{border-bottom:0}
+.dia .n small{display:block;font-size:17px;letter-spacing:.3em;font-weight:500}
+.dia .n b{display:block;font-weight:300;color:var(--turq-p);font-size:42px;line-height:1.02}
+.dia .n span{display:block;font-size:18px;letter-spacing:.18em}
+.dia h3{margin:0 0 4px;font-weight:600;font-size:27px}
+.dia p{margin:0;font-size:21px;font-weight:300;line-height:1.42}
+.dia p b{font-weight:600}
+/* días 10 y 11 */
+.dia.doble{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.mitad{display:grid;grid-template-columns:120px 1fr}
+/* lo nuevo: estilo de la muestra */
+.beatle{margin-top:7px;background:var(--amarillo);border-top:6px solid var(--negro);padding:7px 16px 8px;color:var(--negro);font-weight:700;font-size:20px;line-height:1.35}
+.beatle small{display:block;font-weight:700;font-size:13px;letter-spacing:.32em;margin-bottom:2px}
+.ref{position:absolute;right:0;bottom:118px;display:flex;align-items:center;gap:12px;font-size:16px;letter-spacing:.2em;color:var(--gris)}
+.ref i{display:inline-block;width:34px;height:20px;background:var(--amarillo);border-top:4px solid var(--negro)}
+/* servicios */
+.serv .cab{position:absolute;left:100px;right:100px;top:55px;display:flex;justify-content:space-between;align-items:center}
+.serv .cancion{position:absolute;left:100px;top:172px;font-style:italic;font-weight:300;color:var(--turq-p);font-size:36px}
+.serv .cancion:before{content:"";display:inline-block;width:40px;height:2px;background:var(--turq-p);vertical-align:middle;margin-right:18px}
+.serv h2{position:absolute;left:100px;top:222px;margin:0;font-weight:300;font-size:72px}
+.serv h2 em{color:var(--turq-p)}
+.cajas{position:absolute;left:100px;right:100px;top:375px;display:grid;grid-template-columns:repeat(3,1fr);gap:35px}
+.caja{background:#fff;border:2px solid var(--linea);border-top:7px solid var(--turq);height:280px;padding:48px 44px;box-sizing:border-box}
+.caja small{display:block;font-weight:600;font-size:19px;letter-spacing:.3em;color:var(--turq-p);margin-bottom:22px}
+.caja p{margin:0;font-weight:300;font-size:31px;line-height:1.45}
+.caja.amarilla{background:var(--amarillo);border:0;border-top:9px solid var(--negro);padding-top:40px}
+.caja.amarilla small{color:var(--negro);font-weight:800}
+.caja.amarilla p{font-weight:700;color:var(--negro);font-size:27px;line-height:1.4}
+</style></head><body>
+
+<!-- 01 PORTADA -->
+<div class="hoja"><div class="l portada">
+  <div class="foto"></div>
+  <div class="marca"><img src="img/logo.png"><div><b>VIAJARENGRUPO</b><i>Experiencias de viaje</i></div></div>
+  <h1>The Beatle<br>Experience</h1>
+  <h2>De Londres a Liverpool</h2>
+  <div class="bajada">Un viaje al corazón de los <em>Fab Four</em> con <b>Alejandra Peñalva</b> y <b>Mirna Cappiello</b>, a 70 años del primer encuentro de John y Paul.</div>
+  <div class="fechas">25 de agosto al 4 de septiembre</div>
+  <div class="datos">
+    <div class="dato"><b>11 días</b><span>25 AGO. AL 4 SEP.</span></div>
+    <div class="dato"><b>9 noches</b><span>EN HOTELES 4*</span></div>
+    <div class="dato"><b>Londres · Liverpool</b><span>Y EXPERIENCIAS BEATLE</span></div>
+  </div>
+</div></div>
+
+<!-- 03 LIVERPOOL Y REGRESO -->
+<div class="hoja"><div class="l">
+  <div class="izq">
+    <div class="cancion">Ticket to Ride</div>
+    <div class="tipo">ITINERARIO<br>TERRESTRE</div>
+    <h2>Liverpool <em>y<br><i>regreso</i></em></h2>
+    <div class="rango">Días 6 al 11<br>30/08 al 04/09</div>
+    <ul>
+      <li>Ezeiza<span>DÍA 1</span></li>
+      <li>Londres<span>DÍAS 2 AL 5</span></li>
+      <li class="on">Liverpool<span>DÍAS 6 AL 9</span></li>
+      <li class="on">Londres<span>DÍAS 10 Y 11</span></li>
+    </ul>
+    <div class="foto"></div>
+  </div>
+  <div class="der">
+    <div class="cab"><div class="marca"><img src="img/logo.png"><div><b>VIAJARENGRUPO</b><i>Experiencias de viaje</i></div></div><div class="seccion">ITINERARIO TERRESTRE</div></div>
+    <div class="dias">
+      <div class="dia"><div class="n"><small>DÍA</small><b>6</b><span>30/08</span></div><div>
+        <h3>Londres a Liverpool</h3>
+        <p>Desayuno y viaje en tren directo (categoría estándar) hacia Liverpool junto a Carmen. Traslado al hotel temático y alojamiento.</p>
+        <div class="beatle"><small>INCLUIDO</small>A la noche, cóctel de bienvenida con Freda Kelly, ex secretaria de los Beatles.</div>
+      </div></div>
+      <div class="dia"><div class="n"><small>DÍA</small><b>7</b><span>31/08</span></div><div>
+        <h3>Liverpool Beatle</h3>
+        <div class="beatle" style="margin-top:4px"><small>INCLUIDO</small>A la mañana, visita al museo The Beatles Story.</div>
+        <p style="margin-top:8px">Por la tarde, tiempo libre para disfrutar de la Beatleweek.</p>
+      </div></div>
+      <div class="dia"><div class="n"><small>DÍA</small><b>8</b><span>01/09</span></div><div>
+        <h3>Tras los pasos de los Beatles</h3>
+        <div class="beatle" style="margin-top:4px"><small>INCLUIDO</small>Tour Beatle de 7 horas: The Casbah, The Cavern, The Jacaranda y las casas de los Beatles.</div>
+      </div></div>
+      <div class="dia"><div class="n"><small>DÍA</small><b>9</b><span>02/09</span></div><div>
+        <h3>Liverpool</h3>
+        <p>Mañana libre.</p>
+        <div class="beatle"><small>INCLUIDO</small>A la tarde, cena temprana en The Philharmonic y después música en vivo en The Cavern.</div>
+      </div></div>
+      <div class="dia doble">
+        <div class="mitad"><div class="n"><small>DÍA</small><b>10</b><span>03/09</span></div><div><h3>Liverpool a Londres</h3><p>Tren directo de regreso a Londres y traslado al hotel.</p></div></div>
+        <div class="mitad"><div class="n"><small>DÍA</small><b>11</b><span>04/09</span></div><div><h3>Regreso</h3><p>Desayuno, traslado al aeropuerto y fin de los servicios.</p></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="pie" style="left:616px"><span>THE BEATLE EXPERIENCE · DE LONDRES A LIVERPOOL</span><b>03</b></div>
+</div></div>
+
+<!-- 04 SERVICIOS -->
+<div class="hoja"><div class="l serv">
+  <div class="cab"><div class="marca"><img src="img/logo.png"><div><b>VIAJARENGRUPO</b><i>Experiencias de viaje</i></div></div><div class="seccion">SERVICIOS</div></div>
+  <div class="cancion">With a Little Help from My Friends</div>
+  <h2>Servicios incluidos <em><i>en el paquete</i></em></h2>
+  <div class="cajas">
+    <div class="caja"><small>TRASLADOS</small><p>Todos los traslados terrestres con asistencia y conexiones de estaciones/aeropuerto.</p></div>
+    <div class="caja"><small>TRENES</small><p>Boletos de tren Londres-Liverpool y Liverpool-Londres directos en categoría estándar.</p></div>
+    <div class="caja"><small>LONDRES</small><p>Dos días de bus y guía de habla hispana (hasta 8 horas) en Londres.</p></div>
+    <div class="caja"><small>ENTRADAS</small><p>Entradas a The British Library y al museo The Beatles Story.</p></div>
+    <div class="caja amarilla"><small>EXPERIENCIAS BEATLE</small><p>Cóctel con Freda Kelly, tour Beatle de 7 horas y cena en The Philharmonic con música en vivo en The Cavern.</p></div>
+    <div class="caja"><small>ALOJAMIENTO</small><p>9 noches de alojamiento en hoteles 4 estrellas con desayuno.</p></div>
+  </div>
+  <div class="pie"><span>THE BEATLE EXPERIENCE · DE LONDRES A LIVERPOOL</span><b>04</b></div>
+</div></div>
+
+</body></html>
