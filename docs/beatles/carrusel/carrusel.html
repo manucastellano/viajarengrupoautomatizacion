@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+:root{--negro:#1c1c1a;--crema:#F3EDE1;--papel:#EFE7D6;--amarillo:#FFF53D;--notas:#D9A300;--turq:#28AAA3;--selva:#1F2B20}
+html,body{margin:0;padding:0;background:#555}
+.p{width:1080px;height:1350px;position:relative;overflow:hidden;background:#222 center/cover no-repeat;font-family:Raleway,sans-serif;margin-bottom:20px}
+.p .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18) 0,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 65%,rgba(0,0,0,.28) 100%)}
+/* título tipo sticker */
+.t{position:absolute;left:0;right:0;text-align:center;font-family:"Playfair Display",serif;font-weight:900;text-transform:uppercase;color:var(--negro);line-height:.95;letter-spacing:.01em;
+  -webkit-text-stroke:16px #fff;paint-order:stroke fill;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
+/* nota estilo app de Notas */
+.nota{position:absolute;background:#FBF8F1;border-radius:34px;padding:30px 40px 36px;box-shadow:0 14px 40px rgba(0,0,0,.28);width:560px;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
+.nota .barra{display:flex;align-items:center;justify-content:space-between;color:var(--notas);font-weight:600;font-size:26px;margin-bottom:20px}
+.nota .barra span:first-child:before{content:"‹";font-size:42px;font-weight:300;line-height:0;vertical-align:-6px;margin-right:12px}
+.nota .barra .ic{display:flex;gap:30px;align-items:center}
+.nota .barra .ic i{display:inline-block;width:34px;height:34px;border:3px solid var(--notas);border-radius:50%}
+.nota .barra .ic b{display:inline-block;width:24px;height:26px;border:3px solid var(--notas);border-top:0;border-radius:0 0 4px 4px;position:relative}
+.nota .barra .ic b:before{content:"";position:absolute;left:9px;top:-14px;width:3px;height:24px;background:var(--notas)}
+.nota p{margin:0;border-left:4px solid var(--notas);padding-left:22px;font-size:34px;line-height:1.38;color:#1b1b1b}
+.nota p b{font-weight:700}
+.credito{position:absolute;left:28px;bottom:22px;font-size:15px;color:rgba(255,255,255,.9);text-shadow:0 1px 3px rgba(0,0,0,.8)}
+.marca{position:absolute;right:30px;bottom:24px;width:74px;height:74px;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.num{position:absolute;right:30px;top:30px;background:rgba(28,28,26,.75);color:#fff;font-size:22px;font-weight:600;padding:8px 18px;border-radius:30px;letter-spacing:.05em}
+.incl{display:inline-block;background:var(--amarillo);color:var(--negro);font-family:Raleway,sans-serif;font-weight:800;font-size:18px;letter-spacing:.28em;padding:8px 16px;border-top:5px solid var(--negro);margin-bottom:16px}
+/* portada */
+.portada{background:var(--papel)}
+.portada:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(255,255,255,.55),rgba(0,0,0,0) 60%),repeating-linear-gradient(0deg,rgba(0,0,0,.012) 0 2px,rgba(0,0,0,0) 2px 4px)}
+.portada .foto{position:absolute;left:0;right:0;bottom:0;height:560px;background:url(fotos/portada.jpg) center 60%/cover;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 30%);mask-image:linear-gradient(180deg,transparent 0,#000 30%)}
+.portada .logo{position:absolute;left:50%;top:70px;transform:translateX(-50%);width:120px;height:120px}
+.portada .sup{position:absolute;left:0;right:0;top:212px;text-align:center;font-weight:600;font-size:30px;letter-spacing:.24em;color:var(--negro)}
+.portada .grande{position:absolute;left:0;right:0;top:268px;text-align:center;font-family:"Playfair Display",serif;font-weight:900;font-size:96px;line-height:1;color:var(--negro)}
+.portada .fechas{position:absolute;left:0;right:0;top:405px;text-align:center;font-weight:600;font-size:30px;letter-spacing:.12em;color:var(--negro)}
+.portada .titulo{position:absolute;left:0;right:0;top:470px;text-align:center;font-family:"Playfair Display",serif;font-weight:800;font-size:98px;line-height:1;color:#fff;-webkit-text-stroke:0;
+  background:none}
+.portada .titulo span{background:var(--negro);padding:6px 26px 14px;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.35}
+.portada .pregunta{position:absolute;left:0;right:0;top:668px;text-align:center;font-weight:700;font-size:44px;line-height:1.25;letter-spacing:.06em;color:var(--negro)}
+/* cierre */
+.cierre{background:var(--selva);color:#FAF6EF}
+.cierre .logo{position:absolute;left:80px;top:90px;width:120px;height:120px}
+.cierre h2{position:absolute;left:80px;right:80px;top:270px;margin:0;font-family:"Playfair Display",serif;font-weight:900;font-size:110px;line-height:1}
+.cierre h2 em{color:var(--amarillo);font-style:normal}
+.cierre .txt{position:absolute;left:80px;right:80px;top:540px;font-size:38px;font-weight:400;line-height:1.45}
+.cierre .txt b{font-weight:700}
+.cierre .caja{position:absolute;left:80px;right:80px;top:820px;background:var(--amarillo);border-top:8px solid var(--negro);color:var(--negro);padding:32px 40px}
+.cierre .caja small{display:block;font-weight:800;font-size:20px;letter-spacing:.3em;margin-bottom:10px}
+.cierre .caja b{font-size:52px;font-weight:800}
+.cierre .web{position:absolute;left:80px;bottom:90px;font-size:24px;letter-spacing:.24em;color:#d6d1c7}
+</style></head><body>
+
+<!-- 1 -->
+<section class="p portada" id="s1">
+  <div class="foto"></div>
+  <img class="logo" src="../img/logo.png">
+  <div class="sup">VIAJAR EN GRUPO</div>
+  <div class="grande">INGLATERRA 2027</div>
+  <div class="fechas">25 DE AGOSTO AL 4 DE SEPTIEMBRE</div>
+  <div class="titulo"><span>The Beatle Experience</span></div>
+  <div class="pregunta">¿DE QUÉ SE TRATA ESTE<br>VIAJE GRUPAL?</div>
+  <div class="credito" style="color:#fff">Foto: Misterweiss · Dominio público · Wikimedia Commons</div>
+</section>
+
+<!-- 2 -->
+<section class="p" id="s2" style="background-image:url(fotos/londres.jpg);background-position:center 30%">
+  <div class="velo"></div>
+  <div class="t" style="top:90px;font-size:170px">Londres</div>
+  <div class="nota" style="right:50px;top:420px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <p>5 noches en la ciudad, <b>2 días con guía en español</b> por la historia del rock y entrada a The British Library.</p></div>
+  <div class="credito">Foto: Julian Herzog · CC BY 4.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 3 -->
+<section class="p" id="s3" style="background-image:url(fotos/abbey.jpg);background-position:40% center">
+  <div class="velo"></div>
+  <div class="t" style="top:110px;font-size:136px">Abbey Road</div>
+  <div class="nota" style="left:50%;transform:translateX(-50%);bottom:110px;width:640px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <p>Parada para la foto en la senda peatonal más famosa del mundo y frente a los estudios.</p></div>
+  <div class="credito">Foto: Josephenus P. Riley · CC BY 2.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 5 -->
+<section class="p" id="s5" style="background-image:url(fotos/camden.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:120px;font-size:170px">Camden</div>
+  <div class="nota" style="right:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <p>El circuito del punk y el rock, con tiempo libre en <b>Camden Market</b>.</p></div>
+  <div class="credito" id="c5"></div>
+</section>
+
+<!-- 6 -->
+<section class="p" id="s6" style="background-image:url(fotos/liverpool.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:110px;font-size:150px">Liverpool</div>
+  <div class="nota" style="left:50px;bottom:130px;width:620px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <p>Tren directo desde Londres y <b>4 noches en el Hard Days Night Hotel</b>, el hotel de los Beatles.</p></div>
+  <div class="credito">Foto: Bob Edwards · CC BY 2.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 7 -->
+<section class="p" id="s7" style="background-image:url(fotos/hotel.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:100px;font-size:128px">Freda Kelly</div>
+  <div class="nota" style="right:50px;bottom:140px;width:600px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <div class="incl">INCLUIDO</div>
+    <p>Cóctel de bienvenida con <b>Freda Kelly</b>, ex secretaria de los Beatles.</p></div>
+  <div class="credito">Foto: 37Hz · CC BY 2.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 8 -->
+<section class="p" id="s8" style="background-image:url(fotos/story.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:100px;font-size:135px">The Beatles<br>Story</div>
+  <div class="nota" style="left:50px;bottom:140px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <div class="incl">INCLUIDO</div>
+    <p>Visita al museo que cuenta la historia de los Beatles.</p></div>
+  <div class="credito" id="c8"></div>
+</section>
+
+<!-- 9 -->
+<section class="p" id="s9" style="background-image:url(fotos/mathew.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:100px;font-size:128px">Tour Beatle</div>
+  <div class="nota" style="right:50px;bottom:130px;width:640px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <div class="incl">INCLUIDO</div>
+    <p><b>7 horas</b> por The Casbah, The Cavern, The Jacaranda y las casas de los Beatles.</p></div>
+  <div class="credito">Foto: Ian Ransley · CC BY 2.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 10 -->
+<section class="p" id="s10" style="background-image:url(fotos/philharmonic.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:100px;font-size:110px">The<br>Philharmonic</div>
+  <div class="nota" style="left:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <div class="incl">INCLUIDO</div>
+    <p>Cena temprana en este clásico pub de Liverpool.</p></div>
+  <div class="credito" id="c10"></div>
+</section>
+
+<!-- 11 -->
+<section class="p" id="s11" style="background-image:url(fotos/cavern.jpg)">
+  <div class="velo"></div>
+  <div class="t" style="top:100px;font-size:132px">The Cavern</div>
+  <div class="nota" style="right:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+    <div class="incl">INCLUIDO</div>
+    <p>Y después, <b>música en vivo</b> en el lugar donde empezó todo.</p></div>
+  <div class="credito">Foto: Eric Daugherty · CC BY 2.0 · Wikimedia Commons</div>
+</section>
+
+<!-- 12 -->
+<section class="p cierre" id="s12">
+  <img class="logo" src="../img/logo.png">
+  <h2>¿Te sumás a la <em>aventura?</em></h2>
+  <div class="txt">Viajás con <b>Alejandra Peñalva</b> y <b>Mirna Cappiello</b>, a 70 años del primer encuentro de John y Paul.<br><br><b>25 de agosto al 4 de septiembre de 2027</b></div>
+  <div class="caja"><small>ESCRIBINOS POR WHATSAPP</small><b>+54 9 11 4434 0161</b></div>
+  <div class="web">VIAJARENGRUPO.TUR.AR</div>
+</section>
+
+</body></html>
