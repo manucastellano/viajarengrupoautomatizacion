@@ -1,6 +1,7 @@
 <title>Tablero __TITULO__</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unica+One&family=Raleway:wght@500;600;700&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
 /* Tablero de aprobación: resumen arriba, vista Calendario o Grilla, detalle en hoja. Paleta fija de marca (tema único claro, deliberado). */
 :root{--selva:#1F2B20;--bosque:#2A3C2E;--turquesa:#28AAA3;--turquesa-profundo:#0E7A75;--dorado:#C3A065;--dorado-profundo:#AB844A;--salvia:#7A9F85;--crema:#FAF6EF;--crema-profunda:#F0EBE4;--blanco:#FFFFFF;--tinta-suave:#595959;--linea:rgba(31,43,32,.14);--ok:#13824A;--cambios:#9A5B00;--descartada:#595959;
@@ -39,6 +40,9 @@ dialog::backdrop{background:rgba(31,43,32,.6)}
 .texto{white-space:pre-wrap;background:var(--blanco);border:1px solid var(--linea);padding:10px;font-size:14px;max-height:220px;overflow:auto}
 textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px solid var(--selva);padding:8px;min-height:80px;background:var(--blanco);color:var(--selva)}
 .acciones{display:flex;flex-wrap:wrap;gap:8px}
+.bajar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.bajar[hidden]{display:none}.bajar p{margin:0;width:100%;font-size:13px;color:var(--tinta-suave)}
+.bajar button{font:600 13px var(--texto);border:1px solid var(--turquesa-profundo);background:transparent;color:var(--turquesa-profundo);padding:6px 12px;cursor:pointer;border-radius:999px}
+.bajar button.todas{background:var(--turquesa-profundo);color:var(--blanco)}
 .acciones .aprobar{background:var(--ok);border-color:var(--ok);color:var(--blanco)}
 .aviso{font-size:13px;color:var(--tinta-suave)}
 .cerrar{justify-self:end;background:none;border:0;font:600 14px var(--texto);cursor:pointer;color:var(--selva);padding:12px 16px 0}
@@ -77,8 +81,8 @@ textarea{width:100%;box-sizing:border-box;font:14px var(--texto);border:1px soli
           <button class="aprobar" id="d-aprobar">✅ Aprobar</button>
           <button id="d-cambios">✏️ Pedir cambio</button>
           <button id="d-descartar">⏸ Descartar</button>
-          <button id="d-descargar" hidden>Descargar</button>
         </div>
+        <div class="bajar" id="d-bajar" hidden></div>
         <p class="aviso" id="d-aviso" role="status"></p>
       </div>
     </div>
@@ -181,9 +185,7 @@ function llenar(p) {
   if (p.comentario) ficha.push(["Tu pedido", p.comentario]);
   $("d-ficha").replaceChildren(...ficha.flatMap(([k, v]) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; return [dt, dd]; }));
   $("d-texto").textContent = [p.texto, (p.hashtags || []).join(" ")].filter(Boolean).join("\n\n") || "Esta pieza no lleva texto de posteo.";
-  const n = (p.assets || []).length, hayVideo = (p.assets || []).some(a => a.tipo === "video");
-  $("d-descargar").hidden = !(downloads && n);
-  $("d-descargar").textContent = n === 1 ? (hayVideo ? "⬇️ Descargar video" : "⬇️ Descargar imagen") : `⬇️ Descargar ${n} ${hayVideo ? "archivos" : "imágenes"}`;
+  armarDescargas(p);
   ["d-aprobar","d-cambios","d-descartar"].forEach(id => $(id).disabled = !db);
 }
 
@@ -201,23 +203,51 @@ async function decidir(estado) {
   }
 }
 
-async function descargar() {
-  const p = piezas.find(x => x.id === abierta);
-  const lista = p.assets || [];
-  let bajados = 0;
-  for (const [i, a] of lista.entries()) {
-    $("d-aviso").textContent = `Descargando ${i + 1} de ${lista.length}…`;
-    try {
-      const blob = await (await fetch(url(a))).blob();
-      await downloads.save({ filename: `${p.id}-${a.nombre}`, data: blob });
-      bajados++;
-    } catch (e) {
-      if (e && e.code === "declined") { $("d-aviso").textContent = "Descarga cancelada."; return; }
-      $("d-aviso").textContent = "No se pudo descargar " + a.nombre + ".";
-      return;
-    }
+// Descargas: el visor permite un aviso de guardado a la vez, así que cada archivo es su propio botón
+// y, si son varios, hay uno más que los junta en un ZIP (un solo aviso).
+const nombreArchivo = (p, a, i) => `${p.id}-${String(i + 1).padStart(2, "0")}-${a.nombre.replace(/^\d+-/, "")}`;
+
+function armarDescargas(p) {
+  const caja = $("d-bajar"), lista = p.assets || [];
+  caja.hidden = !(downloads && lista.length);
+  if (caja.hidden) return caja.replaceChildren();
+  const botones = [];
+  const intro = document.createElement("p");
+  intro.textContent = lista.length > 1 ? "Descargar para subir a mano (una por una o todas juntas):" : "Descargar para subir a mano:";
+  botones.push(intro);
+  lista.forEach((a, i) => {
+    const b = document.createElement("button");
+    b.textContent = lista.length > 1 ? `⬇️ ${a.tipo === "video" ? "Video" : "Imagen"} ${i + 1}` : `⬇️ Descargar ${a.tipo === "video" ? "video" : "imagen"}`;
+    b.onclick = () => guardar(nombreArchivo(p, a, i), () => fetch(url(a)).then(r => r.blob()), b);
+    botones.push(b);
+  });
+  if (lista.length > 1 && window.JSZip) {
+    const z = document.createElement("button"); z.className = "todas";
+    z.textContent = `⬇️ Todas juntas (ZIP, ${lista.length})`;
+    z.onclick = () => guardar(`${p.id}.zip`, async () => {
+      const zip = new JSZip();
+      for (const [i, a] of lista.entries()) zip.file(nombreArchivo(p, a, i), await (await fetch(url(a))).blob());
+      return zip.generateAsync({ type: "blob", compression: "STORE" });
+    }, z);
+    botones.push(z);
   }
-  $("d-aviso").textContent = bajados === 1 ? "Listo: se descargó el archivo." : `Listo: se descargaron ${bajados} archivos, en el orden en que van en Instagram.`;
+  caja.replaceChildren(...botones);
+}
+
+async function guardar(nombre, armar, boton) {
+  boton.disabled = true;
+  $("d-aviso").textContent = "Preparando " + nombre + "…";
+  try {
+    await downloads.save({ filename: nombre, data: await armar() });
+    $("d-aviso").textContent = "Descargado: " + nombre;
+  } catch (e) {
+    const code = e && e.code;
+    $("d-aviso").textContent = code === "declined" ? "Descarga cancelada."
+      : code === "rate_limited" ? "Esperá unos segundos y tocá de nuevo."
+      : "No se pudo descargar " + nombre + ".";
+  } finally {
+    boton.disabled = false;
+  }
 }
 
 async function copiar() {
@@ -232,7 +262,6 @@ $("cerrar").onclick = () => { abierta = null; $("detalle").close(); };
 $("d-aprobar").onclick = () => decidir("aprobada");
 $("d-cambios").onclick = () => decidir("cambios");
 $("d-descartar").onclick = () => decidir("descartada");
-$("d-descargar").onclick = descargar;
 $("d-copiar").onclick = copiar;
 
 (async () => {
