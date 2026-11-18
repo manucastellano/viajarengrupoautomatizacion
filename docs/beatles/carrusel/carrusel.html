@@ -36,6 +36,8 @@ html,body{margin:0;padding:0;background:#555}
   background:none}
 .portada .titulo span{background:var(--negro);padding:6px 26px 14px;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.35}
 .portada .pregunta{position:absolute;left:0;right:0;top:668px;text-align:center;font-weight:700;font-size:44px;line-height:1.25;letter-spacing:.06em;color:var(--negro)}
+.story{background:var(--negro)}
+.story .cinta{position:absolute;left:-60px;right:-60px;top:1010px;height:150px;background:repeating-linear-gradient(90deg,var(--amarillo) 0 46px,var(--negro) 46px 70px);transform:rotate(-6deg);border-top:22px solid var(--amarillo);border-bottom:22px solid var(--amarillo)}
 /* cierre */
 .cierre{background:var(--selva);color:#FAF6EF}
 .cierre .logo{position:absolute;left:80px;top:90px;width:120px;height:120px}
@@ -79,28 +81,19 @@ html,body{margin:0;padding:0;background:#555}
   <div class="credito">Foto: Josephenus P. Riley · CC BY 2.0 · Wikimedia Commons</div>
 </section>
 
-<!-- 5 -->
-<section class="p" id="s5" style="background-image:url(fotos/camden.jpg)">
-  <div class="velo"></div>
-  <div class="t" style="top:120px;font-size:170px">Camden</div>
-  <div class="nota" style="right:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
-    <p>El circuito del punk y el rock, con tiempo libre en <b>Camden Market</b>.</p></div>
-  <div class="credito" id="c5"></div>
-</section>
-
 <!-- 6 -->
-<section class="p" id="s6" style="background-image:url(fotos/liverpool.jpg)">
+<section class="p" id="s6" style="background-image:url(fotos/liverpool.jpg);background-position:30% center">
   <div class="velo"></div>
   <div class="t" style="top:110px;font-size:150px">Liverpool</div>
   <div class="nota" style="left:50px;bottom:130px;width:620px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
     <p>Tren directo desde Londres y <b>4 noches en el Hard Days Night Hotel</b>, el hotel de los Beatles.</p></div>
-  <div class="credito">Foto: Bob Edwards · CC BY 2.0 · Wikimedia Commons</div>
+  
 </section>
 
 <!-- 7 -->
 <section class="p" id="s7" style="background-image:url(fotos/hotel.jpg)">
   <div class="velo"></div>
-  <div class="t" style="top:100px;font-size:128px">Freda Kelly</div>
+  <div class="t" style="top:100px;font-size:116px">Freda Kelly</div>
   <div class="nota" style="right:50px;bottom:140px;width:600px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
     <div class="incl">INCLUIDO</div>
     <p>Cóctel de bienvenida con <b>Freda Kelly</b>, ex secretaria de los Beatles.</p></div>
@@ -108,13 +101,12 @@ html,body{margin:0;padding:0;background:#555}
 </section>
 
 <!-- 8 -->
-<section class="p" id="s8" style="background-image:url(fotos/story.jpg)">
-  <div class="velo"></div>
-  <div class="t" style="top:100px;font-size:135px">The Beatles<br>Story</div>
-  <div class="nota" style="left:50px;bottom:140px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
+<section class="p story" id="s8">
+  <div class="cinta"></div>
+  <div class="t" style="top:170px;font-size:128px;-webkit-text-stroke:0;color:#FAF6EF;filter:none">The Beatles<br>Story</div>
+  <div class="nota" style="left:50%;transform:translateX(-50%);top:640px;width:700px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
     <div class="incl">INCLUIDO</div>
-    <p>Visita al museo que cuenta la historia de los Beatles.</p></div>
-  <div class="credito" id="c8"></div>
+    <p>Una mañana en el museo que cuenta la historia de los Beatles, de Liverpool al mundo.</p></div>
 </section>
 
 <!-- 9 -->
@@ -127,23 +119,13 @@ html,body{margin:0;padding:0;background:#555}
   <div class="credito">Foto: Ian Ransley · CC BY 2.0 · Wikimedia Commons</div>
 </section>
 
-<!-- 10 -->
-<section class="p" id="s10" style="background-image:url(fotos/philharmonic.jpg)">
-  <div class="velo"></div>
-  <div class="t" style="top:100px;font-size:110px">The<br>Philharmonic</div>
-  <div class="nota" style="left:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
-    <div class="incl">INCLUIDO</div>
-    <p>Cena temprana en este clásico pub de Liverpool.</p></div>
-  <div class="credito" id="c10"></div>
-</section>
-
 <!-- 11 -->
 <section class="p" id="s11" style="background-image:url(fotos/cavern.jpg)">
   <div class="velo"></div>
   <div class="t" style="top:100px;font-size:132px">The Cavern</div>
   <div class="nota" style="right:50px;bottom:130px"><div class="barra"><span>Notas</span><span class="ic"><b></b><i></i></span></div>
     <div class="incl">INCLUIDO</div>
-    <p>Y después, <b>música en vivo</b> en el lugar donde empezó todo.</p></div>
+    <p>Cena temprana en <b>The Philharmonic</b> y después, <b>música en vivo</b> en el lugar donde empezó todo.</p></div>
   <div class="credito">Foto: Eric Daugherty · CC BY 2.0 · Wikimedia Commons</div>
 </section>
 
