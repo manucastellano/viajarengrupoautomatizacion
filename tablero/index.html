@@ -181,7 +181,9 @@ function llenar(p) {
   if (p.comentario) ficha.push(["Tu pedido", p.comentario]);
   $("d-ficha").replaceChildren(...ficha.flatMap(([k, v]) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; return [dt, dd]; }));
   $("d-texto").textContent = [p.texto, (p.hashtags || []).join(" ")].filter(Boolean).join("\n\n") || "Esta pieza no lleva texto de posteo.";
-  $("d-descargar").hidden = !(downloads && p.estado === "aprobada" && (p.assets || []).length);
+  const n = (p.assets || []).length, hayVideo = (p.assets || []).some(a => a.tipo === "video");
+  $("d-descargar").hidden = !(downloads && n);
+  $("d-descargar").textContent = n === 1 ? (hayVideo ? "⬇️ Descargar video" : "⬇️ Descargar imagen") : `⬇️ Descargar ${n} ${hayVideo ? "archivos" : "imágenes"}`;
   ["d-aprobar","d-cambios","d-descartar"].forEach(id => $(id).disabled = !db);
 }
 
@@ -201,15 +203,21 @@ async function decidir(estado) {
 
 async function descargar() {
   const p = piezas.find(x => x.id === abierta);
-  for (const a of p.assets) {
+  const lista = p.assets || [];
+  let bajados = 0;
+  for (const [i, a] of lista.entries()) {
+    $("d-aviso").textContent = `Descargando ${i + 1} de ${lista.length}…`;
     try {
       const blob = await (await fetch(url(a))).blob();
       await downloads.save({ filename: `${p.id}-${a.nombre}`, data: blob });
+      bajados++;
     } catch (e) {
-      if (e && e.code === "declined") break;
+      if (e && e.code === "declined") { $("d-aviso").textContent = "Descarga cancelada."; return; }
       $("d-aviso").textContent = "No se pudo descargar " + a.nombre + ".";
+      return;
     }
   }
+  $("d-aviso").textContent = bajados === 1 ? "Listo: se descargó el archivo." : `Listo: se descargaron ${bajados} archivos, en el orden en que van en Instagram.`;
 }
 
 async function copiar() {
